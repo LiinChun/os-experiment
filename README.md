@@ -40,12 +40,15 @@
 ## 快速开始
 
 ```bash
-python -m pip install -r requirements.txt          # 只依赖 requests
+python -m pip install -r requirements.txt          # 只依赖 requests（Python 3.10+）
 
 python -m oslabs_scraper scrape                    # 抓取全站到 raw/
 python -m oslabs_scraper verify                    # 校验快照是否完整、可离线打开
 python -m oslabs_scraper list                      # 只看导航，不下载
 ```
+
+`verify` 默认只在**文件缺失 / 哈希不符**时失败；源站自身 404 的引用只告警，
+加 `--strict-refs` 可以把它也当作失败。
 
 也可以 `pip install -e .` 之后直接用 `oslabs-scrape` 命令。
 

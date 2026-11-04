@@ -60,6 +60,11 @@ def build_parser() -> argparse.ArgumentParser:
     verify = subparsers.add_parser("verify", help="校验快照与 manifest 是否一致")
     _add_common_options(verify)
     verify.add_argument("--no-links", action="store_true", help="跳过页面内引用检查")
+    verify.add_argument(
+        "--strict-refs",
+        action="store_true",
+        help="页面内引用目标缺失时也返回非零（源站自身的 404 也算失败）",
+    )
 
     publish_cmd = subparsers.add_parser("publish", help="提交并推送到 GitHub")
     publish_cmd.add_argument("--repo", default=".", help="仓库根目录（默认当前目录）")
@@ -167,7 +172,14 @@ def command_verify(args: argparse.Namespace) -> int:
     result = verify_mirror(config, check_links=not args.no_links)
     for line in format_result(result):
         _log(line)
-    return EXIT_OK if result.clean else EXIT_INCOMPLETE
+    if not result.healthy:
+        return EXIT_FAILURE
+    # A page may reference a file that the site itself does not serve (this
+    # site 404s /js/image-captions.js on every page). That is reported, but it
+    # only fails the run when --strict-refs is given.
+    if args.strict_refs and not result.clean:
+        return EXIT_INCOMPLETE
+    return EXIT_OK
 
 
 def command_list(args: argparse.Namespace) -> int:

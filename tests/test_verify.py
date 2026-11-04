@@ -2,9 +2,12 @@
 
 from __future__ import annotations
 
+import contextlib
+import io
 import json
 import unittest
 
+from oslabs_scraper.cli import main
 from oslabs_scraper.config import Config
 from oslabs_scraper.util import sha256_bytes
 from oslabs_scraper.verify import format_result, verify_mirror
@@ -101,6 +104,54 @@ class VerifyTests(unittest.TestCase):
         result = verify_mirror(self.config)
         self.assertTrue(result.clean)
         self.assertEqual(result.checked_files, 0)
+
+
+class VerifyCliTests(unittest.TestCase):
+    """The exit-code contract used by CI."""
+
+    def setUp(self) -> None:
+        self.root = support.make_temp_dir()
+        self.addCleanup(support.remove_temp_dir, self.root)
+        self.out = self.root / "raw"
+        html = b'<script src="js/missing.js"></script>'
+        path = self.out / "index.html"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(html)
+        (self.out / "manifest.json").write_text(
+            json.dumps(
+                {
+                    "version": 1,
+                    "base_url": BASE,
+                    "items": {
+                        "index.html": {
+                            "url": BASE + "index.html",
+                            "sha256": sha256_bytes(html),
+                            "size": len(html),
+                        }
+                    },
+                }
+            ),
+            encoding="utf-8",
+        )
+
+    def run_cli(self, *extra: str) -> int:
+        buffer = io.StringIO()
+        with contextlib.redirect_stdout(buffer):
+            code = main(["verify", "--out", str(self.out), *extra])
+        self.buffer = buffer.getvalue()
+        return code
+
+    def test_broken_reference_is_only_a_warning(self) -> None:
+        self.assertEqual(self.run_cli(), 0)
+        self.assertIn("js/missing.js", self.buffer)
+        self.assertIn("⚠️", self.buffer)
+
+    def test_strict_refs_fails_on_broken_reference(self) -> None:
+        self.assertEqual(self.run_cli("--strict-refs"), 3)
+
+    def test_missing_file_fails(self) -> None:
+        (self.out / "index.html").unlink()
+        self.assertEqual(self.run_cli(), 1)
 
 
 if __name__ == "__main__":

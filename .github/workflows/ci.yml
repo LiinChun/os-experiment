@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.12", "3.13"]
+        python-version: ["3.10", "3.12", "3.13"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -41,6 +41,8 @@ jobs:
         run: python -m pip install -r requirements.txt
       # 站点在内网，云端无法抓取；这里只校验已提交的快照是否自洽
       # （manifest.json 中的 sha256 与磁盘一致、页面内引用都能落到本地文件）。
+      # 源站自身 404 的 /js/image-captions.js 只作为告警输出；要把它当失败
+      # 处理请加 --strict-refs。
       - name: Verify snapshot integrity
         run: python -m oslabs_scraper verify --out raw
       - name: Show snapshot stats
