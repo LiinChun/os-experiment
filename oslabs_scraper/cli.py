@@ -250,9 +250,10 @@ def command_sync(args: argparse.Namespace) -> int:
         return code
 
     token = os.environ.get(args.token_env, "").strip()
-    if not token and not args.no_push:
-        _log(f"× 环境变量 {args.token_env} 为空，无法推送。快照已保存在本地。")
-        return EXIT_USAGE
+    push = bool(token) and not args.no_push
+    if not push and not args.no_push:
+        _log(f"! 环境变量 {args.token_env} 为空：只做本地提交，不推送")
+        _log(f"  之后可以用 {args.token_env}=... python -m oslabs_scraper publish 补推")
 
     message = args.message or _commit_message_from_report(getattr(args, "_report", None))
     try:
@@ -262,7 +263,7 @@ def command_sync(args: argparse.Namespace) -> int:
             remote=args.remote,
             branch=args.branch,
             token=token,
-            push=not args.no_push,
+            push=push,
         )
     except GitError as exc:
         _log(f"× {exc}")

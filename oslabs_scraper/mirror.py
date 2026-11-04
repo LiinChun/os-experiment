@@ -6,7 +6,6 @@ import json
 import os
 from collections import deque
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
 
@@ -356,10 +355,13 @@ class Mirror:
 
 
 def render_index(report: Report, config: Config) -> str:
-    """Render ``INDEX.md``: the site outline with links to the local snapshot."""
+    """Render ``INDEX.md``: the site outline with links to the local snapshot.
+
+    The output is deterministic (no timestamps, sorted lists) so that a scrape
+    which finds no new content does not touch the file.
+    """
     title = report.site_title or "站点镜像"
     out_dir = _index_link_prefix(config)
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     lines: list[str] = [
         f"# {title} 镜像索引",
@@ -367,18 +369,18 @@ def render_index(report: Report, config: Config) -> str:
         f"- 源站：<{config.base_url}>",
         f"- 快照目录：[`{out_dir}/`]({out_dir}/)",
         f"- 页面：{report.page_count} · 资源：{report.asset_count}",
-        f"- 生成日期：{today}",
         "",
         "> 本索引由 `oslabs-scraper` 自动生成，抓取的是站点原始 HTML 快照。",
+        "> 更新记录见 git 历史（快照文件与 `manifest.json` 里的 `generated_at`）。",
         "",
         "## 站点导航",
         "",
     ]
     lines.extend(_render_nav_items(report.nav, report, out_dir, depth=0))
 
-    linked = {url for url in report.url_to_rel}
+    linked = set(report.url_to_rel)
     nav_urls = {item.href for item in _flatten(report.nav) if item.href}
-    extra = [url for url in linked if url not in nav_urls]
+    extra = sorted(linked - nav_urls)
     if extra:
         lines.extend(["", "## 导航之外的页面", ""])
         for url in extra:
@@ -387,7 +389,7 @@ def render_index(report: Report, config: Config) -> str:
 
     if report.errors:
         lines.extend(["", "## 抓取失败的 URL", ""])
-        for error in report.errors:
+        for error in sorted(report.errors):
             lines.append(f"- `{error}`")
 
     return "\n".join(lines) + "\n"

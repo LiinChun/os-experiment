@@ -3,9 +3,9 @@
 - 源站：<https://os-labs.p.cs-lab.top/>
 - 快照目录：[`raw/`](raw/)
 - 页面：52 · 资源：371
-- 生成日期：2026-11-04
 
 > 本索引由 `oslabs-scraper` 自动生成，抓取的是站点原始 HTML 快照。
+> 更新记录见 git 历史（快照文件与 `manifest.json` 里的 `generated_at`）。
 
 ## 站点导航
 
