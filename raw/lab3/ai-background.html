@@ -1,0 +1,2778 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="part5.html">
+      
+      
+        <link rel="next" href="ai-principles.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>AI 数据背景 - 操作系统2026秋 | 哈工大（深圳）</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--award:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 2c-.9 0-2 1-2 2H8c0-1-1.1-2-2-2H2v9c0 1 1 2 2 2h2.2c.4 2 1.7 3.7 4.8 4v2.08C8 19.54 8 22 8 22h8s0-2.46-3-2.92V17c3.1-.3 4.4-2 4.8-4H20c1 0 2-1 2-2V2h-4M6 11H4V4h2v7m14 0h-2V4h2v7Z"/></svg>');--md-admonition-icon--testimonial:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4V2m-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24.78 3.33Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="操作系统2026秋 | 哈工大（深圳）" class="md-header__button md-logo" aria-label="操作系统2026秋 | 哈工大（深圳）" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7-18.9 22.5-45.5 58.8-58.1 96.7-6 17.9-8.8 36.1-6.2 53.3-6.5 5.8-11.4 14.7-16.6 20.2-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4 0 3.9.6 7.9 1.2 11.8 1.2 8.1 2.5 15.7.8 20.8-5.2 14.4-5.9 24.4-2.2 31.7 3.8 7.3 11.4 10.5 20.1 12.3 17.3 3.6 40.8 2.7 59.3 12.5 19.8 10.4 39.9 14.1 55.9 10.4 11.6-2.6 21.1-9.6 25.9-20.2 12.5-.1 26.3-5.4 48.3-6.6 14.9-1.2 33.6 5.3 55.1 4.1.6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23 16.6-1.3 34.1-11 48.3-27.9 13.6-16.4 36-23.2 50.9-32.2 7.4-4.5 13.4-10.1 13.9-18.3.4-8.2-4.4-17.3-15.5-29.7zM223.7 87.3c9.8-22.2 34.2-21.8 44-.4 6.5 14.2 3.6 30.9-4.3 40.4-1.6-.8-5.9-2.6-12.6-4.9 1.1-1.2 3.1-2.7 3.9-4.6 4.8-11.8-.2-27-9.1-27.3-7.3-.5-13.9 10.8-11.8 23-4.1-2-9.4-3.5-13-4.4-1-6.9-.3-14.6 2.9-21.8zM183 75.8c10.1 0 20.8 14.2 19.1 33.5-3.5 1-7.1 2.5-10.2 4.6 1.2-8.9-3.3-20.1-9.6-19.6-8.4.7-9.8 21.2-1.8 28.1 1 .8 1.9-.2-5.9 5.5-15.6-14.6-10.5-52.1 8.4-52.1zm-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5 4.7-4.4 13.5-14.2 27.9-14.2 7.1 0 15.6 2.3 25.9 8.9 6.3 4.1 11.3 4.4 22.6 9.3 8.4 3.5 13.7 9.7 10.5 18.2-2.6 7.1-11 14.4-22.7 18.1-11.1 3.6-19.8 16-38.2 14.9-3.9-.2-7-1-9.6-2.1-8-3.5-12.2-10.4-20-15-8.6-4.8-13.2-10.4-14.7-15.3-1.4-4.9 0-9 4.2-12.3zm3.3 334c-2.7 35.1-43.9 34.4-75.3 18-29.9-15.8-68.6-6.5-76.5-21.9-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6.6-16-.6-23.9-1.2-7.8-1.8-15 .9-20 3.5-6.7 8.5-9.1 14.8-11.3 10.3-3.7 11.8-3.4 19.6-9.9 5.5-5.7 9.5-12.9 14.3-18 5.1-5.5 10-8.1 17.7-6.9 8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9zm-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6 7.1 0 14.2-2.2 16.7-8.9 2.3-6.2 0-14.9-7.4-24.9-13.5-18.2-38.3-32.5-38.3-32.5-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2 2.3-1.7.8 3.2-8.7 20.8-8.5 16.1-24.4 53.3-2.6 82.4.6-20.7 5.5-41.8 13.8-61.5 12-27.4 37.3-74.9 39.3-112.7 1.1.8 4.6 3.2 6.2 4.1 4.6 2.7 8.1 6.7 12.6 10.3 12.4 10 28.5 9.2 42.4 1.2 6.2-3.5 11.2-7.5 15.9-9 9.9-3.1 17.8-8.6 22.3-15 7.7 30.4 25.7 74.3 37.2 95.7 6.1 11.4 18.3 35.5 23.6 64.6 3.3-.1 7 .4 10.9 1.4 13.8-35.7-11.7-74.2-23.3-84.9-4.7-4.6-4.9-6.6-2.6-6.5 12.6 11.2 29.2 33.7 35.2 59 2.8 11.6 3.3 23.7.4 35.7 16.4 6.8 35.9 17.9 30.7 34.8-2.2-.1-3.2 0-4.2 0 3.2-10.1-3.9-17.6-22.8-26.1-19.6-8.6-36-8.6-38.3 12.5-12.1 4.2-18.3 14.7-21.4 27.3-2.8 11.2-3.6 24.7-4.4 39.9-.5 7.7-3.6 18-6.8 29-32.1 22.9-76.7 32.9-114.3 7.2zm257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3 3.7-14.2 9.2-28.8 9.9-40.6.8-15.2 1.7-28.5 4.2-38.7 2.6-10.3 6.6-17.2 13.7-21.1.3-.2.7-.3 1-.5.8 13.2 7.3 26.6 18.8 29.5 12.6 3.3 30.7-7.5 38.4-16.3 9-.3 15.7-.9 22.6 5.1 9.9 8.5 7.1 30.3 17.1 41.6 10.6 11.6 14 19.5 13.7 24.6zM173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            操作系统2026秋 | 哈工大（深圳）
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AI 数据背景
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index.html" class="md-tabs__link">
+          
+  
+    
+  
+  实验概述
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../faq/faq-env.html" class="md-tabs__link">
+          
+  
+    
+  
+  常见问题
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab1/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab1：XV6与Unix实用程序
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab2/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab2：进程与系统调用
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab3：锁机制的应用
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab4/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab4：页表
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab5/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab5：基于FUSE的EXT2文件系统
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../oscomp/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  OS竞赛招新
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="操作系统2026秋 | 哈工大（深圳）" class="md-nav__button md-logo" aria-label="操作系统2026秋 | 哈工大（深圳）" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7-18.9 22.5-45.5 58.8-58.1 96.7-6 17.9-8.8 36.1-6.2 53.3-6.5 5.8-11.4 14.7-16.6 20.2-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4 0 3.9.6 7.9 1.2 11.8 1.2 8.1 2.5 15.7.8 20.8-5.2 14.4-5.9 24.4-2.2 31.7 3.8 7.3 11.4 10.5 20.1 12.3 17.3 3.6 40.8 2.7 59.3 12.5 19.8 10.4 39.9 14.1 55.9 10.4 11.6-2.6 21.1-9.6 25.9-20.2 12.5-.1 26.3-5.4 48.3-6.6 14.9-1.2 33.6 5.3 55.1 4.1.6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23 16.6-1.3 34.1-11 48.3-27.9 13.6-16.4 36-23.2 50.9-32.2 7.4-4.5 13.4-10.1 13.9-18.3.4-8.2-4.4-17.3-15.5-29.7zM223.7 87.3c9.8-22.2 34.2-21.8 44-.4 6.5 14.2 3.6 30.9-4.3 40.4-1.6-.8-5.9-2.6-12.6-4.9 1.1-1.2 3.1-2.7 3.9-4.6 4.8-11.8-.2-27-9.1-27.3-7.3-.5-13.9 10.8-11.8 23-4.1-2-9.4-3.5-13-4.4-1-6.9-.3-14.6 2.9-21.8zM183 75.8c10.1 0 20.8 14.2 19.1 33.5-3.5 1-7.1 2.5-10.2 4.6 1.2-8.9-3.3-20.1-9.6-19.6-8.4.7-9.8 21.2-1.8 28.1 1 .8 1.9-.2-5.9 5.5-15.6-14.6-10.5-52.1 8.4-52.1zm-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5 4.7-4.4 13.5-14.2 27.9-14.2 7.1 0 15.6 2.3 25.9 8.9 6.3 4.1 11.3 4.4 22.6 9.3 8.4 3.5 13.7 9.7 10.5 18.2-2.6 7.1-11 14.4-22.7 18.1-11.1 3.6-19.8 16-38.2 14.9-3.9-.2-7-1-9.6-2.1-8-3.5-12.2-10.4-20-15-8.6-4.8-13.2-10.4-14.7-15.3-1.4-4.9 0-9 4.2-12.3zm3.3 334c-2.7 35.1-43.9 34.4-75.3 18-29.9-15.8-68.6-6.5-76.5-21.9-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6.6-16-.6-23.9-1.2-7.8-1.8-15 .9-20 3.5-6.7 8.5-9.1 14.8-11.3 10.3-3.7 11.8-3.4 19.6-9.9 5.5-5.7 9.5-12.9 14.3-18 5.1-5.5 10-8.1 17.7-6.9 8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9zm-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6 7.1 0 14.2-2.2 16.7-8.9 2.3-6.2 0-14.9-7.4-24.9-13.5-18.2-38.3-32.5-38.3-32.5-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2 2.3-1.7.8 3.2-8.7 20.8-8.5 16.1-24.4 53.3-2.6 82.4.6-20.7 5.5-41.8 13.8-61.5 12-27.4 37.3-74.9 39.3-112.7 1.1.8 4.6 3.2 6.2 4.1 4.6 2.7 8.1 6.7 12.6 10.3 12.4 10 28.5 9.2 42.4 1.2 6.2-3.5 11.2-7.5 15.9-9 9.9-3.1 17.8-8.6 22.3-15 7.7 30.4 25.7 74.3 37.2 95.7 6.1 11.4 18.3 35.5 23.6 64.6 3.3-.1 7 .4 10.9 1.4 13.8-35.7-11.7-74.2-23.3-84.9-4.7-4.6-4.9-6.6-2.6-6.5 12.6 11.2 29.2 33.7 35.2 59 2.8 11.6 3.3 23.7.4 35.7 16.4 6.8 35.9 17.9 30.7 34.8-2.2-.1-3.2 0-4.2 0 3.2-10.1-3.9-17.6-22.8-26.1-19.6-8.6-36-8.6-38.3 12.5-12.1 4.2-18.3 14.7-21.4 27.3-2.8 11.2-3.6 24.7-4.4 39.9-.5 7.7-3.6 18-6.8 29-32.1 22.9-76.7 32.9-114.3 7.2zm257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3 3.7-14.2 9.2-28.8 9.9-40.6.8-15.2 1.7-28.5 4.2-38.7 2.6-10.3 6.6-17.2 13.7-21.1.3-.2.7-.3 1-.5.8 13.2 7.3 26.6 18.8 29.5 12.6 3.3 30.7-7.5 38.4-16.3 9-.3 15.7-.9 22.6 5.1 9.9 8.5 7.1 30.3 17.1 41.6 10.6 11.6 14 19.5 13.7 24.6zM173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5z"/></svg>
+
+    </a>
+    操作系统2026秋 | 哈工大（深圳）
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            实验概述
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../platform/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    实验平台
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            实验平台
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm_env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.虚拟机实验环境使用指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote_env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.远程实验平台使用指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../self_host_env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.实验环境搭建指南（自行部署版）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实用工具
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Linux.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux开发环境基础知识
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../debug/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    GDB调试指南
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            GDB调试指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gdb.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    命令行调试
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote_env_gdb.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图形化调试（VSCode）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote_env_gdb2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    系统调用进阶（VSCode）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    常见问题
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            常见问题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/faq-env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验环境常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab1 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab2 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab3 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab4 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab1：XV6与Unix实用程序
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Lab1：XV6与Unix实用程序
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验步骤
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab2：进程与系统调用
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Lab2：进程与系统调用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附加题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Lab3：锁机制的应用
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Lab3：锁机制的应用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    xv-6中Lock的实现（选读）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part6.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础实验提交
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI 推理服务附加题（独立计分）
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            AI 推理服务附加题（独立计分）
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验要求
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    AI 数据背景
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ai-background.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    AI 数据背景
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验背景：从零理解 AI 推理数据
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="实验背景：从零理解 AI 推理数据">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      先分清“训练”和“推理”
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    <span class="md-ellipsis">
+      文本怎样变成 token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      embedding：把编号查成向量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型参数与模型分片
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefill-decode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prefill 与 Decode：一次请求的两个阶段
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qkv-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q、K、V 与 Attention 的最小例子
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kv-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      KV cache 为什么能避免重复计算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#three-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      三类核心数据不要混淆
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      本实验保留了什么，又简化了什么
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      一次请求的完整数据路径
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-principles.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    经典数据链路与锁观察
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-model-kv.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模型与 KV 实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-workers.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多 worker 等价与性能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-prefetch.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KV-aware prefetch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-testing.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    验证与故障定位
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-submission.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附加题提交
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab4：页表
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Lab4：页表
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab5：基于FUSE的EXT2文件系统
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Lab5：基于FUSE的EXT2文件系统
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常见问题（补充）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part6.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    simplefs 参考实现导读
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part7.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附加题（选做）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../oscomp/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OS竞赛招新
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            OS竞赛招新
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验背景：从零理解 AI 推理数据
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="实验背景：从零理解 AI 推理数据">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      先分清“训练”和“推理”
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    <span class="md-ellipsis">
+      文本怎样变成 token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      embedding：把编号查成向量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型参数与模型分片
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefill-decode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prefill 与 Decode：一次请求的两个阶段
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qkv-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q、K、V 与 Attention 的最小例子
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kv-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      KV cache 为什么能避免重复计算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#three-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      三类核心数据不要混淆
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      本实验保留了什么，又简化了什么
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      一次请求的完整数据路径
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ai">AI 推理的数据背景<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h1>
+<p>阅读本页前，先看<a href="part5.html">附加题要求</a>。本页解释后续模型与 KV 任务使用的基本概念；不要求实现真实大模型或 GPU 算子。</p>
+<h2 id="ai-background">实验背景：从零理解 AI 推理数据<a class="headerlink" href="#ai-background" title="Permanent link">&para;</a></h2>
+<p>在真实的 AI 推理服务中，瓶颈不只来自模型计算。一个 worker（工作进程）还要读取模型参数和 embedding（嵌入向量），申请、释放保存中间状态的页面，把 KV cache（键值缓存）写入较慢的存储层并在需要时恢复，同时与其他 worker 共享 CPU、内存、文件系统和 buffer cache。本附加题在没有 GPU 的 xv6 CPU 环境中，用一个小型确定性模型模拟这条数据通路。</p>
+<p>本节为 <strong>AI 推理服务附加题</strong> 提供必要的背景知识。如果只完成 Lab3 原题任务一（<code>kalloc</code>）和任务二（<code>bcache</code>），可以先跳过本节，开始附加题前再回来阅读。你不需要先学过机器学习，也不需要记住完整的 Transformer 公式。阅读时只需抓住一个问题：<strong>一个推理请求的数据从哪里来，经过哪些步骤，最后如何体现为 xv6 中的操作系统问题？</strong></p>
+<h3 id="_1">先分清“训练”和“推理”<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>神经网络模型的生命周期可以粗略分为两个阶段：</p>
+<ul>
+<li><strong>training（训练）</strong>：使用大量样本反复调整模型参数。训练需要计算损失、梯度和参数更新，通常非常耗费算力；</li>
+<li><strong>inference（推理）</strong>：参数已经确定，系统接收用户输入并计算输出。推理一般只读取参数，不再修改它们。</li>
+</ul>
+<p>本实验只研究 <strong>inference（推理）阶段</strong>。</p>
+<ul>
+<li><strong>modelprep</strong>：生成内容确定的模型文件，作用相当于把“已经训练好的参数”写入 xv6 文件系统；</li>
+<li><strong>aiinfer</strong>：AI 推理程序再读取这些文件处理请求。本实验不训练模型、不做反向传播，也不要求编写 GPU 程序。</li>
+</ul>
+<p>为什么操作系统实验还要关心推理？因为推理不只是数学计算。一个服务还要完成模型读取、内存分配、缓存管理、请求隔离、临时状态保存和并发调度。即使模型算子足够快，如果数据不能及时到达 CPU，服务仍然会变慢。</p>
+<div class="admonition danger">
+<p class="admonition-title">常见误区：<code>modelprep</code> 不是训练程序</p>
+<p><code>modelprep</code> 只是生成可重复验证的教学数据。它不从样本中学习参数，也不改变后续计算规则。把它看作“制作模型文件的工具”更准确。</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">你现在应当理解</p>
+<p>AI 附加题的模型加载和 KV 持久化都发生在推理阶段。我们不评价模型是否聪明，只评价同一输入下数据是否正确流动，以及优化后操作系统路径是否更高效。</p>
+</div>
+<details class="question">
+<summary>检查理解：为什么模型参数通常可以被多个请求共享？</summary>
+<p>推理时模型参数已经固定，多个请求只读同一组参数。只要缓存实现不修改其内容，就没有必要为每个请求复制一套参数。请求产生的 KV cache 则不同，它包含该请求自己的历史状态，不能混用。</p>
+</details>
+<h3 id="token">文本怎样变成 token<a class="headerlink" href="#token" title="Permanent link">&para;</a></h3>
+<p>计算机最初收到的是字符串，例如“系统快”。模型无法直接对文字进行整数或矩阵运算，所以会先通过 <strong>tokenizer（分词器）</strong> 把文本切成 token（词元），再在固定的 <strong>vocabulary（词表）</strong> 中查询编号。</p>
+<p>下面是假设性的教学例子：</p>
+<table>
+<thead>
+<tr>
+<th>文本片段</th>
+<th style="text-align: right;">token 编号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“系统”</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>“快”</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td>句子结束标记</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p>于是字符串“系统快”可以表示为整数序列 <code>[5, 12, 3]</code>。不同模型的 tokenizer 可能把同一句话切成完全不同的 token；token 既不保证对应一个汉字，也不保证对应一个完整单词。</p>
+<p>本实验不实现真实 tokenizer。为了让测试结果可重复，<code>prefill_request()</code> 会根据 worker 编号和请求编号生成一个初始 token：</p>
+<div class="highlight"><pre><span></span><code><span class="n">token</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">worker</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">request</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">13</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">AI_VOCAB</span><span class="p">;</span>
+</code></pre></div>
+<p>其中：</p>
+<ul>
+<li>worker：当前 worker 的编号；</li>
+<li>request：当前请求的编号；</li>
+<li>7：worker 编号的权重；</li>
+<li>13：request 编号的权重；</li>
+<li>AI_VOCAB：词表大小，本实验中为 32。</li>
+</ul>
+<p>这里的 token 仍只是 <code>0</code> 到 <code>AI_VOCAB - 1</code> 的整数编号；每个 <code>step</code> 结束后，函数还会根据本轮计算结果更新下一个 token。暂时只需把它看作“测试输入的编号”，<code>prefill_request()</code> 的完整处理流程见 <a href="#prefill-decode">Prefill 与 Decode</a>。这里 <code>AI_VOCAB = 32</code>，表示教学词表中只有 32 个可用编号。</p>
+<div class="admonition danger">
+<p class="admonition-title">常见误区：token 不是字符串，也不是向量</p>
+<p>token 在后续计算中首先只是一个整数编号。编号 <code>5</code> 比编号 <code>3</code> 大，并不表示它的语义更多或更重要。要把编号变成可计算的特征，还需要 embedding。</p>
+</div>
+<details class="question">
+<summary>检查理解：token 编号为什么不能直接表达语义距离？</summary>
+<p>编号只是词表中的位置。例如编号 5 和 6 相邻，不代表二者语义相似；编号 5 和 30 相距很远，也不代表语义差异更大。</p>
+</details>
+<h3 id="embedding">embedding：把编号查成向量<a class="headerlink" href="#embedding" title="Permanent link">&para;</a></h3>
+<p><strong>Embedding（嵌入向量）</strong> 可以理解为一张查找表：输入 token 编号，得到一组数值。这组数值才会进入后续模型计算。</p>
+<p>继续使用刚才的例子，假设教学 embedding 只有两个维度：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">token</th>
+<th>embedding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>[1, 2]</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><code>[-1, 3]</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>[2, 0]</code></td>
+</tr>
+</tbody>
+</table>
+<p>查询后，<code>[5, 12, 3]</code> 就变成三个二维向量。真实模型的维度往往大得多，本实验使用 <code>AI_DIM = 8</code>，表示每个向量有 8 个分量；这里只保留“根据 token 或请求读取 embedding 数据并生成特征”这一过程。</p>
+<div class="admonition success">
+<p class="admonition-title">你现在应当理解</p>
+<p>token 是编号，embedding 是由编号查到的向量。二者不是同一概念。</p>
+</div>
+<h3 id="_2">模型参数与模型分片<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><strong>model parameters（模型参数）</strong> 是在 training 阶段学习得到、在 inference 阶段读取使用的一组数值。它们决定输入向量怎样被逐层变换。对于本实验，你可以把它们理解成“推理前已经固定、推理时大量读取的只读数据”。</p>
+<p>真实模型可能有数十亿个参数，单个文件不便于按需加载、并行读取或分布到不同设备。因此工程系统常按层、设备或文件区间切成 <strong>shard（分片）</strong>。分片不是新的数学概念，只是存储和调度单位发生了变化。</p>
+<p>下面是通用的 embedding 分片示意，不是本 workload 的编号公式。Embedding 表也可以用同样的方式切分。把它看成“每一行对应一个 token”的大表：第 0 行存 token 0 的向量，第 1 行存 token 1 的向量，以此类推。如果每个 shard 容纳 4 行，那么 shard 0 存 token 0～3，shard 1 存 token 4～7；查询 token 6 时，先定位到 shard 1，再读取该 shard 中的第 2 行。一般来说，给定 token 编号 <code>t</code> 和每片容量 <code>K</code>，分片编号为 <code>t / K</code>，片内位置为 <code>t % K</code>。这样按连续编号切分后，需要某一段 token 时只读取对应分片，也便于分片级缓存和并行访问。</p>
+<p>本实验使用两类分片：模型分片 <code>m00</code>～<code>m36</code>，以及 embedding 分片 <code>e00</code>～<code>e36</code>；两类文件各有 37 个，每个文件 1024 字节。在代码中，<code>prefill_request()</code> 的每个 <code>step</code> 都会调用 <code>shard_feature()</code>，先读取一个 <code>mXX</code> 模型分片，再读取一个 <code>eXX</code> embedding 分片。两个分片编号的计算可以直接对照代码看：</p>
+<div class="highlight"><pre><span></span><code><span class="n">model_feature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shard_feature</span><span class="p">(...,</span>
+<span class="w">                              </span><span class="p">(</span><span class="n">request</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">step</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">AI_MODEL_SHARDS</span><span class="p">,</span><span class="w"> </span><span class="n">io</span><span class="p">);</span>
+<span class="n">embed_feature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shard_feature</span><span class="p">(...,</span>
+<span class="w">                              </span><span class="p">(</span><span class="n">worker</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">11</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">request</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">step</span><span class="p">)</span><span class="w"> </span><span class="o">%</span>
+<span class="w">                              </span><span class="n">AI_EMBED_SHARDS</span><span class="p">,</span><span class="w"> </span><span class="n">io</span><span class="p">);</span>
+</code></pre></div>
+<p>表达式得到的编号会补成两位文件名：例如模型编号 <code>7</code> 对应 <code>m07</code>，embedding 编号 <code>12</code> 对应 <code>e12</code>。两类分片的编号通常不同，但都来自各自的 <code>0</code>～<code>36</code> 范围。文件名使用 <code>m07</code>、<code>e12</code> 这类短格式，是因为 xv6 目录项的 <code>DIRSIZ</code> 较小。真实系统可能使用更长、包含层号或设备号的路径，本实验只保留 family 和 shard 编号。</p>
+<p><code>shard_feature()</code> 负责按编号读取相应文件（或命中已有的用户态模型缓存），返回确定性的 <code>model_feature</code> 和 <code>embed_feature</code>。这不是完整的神经网络层，但保留了三种关键性质：</p>
+<ol>
+<li>数据第一次必须来自文件系统；</li>
+<li>同一分片会被同一 worker 的多个请求重复使用；</li>
+<li>多个 worker 会并发访问相同只读工作集。</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">为什么要做成文件，而不是直接写在 C 数组里？</p>
+<p>如果把数据编译进 <code>aiinfer</code>，读取时就不会经过 <code>open()</code>、<code>read()</code> 等文件系统调用，也不会经过 inode（索引节点）、buffer cache 和磁盘路径，因而无法观察 <strong>Lab3 原题任务二（bcache）</strong> 要优化的竞争。把数据放进 xv6 文件系统，才能让 workload（工作负载）真实施加存储压力。</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">常见误区：分片编号不代表模型层编号</p>
+<p><code>m07</code> 只是本实验的第 7 个模型数据文件。指导书不会把它解释成 Transformer 的第 7 层，因为代码没有建立这种对应关系。</p>
+</div>
+<details class="question">
+<summary>检查理解：为什么只读分片适合缓存，而 KV cache 不能用同样方式全局共享？</summary>
+<p>只读分片的内容固定，同一编号的分片对所有请求都相同，因此可以按分片缓存并由多个请求复用。KV cache 则是根据特定请求的输入历史产生的中间状态，具有请求私有性，必须按请求隔离保存；若被多个请求直接全局共享，就可能导致上下文混淆、数据覆盖和并发访问问题。</p>
+</details>
+<h3 id="prefill-decode">Prefill 与 Decode：一次请求的两个阶段<a class="headerlink" href="#prefill-decode" title="Permanent link">&para;</a></h3>
+<p>自回归语言模型的推理通常可以粗略分成两个阶段：</p>
+<ol>
+<li><strong>Prefill（提示词处理）</strong>：一次处理用户已经给出的上下文，为每个历史 token 计算供后续 Attention（注意力机制）使用的 query（查询向量）、key（键向量）和 value（值向量）；</li>
+<li><strong>Decode（解码/逐 token 生成）</strong>：根据已有上下文生成下一个 token，再把新 token 加入上下文，继续下一轮。</li>
+</ol>
+<p>可以把二者类比为“先读完题目并做笔记，再逐步作答”。Prefill 读取整段输入并准备笔记；Decode 每次作答都要查阅之前的笔记。</p>
+<p>前文提到的 <code>prefill_request()</code> 就是 Prefill 阶段的代码实现。函数一开始记录请求的起始时间；随后循环 32 个 <code>step</code>。每一步读取一个模型分片和一个 embedding 分片，把得到的特征转换后分别写入 <code>kv[step].key</code>、<code>kv[step].value</code>，同时更新当前请求的 <code>workspace.query</code>。本轮结果还会用于生成下一个 token。循环结束后，函数记录 <code>partial</code> 和 KV checksum，供后续校验使用；它们不是额外的 KV 副本。32 组 key/value 组成一份 KV cache。随后 workload 把 KV 写入文件并释放原页面。恢复阶段的 <code>decode_request()</code> 只使用恢复后的 KV 执行 attention-style（类注意力）计算。</p>
+<div class="highlight"><pre><span></span><code>一次请求的输入
+  -&gt; 初始化 token（本实验由 worker/request 编号确定）
+  -&gt; Prefill：按编号读取 mXX 模型分片和 eXX embedding 分片
+  -&gt; 计算 query、key、value
+  -&gt; 保存 key/value，形成 KV cache
+  -&gt; KV offload（卸载）：写入文件并释放原页面
+  -&gt; KV restore（恢复）：重新申请页面并读回 KV
+  -&gt; Decode：用 query 匹配历史 key，再读取 value
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">你现在应当理解</p>
+<p>Prefill 负责为上下文准备 K/V；Decode 反复使用这些历史 K/V。AI 附加题的 KV 任务位于两者之间：把 Prefill 产生的 KV 保存到文件系统，并在 Decode 前恢复。</p>
+</div>
+<h3 id="qkv-attention">Q、K、V 与 Attention 的最小例子<a class="headerlink" href="#qkv-attention" title="Permanent link">&para;</a></h3>
+<p><strong>Decode</strong> 需要回答：“当前这一步应该参考历史中的哪个位置？” <strong>Attention（注意力机制）</strong> 就是解决这个问题的一种计算方式，其中三个名字分别表示：</p>
+<ul>
+<li><strong>Query（Q，查询向量）</strong>：当前步骤“想找什么”；</li>
+<li><strong>Key（K，键向量）</strong>：每个历史位置“可以怎样被匹配”；</li>
+<li><strong>Value（V，值向量）</strong>：匹配到该位置后“真正取回什么信息”。</li>
+</ul>
+<p>先看一个二维整数例子。当前 query 为 <code>[2, 1]</code>，历史中有两个位置：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">历史位置</th>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td><code>[1, 0]</code></td>
+<td><code>[8, 4]</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>[0, 3]</code></td>
+<td><code>[2, 9]</code></td>
+</tr>
+</tbody>
+</table>
+<p>先用点积计算匹配分数：</p>
+<div class="highlight"><pre><span></span><code>score(0) = [2, 1] · [1, 0] = 2*1 + 1*0 = 2
+score(1) = [2, 1] · [0, 3] = 2*0 + 1*3 = 3
+</code></pre></div>
+<p>位置 1 的分数更高，所以这个简化算法选择位置 1，并取回它的 value <code>[2, 9]</code>。请注意：key 用于匹配，value 才是匹配后读取的数据；二者即使维度相同，职责也不同。</p>
+<p>真实 Transformer 通常会计算缩放点积、<code>softmax</code>（归一化函数）权重以及多个 value 的加权和。本实验没有复刻完整浮点计算。<code>decode_request()</code> 使用 8 维整数 query 与 32 个 key 做点积，选择最高分位置，再把对应 value 混入确定性输出，并重复 32 轮以制造可测的 CPU 工作量。</p>
+<div class="highlight"><pre><span></span><code>score(step) = query[0] * key[step][0]
+            + query[1] * key[step][1]
+            + ...
+            + query[7] * key[step][7]
+</code></pre></div>
+<p>这种简化不会改变实验关注的系统问题：Decode 必须等到正确 KV 到达；数据若读错、请求若混淆，最终输出和 checksum（校验和）就会改变。</p>
+<div class="admonition danger">
+<p class="admonition-title">常见误区：本实验不是在测模型精度</p>
+<p>整数 attention-style（类注意力）计算的目标是产生可重复且依赖 KV 的输出，而不是模拟自然语言质量。不能用它比较模型能力，但可以用它检查数据通路等价，并留出可与预取重叠的计算时间。</p>
+</div>
+<details class="question">
+<summary>检查理解：为什么 KV cache 必须同时保存 key 和 value？</summary>
+<p>Decode 会先用当前 query 与每个历史位置的 key 计算匹配分数，选出最相关的位置；然后再读取这个位置对应的 value 参与输出。只保存 value 时，无法判断应该选择哪个位置；只保存 key 时，虽然能找到位置，却没有该位置的 value 可用于生成输出。因此，KV cache 必须保存一一对应的 key/value 对。</p>
+</details>
+<h3 id="kv-cache">KV cache 为什么能避免重复计算<a class="headerlink" href="#kv-cache" title="Permanent link">&para;</a></h3>
+<p>如果不保存历史 K/V，decode 每生成一个 token，都要重新读取或计算所有历史 token 的 K/V。上下文越长，重复工作越多：</p>
+<div class="highlight"><pre><span></span><code>不使用 KV cache
+生成第 1 个 token：计算历史 1..N 的 K/V
+生成第 2 个 token：再次计算历史 1..N 的 K/V，再计算新位置
+生成第 3 个 token：再次计算历史 1..N+1 的 K/V，再计算新位置
+</code></pre></div>
+<p><strong>KV cache</strong> 把已经得到的 key 和 value 保存下来。下一轮 decode 只需为新 token 计算新的 K/V，历史部分直接复用：</p>
+<div class="highlight"><pre><span></span><code>使用 KV cache
+prefill：一次计算并保存历史 1..N 的 K/V
+生成第 1 个 token：读取历史 KV，只追加新位置
+生成第 2 个 token：继续读取和追加
+</code></pre></div>
+<p>代价是 KV cache 会随上下文长度增长，并占用大量快速内存。真实服务因此可能把暂时不用的 KV 从 GPU 显存迁移到主存、SSD（固态硬盘），甚至远程存储。这类移动通常称为 <strong>offload（卸载）</strong>；需要继续计算时再 <strong>restore（恢复）</strong>。</p>
+<p>本实验没有 GPU，offload 路径是：CPU 用户页中的 KV -&gt; xv6 文件系统；restore 路径是：xv6 文件系统 -&gt; 新申请的 CPU 用户页。硬件层次虽然简化，但下面三个核心问题没有变化：</p>
+<ol>
+<li>原来的快速层副本必须释放，否则无法证明真正依赖恢复；</li>
+<li>恢复的数据必须完整、顺序正确且属于当前请求；</li>
+<li>存储 I/O（输入/输出）和计算能否重叠，会影响端到端延迟。</li>
+</ol>
+<p>每个 <code>kv_entry</code> 包含 8 个整数 key 和 8 个整数 value。一个 <code>int</code> 类型（整数类型）在 xv6 中占 4 字节，一个请求保存 32 个 token，因此：</p>
+<div class="highlight"><pre><span></span><code>sizeof(struct kv_entry) = (8 + 8) * 4 = 64 字节
+AI_KV_FILE_BYTES       = 32 * 64 = 2048 字节
+</code></pre></div>
+<p><code>AI_KV_FILE_BYTES</code> 表示一个请求的完整 KV cache 写入文件时应占 2048 字节。</p>
+<div class="admonition success">
+<p class="admonition-title">你现在应当理解</p>
+<p>KV cache 是请求执行过程中产生的中间状态，不是模型参数，也不是 buffer cache。AI 附加题要求把它写入文件系统、释放原页并从文件恢复；<strong>Lab3 原题任务二（bcache）</strong> 中的 buffer cache 是内核用于缓存磁盘块的另一层机制。</p>
+</div>
+<details class="question">
+<summary>检查理解：KV cache、模型缓存和 buffer cache 有什么区别？</summary>
+<p>KV cache 保存某个请求的 K/V；模型缓存复用共享只读模型或 embedding 分片；buffer cache 是 xv6 内核对磁盘块的缓存。三者处在不同层次，内容、所有权和生命周期都不同。</p>
+</details>
+<h3 id="three-cache">三类核心数据不要混淆<a class="headerlink" href="#three-cache" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>数据</th>
+<th>来源</th>
+<th>推理时是否修改</th>
+<th>共享范围</th>
+<th>生命周期</th>
+<th>本实验表示</th>
+<th>主要优化问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型参数</td>
+<td>训练完成后的固定参数</td>
+<td>否</td>
+<td>多请求、多 worker 共享内容</td>
+<td>跨请求长期存在</td>
+<td><code>m00</code>～<code>m36</code></td>
+<td>减少重复文件读取</td>
+</tr>
+<tr>
+<td>embedding 分片</td>
+<td>token 到向量的查表数据</td>
+<td>否</td>
+<td>多请求、多 worker 共享内容</td>
+<td>跨请求长期存在</td>
+<td><code>e00</code>～<code>e36</code></td>
+<td>利用只读数据局部性</td>
+</tr>
+<tr>
+<td>KV cache</td>
+<td>当前请求 prefill 产生</td>
+<td>是</td>
+<td>请求私有</td>
+<td>从 prefill 延续到 decode</td>
+<td>KV 临时文件中的 2048 字节记录</td>
+<td>完整持久化、隔离、顺序恢复</td>
+</tr>
+<tr>
+<td>query</td>
+<td>当前请求计算产生</td>
+<td>是</td>
+<td>请求私有</td>
+<td>当前请求内</td>
+<td><code>workspace.query</code></td>
+<td>与恢复后的 key 做匹配</td>
+</tr>
+</tbody>
+</table>
+<p>“共享内容”不等于“必须共享可写内存”。学生实现可以采用 worker 私有模型缓存，避免跨进程同步；只要每个缓存条目的内容都来自第一次真实文件读取，仍然利用了同一 worker 内的重复访问。</p>
+<h3 id="_3">本实验保留了什么，又简化了什么<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>方面</th>
+<th>真实推理服务</th>
+<th>本实验</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型规模</td>
+<td>可能有数十亿参数、多个 GB</td>
+<td>74 个 1024 字节分片</td>
+</tr>
+<tr>
+<td>计算</td>
+<td>浮点/低精度矩阵算子，常用 GPU</td>
+<td>CPU 上的确定性整数计算</td>
+</tr>
+<tr>
+<td>attention</td>
+<td>缩放点积、softmax、多头等</td>
+<td>8 维点积、选最高分 value</td>
+</tr>
+<tr>
+<td>KV 层次</td>
+<td>GPU 显存、主存、SSD、远程存储</td>
+<td>用户页与 xv6 文件系统</td>
+</tr>
+<tr>
+<td>并发单元</td>
+<td>线程、进程或运行时 worker</td>
+<td>独立 xv6 进程</td>
+</tr>
+<tr>
+<td>系统问题</td>
+<td>数据加载、内存压力、缓存与 I/O 竞争</td>
+<td>保留这些数据流和竞争关系</td>
+</tr>
+</tbody>
+</table>
+<p>因此，本实验不是缩小版大语言模型精度实验，而是缩小版 <strong>AI 推理系统数据路径实验</strong>。它用足够小的数据在教学环境中稳定运行，同时保留可观察的操作系统行为。</p>
+<h3 id="_4">一次请求的完整数据路径<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>把前面的概念串起来，一次请求会按下面的顺序流转：</p>
+<ol>
+<li><code>modelprep</code> 预先生成 <code>m00</code>～<code>m36</code>、<code>e00</code>～<code>e36</code> 和 <code>aimeta</code>（模型清单文件）</li>
+<li>worker 根据请求编号得到 token 和要访问的分片编号</li>
+<li>prefill 从文件加载模型/embedding 分片，生成 query、key、value</li>
+<li>32 组 key/value 形成 2048 字节 KV cache</li>
+<li>KV cache 写入 xv6 文件系统</li>
+<li>原 KV 用户页通过 <code>sbrk(-PGSIZE)</code>（调整进程数据区大小的系统调用）释放</li>
+<li>decode 前重新申请页面，并用 0xa5 覆盖整页</li>
+<li>从文件系统把当前请求 KV 恢复到新页面</li>
+<li>校验恢复字节数和 KV checksum</li>
+<li>query 与恢复后的 key 匹配，读取 value，产生请求输出</li>
+<li>baseline 与 student 逐请求比较输出</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="part5.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: 实验要求">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                实验要求
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="ai-principles.html" class="md-footer__link md-footer__link--next" aria-label="下一页: 经典数据链路与锁观察">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                经典数据链路与锁观察
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 - 2026 哈尔滨工业大学（深圳）
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<xiawen@hit.edu.cn>" target="_blank" rel="noopener" title="xiawen@hit.edu.cn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tabs.sticky", "navigation.tracking", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+        <script src="../js/baidu-tongji.js"></script>
+      
+        <script src="../js/image-captions.js"></script>
+      
+        <script src="../js/checkpoint-player.js"></script>
+      
+    
+  </body>
+</html>

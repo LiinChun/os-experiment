@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="510" viewBox="0 0 1200 510" role="img" aria-labelledby="title desc">
+  <title id="title">VectorFS：查询缓存与学生搜索</title>
+  <desc id="desc">三个标准 FUSE2 回调解析完整路径并调用教师 cache_get。缓存项内预留并始终拥有 TOP_K（10）个结果槽位，未命中才将单层结果指针传给学生 vectorfs_search；学生加载文档、嵌入、比较并排序，填写 source/rate/rank 和实际 count，不分配或释放结果数组，仍释放加载的文档列表。source 是 documents 下的相对路径，results[i].rank = i，rank 范围为 0..count-1；空集合 count 为 0 且成功。结果项用 kind 区分，rank 为 0 有效，检查 rank 小于 count 后用 results[rank] 核对名称。回调只借用，普通变更和控制写入前全量失效，init/destroy 清理。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3Z" fill="#334155"/></marker>
+    <style>text{font-family:sans-serif;fill:#0f172a}.title{font-size:26px;font-weight:700}.head{font-size:20px;font-weight:600}.body{font-size:17px}.box{stroke-width:2;rx:12}.line{stroke:#334155;stroke-width:2;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1200" height="510" rx="18" fill="#f8fafc"/>
+  <text x="600" y="44" text-anchor="middle" class="title">VectorFS：按查询缓存，未命中才执行学生搜索</text>
+  <rect x="30" y="105" width="240" height="180" class="box" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="150" y="144" text-anchor="middle" class="head">完整 /.search 路径</text>
+  <text x="150" y="180" text-anchor="middle" class="body">教师工具解析 query</text>
+  <text x="150" y="214" text-anchor="middle" class="body">调用教师 cache_get</text>
+  <text x="150" y="250" text-anchor="middle" class="body">命中复用，未命中搜索</text>
+  <rect x="340" y="85" width="355" height="220" class="box" fill="#fef3c7" stroke="#d97706"/>
+  <text x="517" y="126" text-anchor="middle" class="head">学生 vectorfs_search</text>
+  <text x="517" y="166" text-anchor="middle" class="body">加载文档 / embed / similarity</text>
+  <text x="517" y="204" text-anchor="middle" class="body">rate 降序，同分 source 升序</text>
+  <text x="517" y="242" text-anchor="middle" class="body">前 10 项，rank = i（从 0 开始）</text>
+  <text x="517" y="280" text-anchor="middle" class="body">填写缓存槽位与 count；不分配</text>
+  <rect x="765" y="105" width="405" height="180" class="box" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="967" y="144" text-anchor="middle" class="head">标准 FUSE2 输出</text>
+  <text x="967" y="180" text-anchor="middle" class="body">readdir：调用 filler 列前 K 项</text>
+  <text x="967" y="214" text-anchor="middle" class="body">getattr：填 struct stat</text>
+  <text x="967" y="250" text-anchor="middle" class="body">readlink：将相对目标写入 buf</text>
+  <path d="M270 195H340M695 195H765" class="line"/>
+  <rect x="120" y="350" width="960" height="100" rx="12" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="600" y="390" text-anchor="middle" class="head">缓存预留并拥有 TOP_K（10）个槽位；回调只借用，不改写、不 free</text>
+  <text x="600" y="425" text-anchor="middle" class="body">普通变更 / 控制写入前全量失效，init/destroy 清理；失败不缓存</text>
+  <text x="600" y="485" text-anchor="middle" class="body">四个学生函数：search + 三个 FUSE 回调；单线程，无需 LRU 或 fi-&gt;fh 排名</text>
+</svg>

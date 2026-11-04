@@ -1,0 +1,4382 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="part6.html">
+      
+      
+        <link rel="next" href="../oscomp/index.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>附加题（选做） - 操作系统2026秋 | 哈工大（深圳）</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--award:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 2c-.9 0-2 1-2 2H8c0-1-1.1-2-2-2H2v9c0 1 1 2 2 2h2.2c.4 2 1.7 3.7 4.8 4v2.08C8 19.54 8 22 8 22h8s0-2.46-3-2.92V17c3.1-.3 4.4-2 4.8-4H20c1 0 2-1 2-2V2h-4M6 11H4V4h2v7m14 0h-2V4h2v7Z"/></svg>');--md-admonition-icon--testimonial:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4V2m-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24.78 3.33Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="操作系统2026秋 | 哈工大（深圳）" class="md-header__button md-logo" aria-label="操作系统2026秋 | 哈工大（深圳）" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7-18.9 22.5-45.5 58.8-58.1 96.7-6 17.9-8.8 36.1-6.2 53.3-6.5 5.8-11.4 14.7-16.6 20.2-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4 0 3.9.6 7.9 1.2 11.8 1.2 8.1 2.5 15.7.8 20.8-5.2 14.4-5.9 24.4-2.2 31.7 3.8 7.3 11.4 10.5 20.1 12.3 17.3 3.6 40.8 2.7 59.3 12.5 19.8 10.4 39.9 14.1 55.9 10.4 11.6-2.6 21.1-9.6 25.9-20.2 12.5-.1 26.3-5.4 48.3-6.6 14.9-1.2 33.6 5.3 55.1 4.1.6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23 16.6-1.3 34.1-11 48.3-27.9 13.6-16.4 36-23.2 50.9-32.2 7.4-4.5 13.4-10.1 13.9-18.3.4-8.2-4.4-17.3-15.5-29.7zM223.7 87.3c9.8-22.2 34.2-21.8 44-.4 6.5 14.2 3.6 30.9-4.3 40.4-1.6-.8-5.9-2.6-12.6-4.9 1.1-1.2 3.1-2.7 3.9-4.6 4.8-11.8-.2-27-9.1-27.3-7.3-.5-13.9 10.8-11.8 23-4.1-2-9.4-3.5-13-4.4-1-6.9-.3-14.6 2.9-21.8zM183 75.8c10.1 0 20.8 14.2 19.1 33.5-3.5 1-7.1 2.5-10.2 4.6 1.2-8.9-3.3-20.1-9.6-19.6-8.4.7-9.8 21.2-1.8 28.1 1 .8 1.9-.2-5.9 5.5-15.6-14.6-10.5-52.1 8.4-52.1zm-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5 4.7-4.4 13.5-14.2 27.9-14.2 7.1 0 15.6 2.3 25.9 8.9 6.3 4.1 11.3 4.4 22.6 9.3 8.4 3.5 13.7 9.7 10.5 18.2-2.6 7.1-11 14.4-22.7 18.1-11.1 3.6-19.8 16-38.2 14.9-3.9-.2-7-1-9.6-2.1-8-3.5-12.2-10.4-20-15-8.6-4.8-13.2-10.4-14.7-15.3-1.4-4.9 0-9 4.2-12.3zm3.3 334c-2.7 35.1-43.9 34.4-75.3 18-29.9-15.8-68.6-6.5-76.5-21.9-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6.6-16-.6-23.9-1.2-7.8-1.8-15 .9-20 3.5-6.7 8.5-9.1 14.8-11.3 10.3-3.7 11.8-3.4 19.6-9.9 5.5-5.7 9.5-12.9 14.3-18 5.1-5.5 10-8.1 17.7-6.9 8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9zm-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6 7.1 0 14.2-2.2 16.7-8.9 2.3-6.2 0-14.9-7.4-24.9-13.5-18.2-38.3-32.5-38.3-32.5-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2 2.3-1.7.8 3.2-8.7 20.8-8.5 16.1-24.4 53.3-2.6 82.4.6-20.7 5.5-41.8 13.8-61.5 12-27.4 37.3-74.9 39.3-112.7 1.1.8 4.6 3.2 6.2 4.1 4.6 2.7 8.1 6.7 12.6 10.3 12.4 10 28.5 9.2 42.4 1.2 6.2-3.5 11.2-7.5 15.9-9 9.9-3.1 17.8-8.6 22.3-15 7.7 30.4 25.7 74.3 37.2 95.7 6.1 11.4 18.3 35.5 23.6 64.6 3.3-.1 7 .4 10.9 1.4 13.8-35.7-11.7-74.2-23.3-84.9-4.7-4.6-4.9-6.6-2.6-6.5 12.6 11.2 29.2 33.7 35.2 59 2.8 11.6 3.3 23.7.4 35.7 16.4 6.8 35.9 17.9 30.7 34.8-2.2-.1-3.2 0-4.2 0 3.2-10.1-3.9-17.6-22.8-26.1-19.6-8.6-36-8.6-38.3 12.5-12.1 4.2-18.3 14.7-21.4 27.3-2.8 11.2-3.6 24.7-4.4 39.9-.5 7.7-3.6 18-6.8 29-32.1 22.9-76.7 32.9-114.3 7.2zm257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3 3.7-14.2 9.2-28.8 9.9-40.6.8-15.2 1.7-28.5 4.2-38.7 2.6-10.3 6.6-17.2 13.7-21.1.3-.2.7-.3 1-.5.8 13.2 7.3 26.6 18.8 29.5 12.6 3.3 30.7-7.5 38.4-16.3 9-.3 15.7-.9 22.6 5.1 9.9 8.5 7.1 30.3 17.1 41.6 10.6 11.6 14 19.5 13.7 24.6zM173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            操作系统2026秋 | 哈工大（深圳）
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              附加题（选做）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index.html" class="md-tabs__link">
+          
+  
+    
+  
+  实验概述
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../faq/faq-env.html" class="md-tabs__link">
+          
+  
+    
+  
+  常见问题
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab1/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab1：XV6与Unix实用程序
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab2/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab2：进程与系统调用
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab3/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab3：锁机制的应用
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab4/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab4：页表
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab5：基于FUSE的EXT2文件系统
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../oscomp/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  OS竞赛招新
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="操作系统2026秋 | 哈工大（深圳）" class="md-nav__button md-logo" aria-label="操作系统2026秋 | 哈工大（深圳）" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7-18.9 22.5-45.5 58.8-58.1 96.7-6 17.9-8.8 36.1-6.2 53.3-6.5 5.8-11.4 14.7-16.6 20.2-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4 0 3.9.6 7.9 1.2 11.8 1.2 8.1 2.5 15.7.8 20.8-5.2 14.4-5.9 24.4-2.2 31.7 3.8 7.3 11.4 10.5 20.1 12.3 17.3 3.6 40.8 2.7 59.3 12.5 19.8 10.4 39.9 14.1 55.9 10.4 11.6-2.6 21.1-9.6 25.9-20.2 12.5-.1 26.3-5.4 48.3-6.6 14.9-1.2 33.6 5.3 55.1 4.1.6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23 16.6-1.3 34.1-11 48.3-27.9 13.6-16.4 36-23.2 50.9-32.2 7.4-4.5 13.4-10.1 13.9-18.3.4-8.2-4.4-17.3-15.5-29.7zM223.7 87.3c9.8-22.2 34.2-21.8 44-.4 6.5 14.2 3.6 30.9-4.3 40.4-1.6-.8-5.9-2.6-12.6-4.9 1.1-1.2 3.1-2.7 3.9-4.6 4.8-11.8-.2-27-9.1-27.3-7.3-.5-13.9 10.8-11.8 23-4.1-2-9.4-3.5-13-4.4-1-6.9-.3-14.6 2.9-21.8zM183 75.8c10.1 0 20.8 14.2 19.1 33.5-3.5 1-7.1 2.5-10.2 4.6 1.2-8.9-3.3-20.1-9.6-19.6-8.4.7-9.8 21.2-1.8 28.1 1 .8 1.9-.2-5.9 5.5-15.6-14.6-10.5-52.1 8.4-52.1zm-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5 4.7-4.4 13.5-14.2 27.9-14.2 7.1 0 15.6 2.3 25.9 8.9 6.3 4.1 11.3 4.4 22.6 9.3 8.4 3.5 13.7 9.7 10.5 18.2-2.6 7.1-11 14.4-22.7 18.1-11.1 3.6-19.8 16-38.2 14.9-3.9-.2-7-1-9.6-2.1-8-3.5-12.2-10.4-20-15-8.6-4.8-13.2-10.4-14.7-15.3-1.4-4.9 0-9 4.2-12.3zm3.3 334c-2.7 35.1-43.9 34.4-75.3 18-29.9-15.8-68.6-6.5-76.5-21.9-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6.6-16-.6-23.9-1.2-7.8-1.8-15 .9-20 3.5-6.7 8.5-9.1 14.8-11.3 10.3-3.7 11.8-3.4 19.6-9.9 5.5-5.7 9.5-12.9 14.3-18 5.1-5.5 10-8.1 17.7-6.9 8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9zm-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6 7.1 0 14.2-2.2 16.7-8.9 2.3-6.2 0-14.9-7.4-24.9-13.5-18.2-38.3-32.5-38.3-32.5-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2 2.3-1.7.8 3.2-8.7 20.8-8.5 16.1-24.4 53.3-2.6 82.4.6-20.7 5.5-41.8 13.8-61.5 12-27.4 37.3-74.9 39.3-112.7 1.1.8 4.6 3.2 6.2 4.1 4.6 2.7 8.1 6.7 12.6 10.3 12.4 10 28.5 9.2 42.4 1.2 6.2-3.5 11.2-7.5 15.9-9 9.9-3.1 17.8-8.6 22.3-15 7.7 30.4 25.7 74.3 37.2 95.7 6.1 11.4 18.3 35.5 23.6 64.6 3.3-.1 7 .4 10.9 1.4 13.8-35.7-11.7-74.2-23.3-84.9-4.7-4.6-4.9-6.6-2.6-6.5 12.6 11.2 29.2 33.7 35.2 59 2.8 11.6 3.3 23.7.4 35.7 16.4 6.8 35.9 17.9 30.7 34.8-2.2-.1-3.2 0-4.2 0 3.2-10.1-3.9-17.6-22.8-26.1-19.6-8.6-36-8.6-38.3 12.5-12.1 4.2-18.3 14.7-21.4 27.3-2.8 11.2-3.6 24.7-4.4 39.9-.5 7.7-3.6 18-6.8 29-32.1 22.9-76.7 32.9-114.3 7.2zm257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3 3.7-14.2 9.2-28.8 9.9-40.6.8-15.2 1.7-28.5 4.2-38.7 2.6-10.3 6.6-17.2 13.7-21.1.3-.2.7-.3 1-.5.8 13.2 7.3 26.6 18.8 29.5 12.6 3.3 30.7-7.5 38.4-16.3 9-.3 15.7-.9 22.6 5.1 9.9 8.5 7.1 30.3 17.1 41.6 10.6 11.6 14 19.5 13.7 24.6zM173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5z"/></svg>
+
+    </a>
+    操作系统2026秋 | 哈工大（深圳）
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            实验概述
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../platform/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    实验平台
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            实验平台
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm_env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.虚拟机实验环境使用指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote_env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.远程实验平台使用指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../self_host_env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.实验环境搭建指南（自行部署版）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实用工具
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Linux.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux开发环境基础知识
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../debug/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    GDB调试指南
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            GDB调试指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gdb.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    命令行调试
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote_env_gdb.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图形化调试（VSCode）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote_env_gdb2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    系统调用进阶（VSCode）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    常见问题
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            常见问题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/faq-env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验环境常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab1 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab2 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab3 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab4 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab1：XV6与Unix实用程序
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Lab1：XV6与Unix实用程序
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验步骤
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab2：进程与系统调用
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Lab2：进程与系统调用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附加题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab3：锁机制的应用
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Lab3：锁机制的应用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    xv-6中Lock的实现（选读）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part6.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础实验提交
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI 推理服务附加题（独立计分）
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            AI 推理服务附加题（独立计分）
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验要求
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-background.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI 数据背景
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-principles.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    经典数据链路与锁观察
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-model-kv.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模型与 KV 实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-workers.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多 worker 等价与性能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-prefetch.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KV-aware prefetch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-testing.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    验证与故障定位
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-submission.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附加题提交
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab4：页表
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Lab4：页表
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Lab5：基于FUSE的EXT2文件系统
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Lab5：基于FUSE的EXT2文件系统
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常见问题（补充）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part6.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    simplefs 参考实现导读
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    附加题（选做）
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="part7.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    附加题（选做）
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 附加题一：扩展功能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 附加题一：扩展功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 读写文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 文件与目录的删除（含硬链接计数）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-mv-rename" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 mv 命令与 rename
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-simplefs" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 simplefs 读写代码对照
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 类型判断与错误码提醒
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 本题自查与独立提交说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      拓展阅读：从普通文件走向新的文件接口
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拓展阅读：从普通文件走向新的文件接口">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      一棵目录树里可以挂载多种文件系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么把新功能设计成“文件接口”？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0 附加题二、三环境准备
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.0 附加题二、三环境准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      目录结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      辅助函数速查
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      一键编译与自动测试方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-checkpointfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 附加题二：CheckpointFS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 附加题二：CheckpointFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 背景与设计目标：怎样安全地保存和回滚文件？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-inode" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 独立历史与共享工作分支的 inode 关系
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 重要工具函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 四个待实现函数的分步指南
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 四个待实现函数的分步指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copy_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      copy_file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpointfs_create" class="md-nav__link">
+    <span class="md-ellipsis">
+      checkpointfs_create
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpointfs_copy" class="md-nav__link">
+    <span class="md-ellipsis">
+      checkpointfs_copy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpointfs_restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      checkpointfs_restore
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 实验验收
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-vectorfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 附加题三：VectorFS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 附加题三：VectorFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-as-as" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 文件夹 as 查询，软链接 as 查询结果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 工具函数（直接调用）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 工具函数（直接调用）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs_search" class="md-nav__link">
+    <span class="md-ellipsis">
+      工具组一：文档加载与向量相似度计算（供 vectorfs_search 使用）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getattr-readdir-readlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      工具组二：搜索路径解析（供 getattr / readdir / readlink 使用）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getattr-readdir-readlink_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      工具组三：查询缓存与结果格式化（供 getattr / readdir / readlink 使用）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 待实现函数的分步指南
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 待实现函数的分步指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      vectorfs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs_getattr" class="md-nav__link">
+    <span class="md-ellipsis">
+      vectorfs_getattr
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs_readdir" class="md-nav__link">
+    <span class="md-ellipsis">
+      vectorfs_readdir
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs_readlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      vectorfs_readlink
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-newfs-vectorfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 一张表对照普通 newfs 与 VectorFS 回调
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs-acceptance" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 实验验收
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs-query-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 自主体验：从文本到路径，再读到原文
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs-selftest" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 自主体验：手算分数、同分排序与修改文档后的动态更新
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 附加题四：在自制 FS 上训练简单模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 附加题四：在自制 FS 上训练简单模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 任务要求与容量分析
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 实验步骤与性能优化建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 附加题常见问题排查（FAQ）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 附加题常见问题排查（FAQ）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bonus-enosys" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 挂载后能看到 /.checkpoint 或 /.search，为什么操作时报错 Function not implemented (ENOSYS)？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint-shared-write" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 在 CheckpointFS 中执行 restore 后，为什么继续写工作文件会改变新检查点，而历史检查点不变？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs-recompute" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 在 VectorFS 中，为什么 getattr、readdir 和 readlink 都要调 vectorfs_cache_get？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs-link-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 ls /.search/&lt;query&gt; 能看到结果文件名，为什么 ls -l 或 cat 却报错/读不到原文？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bonus-framework-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 我需要自己写百分号解码（%20）、控制文件解析或向量数学公式吗？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-submission" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 附加题提交要求
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../oscomp/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OS竞赛招新
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            OS竞赛招新
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 附加题一：扩展功能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 附加题一：扩展功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 读写文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 文件与目录的删除（含硬链接计数）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-mv-rename" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 mv 命令与 rename
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-simplefs" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 simplefs 读写代码对照
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 类型判断与错误码提醒
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 本题自查与独立提交说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      拓展阅读：从普通文件走向新的文件接口
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拓展阅读：从普通文件走向新的文件接口">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      一棵目录树里可以挂载多种文件系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么把新功能设计成“文件接口”？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0 附加题二、三环境准备
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.0 附加题二、三环境准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      目录结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      辅助函数速查
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      一键编译与自动测试方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-checkpointfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 附加题二：CheckpointFS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 附加题二：CheckpointFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 背景与设计目标：怎样安全地保存和回滚文件？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-inode" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 独立历史与共享工作分支的 inode 关系
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 重要工具函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 四个待实现函数的分步指南
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 四个待实现函数的分步指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copy_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      copy_file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpointfs_create" class="md-nav__link">
+    <span class="md-ellipsis">
+      checkpointfs_create
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpointfs_copy" class="md-nav__link">
+    <span class="md-ellipsis">
+      checkpointfs_copy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpointfs_restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      checkpointfs_restore
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 实验验收
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-vectorfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 附加题三：VectorFS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 附加题三：VectorFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-as-as" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 文件夹 as 查询，软链接 as 查询结果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 工具函数（直接调用）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 工具函数（直接调用）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs_search" class="md-nav__link">
+    <span class="md-ellipsis">
+      工具组一：文档加载与向量相似度计算（供 vectorfs_search 使用）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getattr-readdir-readlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      工具组二：搜索路径解析（供 getattr / readdir / readlink 使用）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getattr-readdir-readlink_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      工具组三：查询缓存与结果格式化（供 getattr / readdir / readlink 使用）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 待实现函数的分步指南
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 待实现函数的分步指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      vectorfs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs_getattr" class="md-nav__link">
+    <span class="md-ellipsis">
+      vectorfs_getattr
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs_readdir" class="md-nav__link">
+    <span class="md-ellipsis">
+      vectorfs_readdir
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs_readlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      vectorfs_readlink
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-newfs-vectorfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 一张表对照普通 newfs 与 VectorFS 回调
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs-acceptance" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 实验验收
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs-query-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 自主体验：从文本到路径，再读到原文
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs-selftest" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 自主体验：手算分数、同分排序与修改文档后的动态更新
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 附加题四：在自制 FS 上训练简单模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 附加题四：在自制 FS 上训练简单模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 任务要求与容量分析
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 实验步骤与性能优化建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 附加题常见问题排查（FAQ）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 附加题常见问题排查（FAQ）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bonus-enosys" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 挂载后能看到 /.checkpoint 或 /.search，为什么操作时报错 Function not implemented (ENOSYS)？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint-shared-write" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 在 CheckpointFS 中执行 restore 后，为什么继续写工作文件会改变新检查点，而历史检查点不变？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs-recompute" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 在 VectorFS 中，为什么 getattr、readdir 和 readlink 都要调 vectorfs_cache_get？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorfs-link-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 ls /.search/&lt;query&gt; 能看到结果文件名，为什么 ls -l 或 cat 却报错/读不到原文？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bonus-framework-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 我需要自己写百分号解码（%20）、控制文件解析或向量数学公式吗？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-submission" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 附加题提交要求
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">附加题（选做）<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">附加题安排与选做指南</p>
+<p>本页包含四道选做附加题，均不属于任务一、任务二的必做范围，同学们可以根据兴趣和时间自由选择：</p>
+<ul>
+<li><strong>附加题一（扩展功能）</strong>：是后续三道附加题的简单前置；</li>
+<li>附加题二、三、四之间 <strong>互不依赖</strong> ：三者可以按任意顺序、任意数目完成；</li>
+<li>CheckpointFS 主要是对基本功能和附加功能的实现，VectorFS 则 <strong><em>非常有趣</em></strong> ，可窥见 Linux “一切皆文件”理念的一角</li>
+<li>基础实验任务见 <a href="part3.html">实验实现</a>，提交要求见 <a href="part4.html">实验提交</a>。</li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th>附加题</th>
+<th>你将实现什么</th>
+<th>需要先在附加题一中完成的普通 FS 功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#bonus-extensions">一：扩展功能</a></td>
+<td>为自己的 <code>newfs</code> 补齐文件读写、删除、移动、链接或大文件支持</td>
+<td>已完成基础实验（挂载、卸载、<code>ls</code>、<code>touch</code>、<code>mkdir</code>、持久化）</td>
+</tr>
+<tr>
+<td><a href="#bonus-checkpointfs">二：CheckpointFS</a></td>
+<td>为文件创建独立历史快照（<code>create</code>），并通过“复制历史 + 硬链接切换”安全回滚工作文件（<code>restore</code>）</td>
+<td>普通文件读写（<code>read</code>/<code>write</code>/<code>truncate</code>）、目录创建与查询、文件删除（<code>unlink</code>）、硬链接与链接计数（<code>link</code>/<code>nlink</code>）、重挂载持久化</td>
+</tr>
+<tr>
+<td><a href="#bonus-vectorfs">三：VectorFS</a></td>
+<td>将 <code>/.search/&lt;query&gt;</code> 呈现为动态目录，将搜索结果呈现为指向 <code>/documents</code> 下原文档的软链接</td>
+<td>普通文件读写、目录创建与递归遍历（<code>getattr</code>/<code>readdir</code>/<code>read</code>）、重挂载持久化，以及日常维护文档所需的删除/重命名</td>
+</tr>
+<tr>
+<td><a href="#bonus-model">四：模型训练</a></td>
+<td>在自己的文件系统上直接运行 PyTorch 训练脚本，完成数据集读取与模型参数保存</td>
+<td>普通文件读写、重挂载持久化，以及支持至少 <code>1MB</code> 的单文件容量（如间接块或预分配扩展）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bonus-extensions">1. 附加题一：扩展功能<a class="headerlink" href="#bonus-extensions" title="Permanent link">&para;</a></h2>
+<p><strong>本题目标：</strong> 在基础实验已经跑通的“青春版 EXT2（<code>newfs</code>）”基础上，亲手补齐普通文件系统的核心操作，并验证它们的语义与重挂载持久化。 <strong>本题可以作为独立成果提交；如果你计划继续做 CheckpointFS、VectorFS 或模型训练，请先在本题中把对应能力实现扎实。</strong></p>
+<p>基础实验稳定通过后，你可以从以下扩展方向中按需选择实现：</p>
+<ul>
+<li><strong>文件读写与大小调整</strong> ：支持 <code>read</code>、<code>write</code>、<code>truncate</code>，能够向文件写入跨块数据并准确读回；</li>
+<li><strong>文件与目录删除</strong> ：支持 <code>rm</code>（<code>unlink</code>）、<code>rm -r</code>（配合 <code>rmdir</code>）；</li>
+<li><strong>文件重命名与移动</strong> ：支持 <code>mv</code>（<code>rename</code>）；</li>
+<li><strong>硬链接与软链接</strong> ：支持 <code>ln</code>（<code>link</code>，维护 <code>nlink</code> 引用计数）或 <code>ln -s</code>；</li>
+<li><strong>大文件容量扩展</strong> ：引入一级/二级间接块索引，扩大单文件容量上限。</li>
+</ul>
+<p>这些功能对应的 FUSE 钩子函数包括：</p>
+<ul>
+<li><code>newfs_open</code>、<code>newfs_opendir</code>：打开普通文件和目录；</li>
+<li><code>newfs_access</code>：检查路径是否存在及访问权限；</li>
+<li><code>newfs_read</code>、<code>newfs_write</code>、<code>newfs_truncate</code>：读写文件数据、修改文件大小；</li>
+<li><code>newfs_unlink</code>、<code>newfs_rmdir</code>：删除普通文件和目录；</li>
+<li><code>newfs_rename</code>：重命名或移动文件、目录；</li>
+<li><code>newfs_link</code>：在目录中新增指向已有 <code>inode</code> 的目录项，并维护硬链接计数 <code>nlink</code>。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">动手前的关键检查：别忘了挂载 <code>operations</code> 函数表！</p>
+<p>在初始生成的 <code>src/newfs.c</code> 中，<code>operations</code> 结构体里的 <code>.write</code>、<code>.truncate</code>、<code>.unlink</code>、<code>.rmdir</code>、<code>.rename</code> 等字段初始为 <code>NULL</code>，且尚未列出 <code>.link</code>。同时，模板里的选做桩函数（如 <code>newfs_write</code>、<code>newfs_unlink</code>）初始直接返回了 <code>size</code> 或 <code>0</code>。</p>
+<p>因此，当你实现某个扩展钩子时，请务必确认两件事：</p>
+<ol>
+<li><strong>把函数指针填入 <code>operations</code> 结构体</strong> （例如实现硬链接时，在 <code>include/newfs.h</code> 中声明 <code>newfs_link</code>，并在 <code>operations</code> 中加上 <code>.link = newfs_link,</code>）。</li>
+<li><strong>填写真实的磁盘/内存操作逻辑</strong> ，不要让未实现的函数返回“假成功”。</li>
+</ol>
+</div>
+<p>本题直接修改你自己的 <code>fs/newfs</code>。CheckpointFS 和 VectorFS 所需的支持文件已经随 <code>./setenv.sh</code> 自动生成在工程中，CMake 和 FUSE 路由也已预先接好；当你完成本题中对应的前置功能后，即可按照 <a href="#bonus-setup">附加题二、三的工程准备</a> 直接去填那两道题的 TODO。</p>
+<h3 id="11">1.1 读写文件<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>建议先参考 <code>simplefs</code> 完成 <code>newfs_open</code>、<code>newfs_opendir</code>、<code>newfs_access</code>、<code>newfs_truncate</code>，再实现核心的 <code>newfs_read</code> 和 <code>newfs_write</code>。后续附加题会直接调用你实现的这些普通文件接口。</p>
+<p>文件读写的核心流程是：先通过路径解析（<code>lookup</code>）找到目标目录项（<code>dentry</code>）及其 <code>inode</code>，检查它确实是普通文件且偏移量 <code>offset</code> 合法，然后在内存数据区与用户缓冲区 <code>buf</code> 之间拷贝数据。</p>
+<p>需要注意的是：在 <code>simplefs</code> 中，<code>sfs_read_inode</code> 采取了固定分配数据块的方式；而在我们的 <code>newfs</code> 任务二中，要求 <strong>按需分配数据块</strong> 。因此在实现 <code>newfs_write</code> 时，当写入范围（<code>offset + size</code>）超过当前已分配的数据块容量时，你需要动态分配新的数据块、更新数据块位图，并在卸载（<code>destroy</code>）时把数据块内容刷回磁盘。</p>
+<h3 id="12">1.2 文件与目录的删除（含硬链接计数）<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<p>删除功能通常借助 <code>drop_inode</code> 和 <code>drop_dentry</code> 两个内部辅助函数完成：</p>
+<ul>
+<li><code>drop_dentry</code>：从父目录的 <code>inode</code> 下移除指定的目录项；</li>
+<li><code>drop_inode</code>：回收一个 <code>inode</code> 及其占用的数据块和位图标志（如果是目录，还需递归清理其子目录项）。</li>
+</ul>
+<p>在没有硬链接的 <code>simplefs</code> 中，<code>sfs_unlink</code> 删掉目录项时直接释放了 <code>inode</code>：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">sfs_unlink</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">path</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="cm">/* simplefs 无硬链接时的简化做法：直接释放 inode，再移除目录项 */</span>
+<span class="w">    </span><span class="n">sfs_drop_inode</span><span class="p">(</span><span class="n">inode</span><span class="p">);</span>
+<span class="w">    </span><span class="n">sfs_drop_dentry</span><span class="p">(</span><span class="n">dentry</span><span class="o">-&gt;</span><span class="n">parent</span><span class="o">-&gt;</span><span class="n">inode</span><span class="p">,</span><span class="w"> </span><span class="n">dentry</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">SFS_ERROR_NONE</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>但如果你要支持硬链接（或者准备选做 CheckpointFS），就不能一删目录项就立刻释放 <code>inode</code>！</strong> 硬链接的核心语义是“多个目录项指向同一个 <code>inode</code>”：</p>
+<ol>
+<li><strong><code>newfs_link(source, target)</code></strong> ：先找到 <code>source</code> 对应的 <code>inode</code>，再在 <code>target</code> 的父目录下创建一个新的 <code>dentry</code> 指向同一个 <code>ino</code> / <code>inode</code>，并将该 <code>inode</code> 的硬链接计数 <code>nlink</code> 加 1（ <strong>不复制文件数据块</strong> ）。</li>
+<li><strong><code>newfs_unlink(path)</code></strong> ：从父目录移除当前 <code>dentry</code>，并将对应 <code>inode</code> 的 <code>nlink</code> 减 1； <strong>只有当 <code>nlink</code> 减到 0 时，才调用 <code>drop_inode</code> 真正回收 <code>inode</code> 位图、数据块位图和磁盘数据</strong> 。</li>
+<li><strong><code>newfs_rename(from, to)</code></strong> ：如果目标路径 <code>to</code> 原本已经存在，覆盖它时同样相当于对旧目标做了一次 <code>unlink</code>（减少旧目标的引用计数）；如果 <code>from</code> 和 <code>to</code> 原本就指向同一个 <code>inode</code>，按 POSIX 语义直接返回成功即可（注：CheckpointFS 的恢复操作通过 <code>unlink + link</code> 完成，不依赖 <code>rename</code>）。</li>
+</ol>
+<p>回收 <code>inode</code> 时，除了像 <code>simplefs</code> 那样清零 <code>inode</code> 位图，别忘了在 <code>newfs</code> 中一并清零该 <code>inode</code> 所占用的 <strong>数据块位图</strong> ：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">sfs_drop_inode</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">sfs_inode</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">inode</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">        </span><span class="cm">/* 逐字节扫描 inode 位图 */</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">byte_cursor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">byte_cursor</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">SFS_BLKS_SZ</span><span class="p">(</span><span class="n">sfs_super</span><span class="p">.</span><span class="n">map_inode_blks</span><span class="p">);</span><span class="w"> </span>
+<span class="w">            </span><span class="n">byte_cursor</span><span class="o">++</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="cm">/* 再逐位检查当前字节中的 8 个 bit */</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">bit_cursor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">bit_cursor</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">UINT8_BITS</span><span class="p">;</span><span class="w"> </span><span class="n">bit_cursor</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="cm">/* 找到与当前 inode 编号对应的那一位 */</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ino_cursor</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">inode</span><span class="o">-&gt;</span><span class="n">ino</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                     </span><span class="cm">/* 将这一位清零，表示该 inode 已回收 */</span>
+<span class="w">                     </span><span class="n">sfs_super</span><span class="p">.</span><span class="n">map_inode</span><span class="p">[</span><span class="n">byte_cursor</span><span class="p">]</span><span class="w"> </span><span class="o">&amp;=</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="p">)(</span><span class="o">~</span><span class="p">(</span><span class="mh">0x1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">bit_cursor</span><span class="p">));</span>
+<span class="w">                     </span><span class="n">is_find</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span>
+<span class="w">                     </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">                </span><span class="n">ino_cursor</span><span class="o">++</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">is_find</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">TRUE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="13-mv-rename">1.3 <code>mv</code> 命令与 <code>rename</code><a class="headerlink" href="#13-mv-rename" title="Permanent link">&para;</a></h3>
+<p><code>mv</code> 命令用于重命名文件/目录，或将其移动到新目录下，对应 FUSE 的 <code>newfs_rename(from, to)</code> 钩子。在 <code>simplefs</code> 中给出了一种直观的参考思路：先检查源路径 <code>from</code>，在目标路径 <code>to</code> 创建一个同类型的目录项，随后让目标目录项改为指向源 <code>inode</code>，最后把源目录项从原父目录移除。</p>
+<p>下面两段代码展示的是同一个 <code>sfs_rename()</code> 函数的完整过程：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">sfs_rename</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">from</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">to</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="cm">/* 第一步：检查源路径是否存在，并确定其文件类型 */</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">sfs_dentry</span><span class="o">*</span><span class="w"> </span><span class="n">from_dentry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sfs_lookup</span><span class="p">(</span><span class="n">from</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">is_find</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">is_root</span><span class="p">);</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">SFS_IS_DIR</span><span class="p">(</span><span class="n">from_inode</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">__S_IFDIR</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">SFS_IS_REG</span><span class="p">(</span><span class="n">from_inode</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">__S_IFREG</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/* 在目标路径先创建一个同类型的新目录项和临时 inode */</span>
+<span class="w">    </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sfs_mknod</span><span class="p">(</span><span class="n">to</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ret</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">SFS_ERROR_NONE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">ret</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">...</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="cm">/* 第二步：拿到刚创建的目标目录项，释放其临时 inode，改为指向源 inode */</span>
+<span class="w">    </span><span class="n">to_dentry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sfs_lookup</span><span class="p">(</span><span class="n">to</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">is_find</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">is_root</span><span class="p">);</span><span class="w">   </span>
+<span class="w">    </span><span class="n">sfs_drop_inode</span><span class="p">(</span><span class="n">to_dentry</span><span class="o">-&gt;</span><span class="n">inode</span><span class="p">);</span><span class="w">                   </span>
+<span class="w">    </span><span class="n">to_dentry</span><span class="o">-&gt;</span><span class="n">ino</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from_inode</span><span class="o">-&gt;</span><span class="n">ino</span><span class="p">;</span><span class="w">                 </span>
+<span class="w">    </span><span class="n">to_dentry</span><span class="o">-&gt;</span><span class="n">inode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from_inode</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/* 第三步：把源目录项从原父目录中移除 */</span>
+<span class="w">    </span><span class="n">sfs_drop_dentry</span><span class="p">(</span><span class="n">from_dentry</span><span class="o">-&gt;</span><span class="n">parent</span><span class="o">-&gt;</span><span class="n">inode</span><span class="p">,</span><span class="w"> </span><span class="n">from_dentry</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ret</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>使用 <code>mv</code> 命令时，Shell 与内核 VFS 会根据第二个参数是否为已存在的目录，自动把路径转换成明确的“旧路径 -&gt; 新路径”再传给 <code>rename</code> 钩子：</p>
+<div class="highlight"><pre><span></span><code>$ mv f0 f1    # f1 不存在：直接改名
+rename /f0 /f1
+
+$ mv f0 d0    # d0 是已存在的目录：移动到 d0 下
+rename /f0 /d0/f0
+</code></pre></div>
+<h3 id="14-simplefs">1.4 <code>simplefs</code> 读写代码对照<a class="headerlink" href="#14-simplefs" title="Permanent link">&para;</a></h3>
+<p>如果你正在实现 <code>newfs_read</code> / <code>newfs_write</code>，可以用 <code>simplefs</code> 的代码作为骨架参考，但请特别留意 <strong>按需分配数据块</strong> 的差异：</p>
+<ul>
+<li><strong>可复用的主干</strong> ：先 <code>lookup</code> 定位文件 → 检查是否为目录（目录不可按普通文件读写） → 检查 <code>offset</code> 是否越界 → 拷贝数据并更新文件大小 <code>size</code>。</li>
+<li><strong>必须自己改造的部分</strong> ：<code>simplefs</code> 事先把固定数量的数据块全部分配好了；而 <code>newfs</code> 需要你在 <code>write</code> 扩展文件大小时按需分配新块、维护数据块位图，并正确处理跨块读写与不足一块的尾部数据。</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">sfs_read</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kt">off_t</span><span class="w"> </span><span class="n">offset</span><span class="p">,</span>
+<span class="w">             </span><span class="k">struct</span><span class="w"> </span><span class="nc">fuse_file_info</span><span class="w"> </span><span class="o">*</span><span class="n">fi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">fi</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">boolean</span><span class="w"> </span><span class="n">is_find</span><span class="p">,</span><span class="w"> </span><span class="n">is_root</span><span class="p">;</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">sfs_dentry</span><span class="o">*</span><span class="w"> </span><span class="n">dentry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sfs_lookup</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">is_find</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">is_root</span><span class="p">);</span><span class="w"> </span><span class="cm">/* 先找目标文件 */</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">sfs_inode</span><span class="o">*</span><span class="w"> </span><span class="n">inode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dentry</span><span class="o">-&gt;</span><span class="n">inode</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">SFS_IS_DIR</span><span class="p">(</span><span class="n">inode</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">                          </span><span class="cm">/* 目录不能按普通文件读 */</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="n">SFS_ERROR_ISDIR</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">inode</span><span class="o">-&gt;</span><span class="n">size</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">offset</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">                      </span><span class="cm">/* 读偏移不能越过文件末尾 */</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="n">SFS_ERROR_SEEK</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">memcpy</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="n">inode</span><span class="o">-&gt;</span><span class="n">data</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">offset</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p">);</span><span class="w">         </span><span class="cm">/* 从内存数据区拷到用户缓冲区 */</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">size</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><img alt="" src="part3.assets/read%E6%8E%A5%E5%8F%A3%E5%B0%81%E8%A3%85.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">sfs_write</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kt">off_t</span><span class="w"> </span><span class="n">offset</span><span class="p">,</span>
+<span class="w">              </span><span class="k">struct</span><span class="w"> </span><span class="nc">fuse_file_info</span><span class="w"> </span><span class="o">*</span><span class="n">fi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">fi</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">boolean</span><span class="w"> </span><span class="n">is_find</span><span class="p">,</span><span class="w"> </span><span class="n">is_root</span><span class="p">;</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">sfs_dentry</span><span class="o">*</span><span class="w"> </span><span class="n">dentry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sfs_lookup</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">is_find</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">is_root</span><span class="p">);</span><span class="w"> </span><span class="cm">/* 先找目标文件 */</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">sfs_inode</span><span class="o">*</span><span class="w"> </span><span class="n">inode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dentry</span><span class="o">-&gt;</span><span class="n">inode</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">SFS_IS_DIR</span><span class="p">(</span><span class="n">inode</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">                          </span><span class="cm">/* 目录不能按普通文件写 */</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="n">SFS_ERROR_ISDIR</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">inode</span><span class="o">-&gt;</span><span class="n">size</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">offset</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">                      </span><span class="cm">/* 写偏移非法 */</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="n">SFS_ERROR_SEEK</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">memcpy</span><span class="p">(</span><span class="n">inode</span><span class="o">-&gt;</span><span class="n">data</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">offset</span><span class="p">,</span><span class="w"> </span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p">);</span><span class="w">         </span><span class="cm">/* 把用户数据写到内存中的文件内容 */</span>
+<span class="w">    </span><span class="n">inode</span><span class="o">-&gt;</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">offset</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">inode</span><span class="o">-&gt;</span><span class="n">size</span>
+<span class="w">                    </span><span class="o">?</span><span class="w"> </span><span class="n">offset</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">size</span><span class="w">                   </span><span class="cm">/* 必要时扩展文件大小 */</span>
+<span class="w">                    </span><span class="o">:</span><span class="w"> </span><span class="n">inode</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">size</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><img alt="" src="part3.assets/write%E6%8E%A5%E5%8F%A3%E5%B0%81%E8%A3%85.png" /></p>
+<h3 id="15">1.5 类型判断与错误码提醒<a class="headerlink" href="#15" title="Permanent link">&para;</a></h3>
+<p>当你扩展了 <code>read</code>、<code>write</code>、<code>unlink</code>、<code>rmdir</code>、<code>rename</code>、<code>link</code> 等钩子后，别忘了同步检查：</p>
+<ul>
+<li><strong><code>getattr</code> 是否完整报告了文件属性</strong> ：特别是普通文件大小 <code>st_size</code>、硬链接数 <code>st_nlink</code> 以及对应的文件类型标志（<code>S_IFREG</code>、<code>S_IFDIR</code>、<code>S_IFLNK</code>）。</li>
+<li><strong>错误码是否符合 FUSE 负值约定</strong> ：FUSE 回调失败时一律返回 <strong>负的 <code>errno</code></strong> （如文件不存在返回 <code>-ENOENT</code>，目标已存在返回 <code>-EEXIST</code>，对目录做普通文件操作返回 <code>-EISDIR</code>）；只有 <code>read</code> 和 <code>write</code> 成功时返回实际读写的字节数，其余操作成功时返回 <code>0</code>。</li>
+</ul>
+<h3 id="16">1.6 本题自查与独立提交说明<a class="headerlink" href="#16" title="Permanent link">&para;</a></h3>
+<p>完成所选的扩展功能后，建议按以下清单逐项验证，并在实验报告中如实记录你实现的功能范围（未选做的项无需写入）：</p>
+<ul>
+<li><strong>读写验证</strong> ：写入不同长度的内容（包括空文件、不足一块的短文本、跨越多个数据块的数据）并读回比对，检查 <code>truncate</code> 截断后的文件大小是否正确。</li>
+<li><strong>删除、移动与硬链接验证</strong> ：创建硬链接后用 <code>stat</code> 检查两个路径的 <code>inode</code> 编号是否相同、<code>nlink</code> 是否为 2；删除其中一个名字后，检查另一个名字是否仍能正常读取原内容。</li>
+<li><strong>容量扩展验证</strong> ：若实现了间接块，记录你支持的最大单文件容量，并用超过直接块上限的文件进行读写测试。</li>
+<li><strong>重挂载持久化验证</strong> ：正常卸载（<code>fusermount -u</code>）后重新挂载同一磁盘，确认刚才写入的文件内容、目录结构和硬链接关系依然完好。</li>
+</ul>
+<p><strong>如果只选做附加题一</strong> ：完成上述验证后，直接提交你修改的 <code>newfs</code> 源码、设计说明与测试截图即可，无需理会 <code>checkpointfs.c</code> 和 <code>vectorfs.c</code> 中的 TODO，也不必运行它们的测试。如果你打算继续挑战附加题二或三，请往下阅读。</p>
+<hr />
+<h2 id="_2">拓展阅读：从普通文件走向新的文件接口<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>做完基础实验和附加题一后，我们很容易形成一种直觉：所谓文件，就是“磁盘上的 <code>inode</code> 加数据块”；<code>read</code> 就是从数据块读字节，<code>write</code> 就是把字节写进数据块。</p>
+<p>对于 EXT2 这类磁盘文件系统，这个直觉完全正确。但如果你打开一台正在运行的 Linux 机器，执行下面几条命令，就会遇到一些很特别的“文件”：</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/proc/uptime
+cat<span class="w"> </span>/proc/cpuinfo
+<span class="nb">echo</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>&gt;<span class="w"> </span>/sys/class/leds/.../brightness
+<span class="nb">echo</span><span class="w"> </span>hello<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
+</code></pre></div>
+<p>连续执行两次 <code>cat /proc/uptime</code>，读到的数字一直在变；向 <code>/sys</code> 下的文件写入一个字符，可能会点亮一盏硬件指示灯；写进 <code>/dev/null</code> 的内容则会瞬间消失。它们明明都可以用标准的 <code>open</code>、<code>read</code>、<code>write</code> 来操作，背后却并不是磁盘上躺着的一段静态文本。</p>
+<p>这正是 Unix/Linux <strong>“一切皆文件（Everything is a file）”</strong> 抽象最迷人的地方：</p>
+<blockquote>
+<p><strong>“像文件一样访问”定义的是统一的访问接口（路径 + 文件操作），而不限制接口背后的数据从哪里来、操作会触发什么行为。</strong></p>
+</blockquote>
+<h3 id="_3">一棵目录树里可以挂载多种文件系统<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>Linux 通过虚拟文件系统（VFS）把不同的文件系统拼接到同一棵目录树上。应用程序看到的始终是路径和文件描述符，但当路径穿过不同的挂载点或特殊目录时，底层调用的钩子函数可能完全不同。</p>
+<p><img alt="Linux 中不同文件系统共享一套 VFS 接口" src="part2.assets/linux-filesystems.svg" /></p>
+<table>
+<thead>
+<tr>
+<th>文件系统</th>
+<th>常见挂载位置</th>
+<th>读写文件时背后发生了什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ext4</code></td>
+<td><code>/</code>、<code>/home</code></td>
+<td>读写磁盘上的 <code>inode</code> 与数据块</td>
+</tr>
+<tr>
+<td><code>tmpfs</code></td>
+<td><code>/run</code>、<code>/dev/shm</code></td>
+<td>数据直接保存在内存中，读写速度极快</td>
+</tr>
+<tr>
+<td><code>procfs</code></td>
+<td><code>/proc</code></td>
+<td>读取时由内核实时查询进程或系统状态并拼成文本返回</td>
+</tr>
+<tr>
+<td><code>sysfs</code></td>
+<td><code>/sys</code></td>
+<td>读取或修改内核对象、总线、驱动与硬件设备的属性</td>
+</tr>
+<tr>
+<td><code>devtmpfs</code></td>
+<td><code>/dev</code></td>
+<td>读写请求直接转发给对应的设备驱动程序</td>
+</tr>
+</tbody>
+</table>
+<p>从 VFS 的视角来看，一个“文件”的本质由三件事决定：</p>
+<ol>
+<li><strong>它在目录树里的名字（路径）</strong> ；</li>
+<li><strong>打开它之后允许执行的一组钩子操作（<code>getattr</code>、<code>readdir</code>、<code>read</code>、<code>write</code>、<code>readlink</code> 等）</strong> ；</li>
+<li><strong>这些操作背后维护的状态</strong> 。</li>
+</ol>
+<h3 id="_4">为什么把新功能设计成“文件接口”？<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>假设我们想给自己的文件系统加上“文件版本快照（Checkpoint）”和“相似文档检索（Vector Search）”两项新能力。一种做法是去改操作系统内核、发明新的系统调用（比如 <code>sys_checkpoint_create</code> 或 <code>sys_vector_search</code>），但这需要同时修改内核、C 标准库和所有用户态程序。</p>
+<p>如果换一种思路， <strong>用文件接口来表达这两项功能</strong> 呢？</p>
+<div class="highlight"><pre><span></span><code>1. CheckpointFS（控制文件 + 只读视图）：
+   用户工具向 /.checkpoint/control 写入一行命令
+   → 文件系统收到 write 请求后，调用你实现的复制与硬链接函数完成版本保存或回滚
+   → 用户直接 ls / cat /.checkpoints/&lt;文件集合&gt;/&lt;版本ID&gt; 查看历史版本
+
+2. VectorFS（路径即查询 + 结果即软链接）：
+   用户直接执行 ls -l /.search/&lt;查询词&gt;/
+   → 文件系统在 readdir / getattr / readlink 回调中动态计算文档相似度
+   → 将排名前十的结果包装成指向 ../../documents/&lt;原文档&gt; 的虚拟软链接返回
+</code></pre></div>
+<p>你会发现，不需要发明任何新的系统调用，标准的 <code>ls</code>、<code>cat</code>、<code>stat</code>、<code>readlink</code> 命令就能直接驱动版本管理与向量检索！这正是附加题二（CheckpointFS）和附加题三（VectorFS）想要带你体验的系统设计思想：</p>
+<ul>
+<li><strong>基础实验 &amp; 附加题一</strong> ：解决“真实文件的数据和 <code>inode</code> 怎么在磁盘上存取”；</li>
+<li><strong>附加题二（CheckpointFS）</strong> ：组合你自己的文件复制与硬链接操作，体会 <strong>“独立 <code>inode</code> 副本”与“共享 <code>inode</code> 硬链接”</strong> 在版本管理中的精妙配合；</li>
+<li><strong>附加题三（VectorFS）</strong> ：实现与普通文件系统完全相同的标准 FUSE 回调（<code>getattr</code>/<code>readdir</code>/<code>readlink</code>），把 <strong>实时计算出的搜索排名</strong> 动态映射为目录项与软链接。</li>
+</ul>
+<hr />
+<h2 id="bonus-setup">2.0 附加题二、三环境准备<a class="headerlink" href="#bonus-setup" title="Permanent link">&para;</a></h2>
+<h3 id="_5">目录结构<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>在你的 <code>fs/newfs</code> 目录中，与附加题相关的文件布局如下（如果你的工作目录不叫 <code>newfs</code>，请替换为你的实际目录名）：</p>
+<div class="highlight"><pre><span></span><code>fs/newfs/
+├── include/
+│   └── newfs.h              # 你自己的普通文件系统头文件（在这里声明 newfs_link 等扩展函数）
+├── src/
+│   ├── newfs.c              # 你自己的普通文件系统实现（基础题 + 附加题一）
+│   ├── checkpointfs.c       # 附加题二的 4 个 TODO 函数
+│   └── vectorfs.c           # 附加题三的 4 个 TODO 函数
+└── bonus/
+    ├── include/
+    │   ├── bonus.h          # 公共宏 CHECK(expr) 与路径规范化/解码工具声明
+    │   ├── checkpointfs.h   # CheckpointFS 接口与路径生成工具 checkpointfs_path 声明
+    │   └── vectorfs.h       # VectorFS 接口、缓存、向量计算与路径解析工具声明
+    ├── src/                 # FUSE 路由分发、控制会话、查询缓存与向量计算源码
+    ├── tools/               # checkpointctl.py 与 searchpath.py 命令行辅助脚本
+    ├── tests/               # 自动验收脚本 run_bonus.py
+    └── README.md            # 工程内速查说明
+</code></pre></div>
+<h3 id="_6">辅助函数速查<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>为了让大家把精力集中在文件操作语义和 FUSE 回调本身，教师在 <code>bonus/src/</code> 中已经写好了外围的路由分发与数学/编码工具。你的工作非常聚焦：</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>教师已提供（直接调用，无需重造）</th>
+<th>学生需要完成（共 8 个 TODO 函数）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>底层基础</strong></td>
+<td><code>main()</code> 中的 <code>bonus_register(&amp;operations)</code> 自动拦截特殊路径（<code>/.checkpoint*</code>、<code>/.search</code>），普通路径原样转交你的 <code>newfs_*</code></td>
+<td>先在 <code>src/newfs.c</code> 中完成所选题目依赖的普通文件钩子（ <strong>不要在 <code>newfs_*</code> 内部再去判断或转发附加题路径</strong> ）</td>
+</tr>
+<tr>
+<td><strong>附加题二<br>CheckpointFS</strong></td>
+<td>1. 接收 <code>/.checkpoint/control</code> 的命令并解析参数<br>2. 自动创建内部根存储目录 <code>/.checkpointfs-data</code><br>3. 路径生成工具 <code>checkpointfs_path(...)</code><br>4. 只读视图 <code>/.checkpoints/...</code> 的映射展示<br>5. <code>checkpointfs.c</code> 中现成的 <code>parent_path(...)</code> 辅助函数</td>
+<td>在 <code>src/checkpointfs.c</code> 中完成 <strong>4 个函数</strong> ：<br>1. <code>static copy_file(source, target)</code><br>2. <code>checkpointfs_create(source, id)</code><br>3. <code>checkpointfs_copy(source, source_id, target_id)</code><br>4. <code>checkpointfs_restore(source, hist_id, new_id)</code></td>
+</tr>
+<tr>
+<td><strong>附加题三<br>VectorFS</strong></td>
+<td>1. 路径解析工具 <code>vectorfs_parse_path(...)</code><br>2. 递归加载文档与向量 <code>vectorfs_load_documents(...)</code><br>3. 向量编码 <code>vectorfs_embed</code> 与余弦相似度 <code>vectorfs_similarity</code><br>4. 按查询词缓存 <code>vectorfs_cache_get</code>（文件修改时自动清空缓存）<br>5. 结果文件名与链接目标格式化 <code>vectorfs_result_name</code> / <code>vectorfs_result_target</code></td>
+<td>在 <code>src/vectorfs.c</code> 中完成 <strong>4 个函数</strong> ：<br>1. <code>vectorfs_search(query, results, count)</code><br>2. <code>vectorfs_getattr(path, st)</code><br>3. <code>vectorfs_readdir(path, buf, filler, offset, fi)</code><br>4. <code>vectorfs_readlink(path, buf, size)</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">通用编程提示：巧用 <code>CHECK(expr)</code> 宏</p>
+<p><code>bonus/include/bonus.h</code> 中提供了一个非常顺手的错误检查宏：
+<div class="highlight"><pre><span></span><code><span class="cp">#define CHECK(expr) do { \</span>
+<span class="cp">    int check_status = (expr); \</span>
+<span class="cp">    if (check_status &lt; 0) return check_status; \</span>
+<span class="cp">} while (0)</span>
+</code></pre></div>
+它只会对 <code>expr</code> 求值一次；一旦发现返回值小于 0（即负的 <code>errno</code> 错误码），就会立刻从当前函数返回该错误码。
+<strong>注意</strong> ：如果当前已经动态分配了内存（如 <code>vectorfs_parse_path</code> 分配的 <code>query</code> 字符串或 <code>vectorfs_load_documents</code> 加载的文档数组）或创建了半成品文件需要清理，请用显式的 <code>if (ret &lt; 0)</code> 先释放资源再返回，不要用 <code>CHECK</code> 直接跳过清理代码。</p>
+</div>
+<h3 id="_7">一键编译与自动测试方法<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>附加题与基础题在同一个工程内构建。完成所选题目的前置功能和对应的 TODO 后，在 <strong>仓库根目录</strong> （<code>/workspace</code>）直接运行以下短命令即可：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 只测附加题二（CheckpointFS）</span>
+bash<span class="w"> </span>fs/newfs/tests/test.sh<span class="w"> </span>checkpoint
+
+<span class="c1"># 只测附加题三（VectorFS）</span>
+bash<span class="w"> </span>fs/newfs/tests/test.sh<span class="w"> </span>vector
+
+<span class="c1"># 同时测普通扩展 + CheckpointFS + VectorFS</span>
+bash<span class="w"> </span>fs/newfs/tests/test.sh<span class="w"> </span>all
+</code></pre></div>
+<p>（如果你当前已经在 <code>fs/newfs</code> 目录下，也可以简写为 <code>bash tests/test.sh checkpoint</code>、<code>vector</code> 或 <code>all</code>。不带参数的 <code>bash tests/test.sh</code> 仍然保留基础实验原本的交互式评分流程。）</p>
+<p><strong>自动测试脚本为你做了什么：</strong></p>
+<ol>
+<li><strong>自动编译与定位</strong> ：自动调用 CMake 配置并编译当前工程，无需手动传入 <code>--binary</code> 或 <code>--device</code> 参数。</li>
+<li><strong>安全隔离的测试盘</strong> ：在 <code>fs/newfs/tests/.lab5-test-*</code> 下自动创建独占的临时虚拟磁盘、挂载点和运行日志，完成真实挂载 → 功能验证 → 卸载 → 重新挂载持久化验证；测试结束或中途失败时会自动卸载并清理临时盘， <strong>绝不会覆盖或擦除你自己的 <code>$HOME/ddriver</code> 默认磁盘</strong> 。</li>
+<li><strong>清晰的逐步定位</strong> ：终端会用中文逐步打印 <code>[步骤 X] 开始：...</code> 和 <code>pass</code> / <code>fail</code>。如果某一步失败，脚本会立即停止并打印该步名称、失败原因、已通过步数以及文件系统的运行日志，方便你精准排查（注：打印的“共 X 步”代表功能验收进度，不是课程最终加分分值）。</li>
+</ol>
+<p>如果你希望在自动测试之外，自己动手挂载文件系统、用 <code>ls</code>/<code>cat</code>/<code>stat</code>/<code>readlink</code> 直观观察现象，可以按下面两节中的交互步骤操作。</p>
+<hr />
+<h2 id="bonus-checkpointfs">2. 附加题二：CheckpointFS<a class="headerlink" href="#bonus-checkpointfs" title="Permanent link">&para;</a></h2>
+<p><strong>前置要求：</strong> 请先在附加题一中完成并验证 <code>newfs</code> 的普通文件创建（<code>mknod</code>）、目录创建（<code>mkdir</code>）、属性查询（<code>getattr</code>）、读写与截断（<code>read</code>/<code>write</code>/<code>truncate</code>）、文件删除（<code>unlink</code>）、 <strong>硬链接（<code>link</code>）与引用计数（<code>nlink</code>）</strong> ，以及卸载重挂载持久化。（本题不需要依赖 <code>newfs_rename</code>。）</p>
+<h3 id="21">2.1 背景与设计目标：怎样安全地保存和回滚文件？<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p>在训练机器学习模型或修改重要配置文件时，我们经常需要“打个存档点（Checkpoint）”：</p>
+<ol>
+<li><strong>创建检查点（<code>create</code>）</strong> ：把当前工作文件（比如 <code>/models/model.bin</code>）保存为一个历史版本 <code>v0</code>。之后我们继续训练并改写 <code>/models/model.bin</code>，历史版本 <code>v0</code> 的内容必须保持原样、不被后续写入污染。</li>
+<li><strong>回滚检查点（<code>restore</code>）</strong> ：假设训练跑崩了，我们想把 <code>/models/model.bin</code> 恢复到历史版本 <code>v0</code> 的状态，继续展开新一轮训练，并把这次新分支记为 <code>resumed</code>。</li>
+</ol>
+<p>这里有一个需要特别明确的设计问题： <strong>恢复（<code>restore</code>）时，不能直接把工作路径 <code>/models/model.bin</code> 硬链接到历史版本 <code>v0</code> 的 <code>inode</code> 上？</strong></p>
+<p><strong>不行！</strong> 仔细想一想，checkpoint之所以成为checkpoint，是因为它反映了模型的一个历史版本，因为硬链接共享同一个 <code>inode</code>，如果直接让工作文件链接到 <code>v0</code>，那么恢复之后只要程序继续向 <code>/models/model.bin</code> 写数据，历史存档 <code>v0</code> 的内容就会被一并改写，历史就不再是历史了！</p>
+<p>因此，CheckpointFS 采用了 <strong>“独立复制保存历史 + 复制新分支后硬链接切换”</strong> 的设计，对外提供两条控制命令：</p>
+<div class="highlight"><pre><span></span><code>create FILE ID
+restore FILE HIST_CHECKPOINT NEW_CHECKPOINT
+</code></pre></div>
+<ul>
+<li><strong><code>create FILE ID</code></strong> ：将当前工作文件 <code>FILE</code> 完整复制为一份拥有 <strong>独立新 <code>inode</code> 和独立数据块</strong> 的检查点 <code>ID</code>。</li>
+<li><strong><code>restore FILE HIST_CHECKPOINT NEW_CHECKPOINT</code></strong> ：<ol>
+<li>先将同一 <code>FILE</code> 集合下的历史检查点 <code>HIST_CHECKPOINT</code> 完整复制为一个 <strong>独立新 <code>inode</code></strong> 的新检查点 <code>NEW_CHECKPOINT</code>；</li>
+<li>再删除原工作路径 <code>FILE</code>（<code>unlink</code>），并将 <code>FILE</code> 硬链接（<code>link</code>）到新检查点 <code>NEW_CHECKPOINT</code> 上。</li>
+</ol>
+</li>
+</ul>
+<h3 id="22-inode">2.2 独立历史与共享工作分支的 <code>inode</code> 关系<a class="headerlink" href="#22-inode" title="Permanent link">&para;</a></h3>
+<p>理解了上面的设计，我们就能非常清楚地画出 <code>create</code> 和 <code>restore</code> 之后的 <code>inode</code> 指向关系：</p>
+<p><strong>1. 执行 <code>create /models/model.bin v0</code> 之后：</strong></p>
+<div class="highlight"><pre><span></span><code>工作路径 /models/model.bin                → inode A（nlink = 1）
+历史检查点 /.checkpoints/models__model.bin/v0 → inode B（nlink = 1，内容与 A 相同，但拥有独立数据块）
+</code></pre></div>
+<p>此时继续修改工作文件 <code>/models/model.bin</code>（比如把内容从 <code>A</code> 改成 <code>B</code>），改的只是 <code>inode A</code>；检查点 <code>v0</code> 指向的 <code>inode B</code> 毫发无损。</p>
+<p><strong>2. 执行 <code>restore /models/model.bin v0 resumed</code> 之后：</strong></p>
+<div class="highlight"><pre><span></span><code>历史检查点 v0      → inode B（nlink = 1，始终保存着历史内容 A）
+新检查点 resumed  ─┐
+                   ├→ inode C（nlink = 2，从 v0 独立复制而来，与工作路径共享同一个 inode）
+工作路径 model.bin ─┘
+（原先的 inode A 因被 unlink 且 nlink 归零，已被回收）
+</code></pre></div>
+<p>请特别留意恢复后的这个状态：</p>
+<ul>
+<li><strong>工作路径与新检查点 <code>resumed</code> 共享 <code>inode C</code>（<code>nlink = 2</code>）</strong> ：它们代表当前正在推进的“新工作分支”。当你继续向工作路径 <code>/models/model.bin</code> 写入新内容 <code>C</code> 时，<code>resumed</code> 看到的内容也会同步变成 <code>C</code>；</li>
+<li><strong>历史检查点 <code>v0</code> 依然指向独立的 <code>inode B</code></strong> ：无论工作文件怎么改写，<code>v0</code> 都稳稳地保留着当初的历史内容 <code>A</code>，未来随时可以从 <code>v0</code> 再次恢复出新的分支（如 <code>resumed_again</code>）。</li>
+</ul>
+<p>可以通过下面的分步交互图直观对比整个过程：</p>
+<div class="checkpoint-player" aria-label="CheckpointFS 白板分步示意">
+  <div class="checkpoint-player-controls">
+    <label>过程 <select aria-label="选择示意过程"><option value="create">创建检查点</option><option value="restore">回滚检查点</option></select></label>
+    <button type="button" data-previous aria-label="上一步">上一步</button>
+    <span role="status" aria-live="polite">第 1 / 8 步</span>
+    <button type="button" data-next aria-label="下一步">下一步</button>
+  </div>
+  <figure data-mode="create"><img src="../lab5/part3.assets/checkpoint-board-create-1.svg" alt="创建检查点，第 1 步"><figcaption>第 1 步：初始状态：工作文件指向 inode 1（内含当前数据块）。</figcaption></figure>
+  <figure data-mode="create" hidden><img src="../lab5/part3.assets/checkpoint-board-create-2.svg" alt="创建检查点，第 2 步"><figcaption>第 2 步：创建第一个检查点：在检查点目录中新增检查点，硬链接到工作文件。</figcaption></figure>
+  <figure data-mode="create" hidden><img src="../lab5/part3.assets/checkpoint-board-create-3.svg" alt="创建检查点，第 3 步"><figcaption>第 3 步：工作文件发生变动，对应的当前记录点内容会一起变动</figcaption></figure>
+  <figure data-mode="create" hidden><img src="../lab5/part3.assets/checkpoint-board-create-4.svg" alt="创建检查点，第 4 步"><figcaption>第 4 步：创建检查点v2：使v1指向当前文件的副本</figcaption></figure>
+  <figure data-mode="create" hidden><img src="../lab5/part3.assets/checkpoint-board-create-5.svg" alt="创建检查点，第 5 步"><figcaption>第 5 步：创建检查点v2：创建工作文件的硬链接v2</figcaption></figure>
+  <figure data-mode="create" hidden><img src="../lab5/part3.assets/checkpoint-board-create-6.svg" alt="创建检查点，第 6 步"><figcaption>第 6 步：创建检查点v3：使v1指向当前文件的副本</figcaption></figure>
+  <figure data-mode="create" hidden><img src="../lab5/part3.assets/checkpoint-board-create-7.svg" alt="创建检查点，第 7 步"><figcaption>第 7 步：创建检查点v3：创建工作文件的硬链接v3</figcaption></figure>
+  <figure data-mode="create" hidden><img src="../lab5/part3.assets/checkpoint-board-restore-1.svg" alt="创建检查点，第 8 步"><figcaption>第 8 步：创建完成：工作文件与检查点各自拥有独立的 inode 和数据块，后续修改工作文件不会影响历史检查点。</figcaption></figure>
+  <figure data-mode="restore" hidden><img src="../lab5/part3.assets/checkpoint-board-restore-1.svg" alt="回滚检查点，第 1 步"><figcaption>第 1 步：回滚前状态：工作文件已被修改，历史检查点保留着旧版本的独立 inode。</figcaption></figure>
+  <figure data-mode="restore" hidden><img src="../lab5/part3.assets/checkpoint-board-restore-2.svg" alt="回滚检查点，第 2 步"><figcaption>第 2 步：复制历史版本：先调用 checkpointfs_copy 将历史检查点完整复制为一个独立的新检查点 NEW_CHECKPOINT。</figcaption></figure>
+  <figure data-mode="restore" hidden><img src="../lab5/part3.assets/checkpoint-board-restore-3.svg" alt="回滚检查点，第 3 步"><figcaption>第 3 步：切换工作路径：先 unlink 原工作路径，再将硬链接到新检查点的 inode；此后工作路径与新检查点共享写入，而原历史检查点依然保持独立不变。</figcaption></figure>
+</div>
+
+<h3 id="23">2.3 重要工具函数<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<p><del>为了减少工作量</del></p>
+<p>在挂载后的文件系统中，与 CheckpointFS 相关的路径有三类：</p>
+<table>
+<thead>
+<tr>
+<th>挂载内路径示例</th>
+<th>角色说明</th>
+<th>谁来负责</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/.checkpoint/control</code></td>
+<td>只写控制入口，<code>checkpointctl.py</code> 向它写入 <code>create</code> 或 <code>restore</code> 命令</td>
+<td><strong>教师已实现</strong> ：解析命令后自动调用你的 <code>checkpointfs_create</code> 或 <code>checkpointfs_restore</code></td>
+</tr>
+<tr>
+<td><code>/.checkpointfs-data/models__model.bin/v0</code></td>
+<td><strong>隐藏的真实存储路径</strong> ：检查点文件真正保存在你 <code>newfs</code> 里的位置</td>
+<td><strong>教师预建根目录</strong> <code>/.checkpointfs-data</code>； <strong>你负责</strong> 创建子目录 <code>models__model.bin</code> 及里面的检查点文件 <code>v0</code></td>
+</tr>
+<tr>
+<td><code>/.checkpoints/models__model.bin/v0</code></td>
+<td><strong>公开只读视图</strong> ：供用户在终端用 <code>ls</code>、<code>stat</code>、<code>cat</code> 查看检查点</td>
+<td><strong>教师已实现</strong> ：自动将只读请求转发到上面的隐藏真实存储路径（不额外复制数据，也不增加 <code>nlink</code>）</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="CheckpointFS 保存与恢复的调用顺序" src="part3.assets/checkpointfs-flow.svg" /></p>
+<p>你 <strong>不需要</strong> 自己拼接 <code>models__model.bin</code> 这样的目录编码名！我们在 <code>bonus/include/checkpointfs.h</code> 中为你提供了现成的路径生成函数 <code>checkpointfs_path</code>，并在 <code>src/checkpointfs.c</code> 顶部提供了提取父目录的辅助函数 <code>parent_path</code>：</p>
+<div class="highlight"><pre><span></span><code><span class="cm">/* 1. 教师提供的检查点路径生成函数（声明于 bonus/include/checkpointfs.h） */</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">checkpointfs_path</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">capacity</span><span class="p">);</span>
+
+<span class="cm">/* 2. 模板已提供的父目录提取函数（定义于 src/checkpointfs.c） */</span>
+<span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">parent_path</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">parent</span><span class="p">);</span>
+</code></pre></div>
+<p><strong>调用示例（以工作文件 <code>source = "/models/model.bin"</code>、检查点 <code>id = "v0"</code> 为例）：</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">target_path</span><span class="p">[</span><span class="n">CHECKPOINTFS_PATH_MAX</span><span class="p">];</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">dir_path</span><span class="p">[</span><span class="n">CHECKPOINTFS_PATH_MAX</span><span class="p">];</span>
+
+<span class="cm">/* 第一步：生成检查点的真实内部存储路径</span>
+<span class="cm"> * 若 source 或 id 非法，checkpointfs_path 会返回负错误码，用 CHECK 宏可直接拦截返回 */</span>
+<span class="n">CHECK</span><span class="p">(</span><span class="n">checkpointfs_path</span><span class="p">(</span><span class="n">source</span><span class="p">,</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">target_path</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">target_path</span><span class="p">)));</span>
+<span class="cm">/* 此时 target_path 为 &quot;/.checkpointfs-data/models__model.bin/v0&quot; */</span>
+
+<span class="cm">/* 第二步：如果需要该检查点所在的集合目录路径，直接调用 parent_path */</span>
+<span class="n">parent_path</span><span class="p">(</span><span class="n">target_path</span><span class="p">,</span><span class="w"> </span><span class="n">dir_path</span><span class="p">);</span>
+<span class="cm">/* 此时 dir_path 为 &quot;/.checkpointfs-data/models__model.bin&quot; */</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">关于 <code>checkpointfs_path</code> 的两个重要细节</p>
+<ol>
+<li><code>checkpointfs_path</code> <strong>只做字符串校验与路径拼装</strong> ，不会访问磁盘，也不会替你创建目录或文件。</li>
+<li>第一个参数 <strong>永远传工作文件的路径 <code>source</code></strong> （例如 <code>"/models/model.bin"</code>），用于确定检查点所属的集合目录。哪怕是在 <code>checkpointfs_copy</code> 或 <code>checkpointfs_restore</code> 中定位已有的历史检查点，第一个参数也必须传工作文件路径 <code>source</code>， <strong>千万不要把隐藏的历史路径再传进 <code>checkpointfs_path</code></strong> 。</li>
+</ol>
+</div>
+<h3 id="24">2.4 四个待实现函数的分步指南<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
+<p>你需要编辑 <code>fs/newfs/src/checkpointfs.c</code>，按顺序完成以下 <strong>4 个函数</strong> （它们会复用层层递进的逻辑）：</p>
+<table>
+<thead>
+<tr>
+<th>建议实现顺序</th>
+<th>函数签名</th>
+<th>一句话职责</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>第 1 步</strong></td>
+<td><code>static int copy_file(const char *source, const char *target)</code></td>
+<td>将真实路径 <code>source</code> 的普通文件完整复制为真实路径 <code>target</code> 的独立新文件</td>
+</tr>
+<tr>
+<td><strong>第 2 步</strong></td>
+<td><code>int checkpointfs_create(const char *source, const char *id)</code></td>
+<td>准备 <code>source</code> 对应的检查点集合目录，调用 <code>copy_file</code> 将工作文件保存为检查点 <code>id</code></td>
+</tr>
+<tr>
+<td><strong>第 3 步</strong></td>
+<td><code>int checkpointfs_copy(const char *source, const char *source_id, const char *target_id)</code></td>
+<td>在同一 <code>source</code> 的检查点集合内，调用 <code>copy_file</code> 将 <code>source_id</code> 复制为新检查点 <code>target_id</code></td>
+</tr>
+<tr>
+<td><strong>第 4 步</strong></td>
+<td><code>int checkpointfs_restore(const char *source, const char *hist_id, const char *new_id)</code></td>
+<td>先调用 <code>checkpointfs_copy</code> 将 <code>hist_id</code> 复制为 <code>new_id</code>，成功后 <code>unlink(source)</code> 再 <code>link(new_id路径, source)</code></td>
+</tr>
+</tbody>
+</table>
+<p>下面给出每个函数的具体实现要点与边界处理说明：</p>
+<h4 id="copy_file">copy_file<a class="headerlink" href="#copy_file" title="Permanent link">&para;</a></h4>
+<p><code>static int copy_file(const char *source, const char *target)</code></p>
+<p>这是整个 CheckpointFS 的基石，只处理两个已经确定的真实路径（假设 <code>target</code> 的父目录已存在）：</p>
+<ol>
+<li><strong>检查源文件 <code>source</code></strong> ：调用 <code>newfs_getattr(source, &amp;st)</code>，确认源文件存在且是普通文件（<code>S_ISREG(st.st_mode)</code>；若为目录则返回 <code>-EISDIR</code>）。</li>
+<li><strong>检查并排他创建目标文件 <code>target</code></strong> ：不能覆盖已有文件！先确认 <code>target</code> 不存在（或确保你的 <code>newfs_mknod(target, S_IFREG | 0644, 0)</code> 在文件已存在时返回 <code>-EEXIST</code>）。</li>
+<li><strong>完整拷贝数据</strong> ：<ul>
+<li><strong>方法 A（推荐，最直观）</strong> ：循环调用你自己的 <code>newfs_read</code> 和 <code>newfs_write</code>（使用固定缓冲区如 <code>char buf[4096]</code>，维护偏移量 <code>offset</code> 从 <code>0</code> 读到 <code>st.st_size</code>）。需要 <code>struct fuse_file_info</code> 参数时，定义一个局部的 <code>struct fuse_file_info fi = {0};</code> 传入即可。注意处理空文件（<code>st.st_size == 0</code> 时无需读写，直接成功）、不足一块的尾部字节，以及读写返回负值或 <code>0</code> 的异常情况。</li>
+<li><strong>方法 B</strong> ：直接在你自己的文件系统内部按数据块复制。</li>
+<li>无论哪种方法，都必须保证 <code>target</code> 拥有 <strong>独立的 <code>inode</code> 和独立的数据块</strong> ，大小和内容与 <code>source</code> 完全一致。</li>
+</ul>
+</li>
+<li><strong>失败清理</strong> ：如果在创建了 <code>target</code> 之后，读写拷贝过程中发生了错误，必须调用 <code>newfs_unlink(target)</code> 删除本次新建的半成品文件，再返回刚才的负错误码（ <strong>注意：不要误删原本就已经存在的目标文件</strong> ）。</li>
+</ol>
+<h4 id="checkpointfs_create">checkpointfs_create<a class="headerlink" href="#checkpointfs_create" title="Permanent link">&para;</a></h4>
+<p><code>int checkpointfs_create(const char *source, const char *id)</code></p>
+<p>对应命令 <code>create FILE ID</code>：</p>
+<ol>
+<li>定义局部路径缓冲区，调用 <code>checkpointfs_path(source, id, target_path, sizeof(target_path))</code> 得到检查点内部路径，再用 <code>parent_path(target_path, dir_path)</code> 得到该工作文件专属的集合目录路径。</li>
+<li><strong>按需创建集合目录</strong> ：固定的内部根目录 <code>CHECKPOINTFS_STORAGE_DIR</code>（<code>/.checkpointfs-data</code>）已由教师控制层提前建好。你只需用 <code>newfs_getattr(dir_path, &amp;st)</code> 检查 <code>dir_path</code> 是否存在：若返回 <code>-ENOENT</code>，则调用 <code>newfs_mkdir(dir_path, 0755)</code> 创建它；若已存在但不是目录，返回 <code>-ENOTDIR</code>。</li>
+<li>调用 <code>copy_file(source, target_path)</code> 完成独立复制并返回结果。</li>
+</ol>
+<h4 id="checkpointfs_copy">checkpointfs_copy<a class="headerlink" href="#checkpointfs_copy" title="Permanent link">&para;</a></h4>
+<p><code>int checkpointfs_copy(const char *source, const char *source_id, const char *target_id)</code></p>
+<p>这是一个供 <code>restore</code> 复用的公开 C 函数（注：命令行工具 <code>checkpointctl.py</code> 仍然只有 <code>create</code> 和 <code>restore</code> 两条子命令，没有单独的 <code>copy</code> 子命令）：</p>
+<ol>
+<li>用同一个工作文件路径 <code>source</code>，分别调用两次 <code>checkpointfs_path</code>：<ul>
+<li><code>checkpointfs_path(source, source_id, src_ckpt_path, sizeof(src_ckpt_path))</code></li>
+<li><code>checkpointfs_path(source, target_id, dst_ckpt_path, sizeof(dst_ckpt_path))</code></li>
+</ul>
+</li>
+<li>直接调用 <code>copy_file(src_ckpt_path, dst_ckpt_path)</code> 并返回结果（无需改动工作文件 <code>source</code>）。</li>
+</ol>
+<h4 id="checkpointfs_restore">checkpointfs_restore<a class="headerlink" href="#checkpointfs_restore" title="Permanent link">&para;</a></h4>
+<p><code>int checkpointfs_restore(const char *source, const char *hist_id, const char *new_id)</code></p>
+<p>对应命令 <code>restore FILE HIST_CHECKPOINT NEW_CHECKPOINT</code>：</p>
+<ol>
+<li><strong>检查工作文件 <code>source</code></strong> ：调用 <code>newfs_getattr(source, &amp;st)</code> 确认工作文件当前存在且是普通文件（若不存在或为目录则直接返回对应负错误码，不去创建新检查点）。</li>
+<li><strong>独立复制历史检查点</strong> ：调用 <code>checkpointfs_copy(source, hist_id, new_id)</code>。<ul>
+<li>如果 <code>hist_id</code> 不存在，或者 <code>new_id</code> 已经存在，或者复制失败，这一步会直接返回错误，此时工作文件 <code>source</code> <strong>保持原样不变</strong> 。</li>
+<li><strong>重要规则</strong> ：哪怕当前工作文件 <code>source</code> 已经和 <code>hist_id</code> 共享同一个 <code>inode</code>，也 <strong>必须</strong> 执行这一步生成独立的新检查点 <code>new_id</code>，不要写“同 <code>inode</code> 直接跳过返回”的捷径！</li>
+</ul>
+</li>
+<li><strong>切换工作路径硬链接</strong> ：<ul>
+<li>先用 <code>checkpointfs_path(source, new_id, new_ckpt_path, sizeof(new_ckpt_path))</code> 拿到新检查点的内部路径；</li>
+<li>调用 <code>newfs_unlink(source)</code> 删除旧的工作路径目录项；</li>
+<li>再调用 <code>newfs_link(new_ckpt_path, source)</code> 让工作路径成为新检查点的硬链接。</li>
+<li>（注：这里不需要实现原子事务、临时文件或 <code>rename</code> 回滚；如果最后的 <code>newfs_link</code> 失败，直接返回错误码并保留刚才复制好的 <code>new_id</code> 即可。）</li>
+</ul>
+</li>
+</ol>
+<h3 id="25">2.5 实验验收<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
+<p>完成实现后，在学生仓库根目录运行以下脚本，即可进行 VectorFS 自动验收：</p>
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>fs/newfs/tests/test.sh<span class="w"> </span>vector
+</code></pre></div>
+<p>若当前位于 <code>fs/newfs/tests</code>，直接运行 <code>bash test.sh vector</code>。脚本自动编译，并使用独立测试盘完成挂载、功能测试、重挂载和清理。</p>
+<p><img alt="CheckpointFS 自动验收：实际终端完整输出，13 步通过" src="part3.assets/checkpointfs-test-result.png" /></p>
+<p>完成代码后，除了直接运行 <code>bash fs/newfs/tests/test.sh checkpoint</code> 进行自动验收外，你也可以在已挂载的文件系统（设挂载点为 <code>$M</code>）中执行以下命令，亲眼观察 <code>inode</code> 编号（<code>%i</code>）与硬链接计数（<code>%h</code>）的变化：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. 创建工作文件并写入 &quot;A&quot;，保存为检查点 v0</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/models&quot;</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;A\n&#39;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/models/model.bin&quot;</span>
+python3<span class="w"> </span>fs/newfs/bonus/tools/checkpointctl.py<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span><span class="w"> </span>create<span class="w"> </span>/models/model.bin<span class="w"> </span>v0
+stat<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;%i %h %n&#39;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/models/model.bin&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/.checkpoints/models__model.bin/v0&quot;</span>
+<span class="c1"># 预期现象：两个文件的 inode 编号（第 1 列）不同，硬链接数（第 2 列）均为 1</span>
+
+<span class="c1"># 2. 修改工作文件为 &quot;B&quot;，验证检查点 v0 不受影响，然后回滚到 v0（新分支命名为 resumed）</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;B\n&#39;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/models/model.bin&quot;</span>
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/.checkpoints/models__model.bin/v0&quot;</span><span class="w">  </span><span class="c1"># 仍输出 A（独立副本）</span>
+python3<span class="w"> </span>fs/newfs/bonus/tools/checkpointctl.py<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span><span class="w"> </span>restore<span class="w"> </span>/models/model.bin<span class="w"> </span>v0<span class="w"> </span>resumed
+stat<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;%i %h %n&#39;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/models/model.bin&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/.checkpoints/models__model.bin/resumed&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/.checkpoints/models__model.bin/v0&quot;</span>
+<span class="c1"># 预期现象：model.bin 与 resumed 的 inode 编号相同且硬链接数均为 2；v0 的 inode 编号与它们不同</span>
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/models/model.bin&quot;</span><span class="w">  </span><span class="c1"># 输出 A（刚才未保存的 B 已被丢弃）</span>
+
+<span class="c1"># 3. 继续向工作文件写入 &quot;C&quot;，观察新分支与旧历史的区别</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;C\n&#39;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/models/model.bin&quot;</span>
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/.checkpoints/models__model.bin/resumed&quot;</span><span class="w">  </span><span class="c1"># 输出 C（与工作文件共享 inode）</span>
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/.checkpoints/models__model.bin/v0&quot;</span><span class="w">       </span><span class="c1"># 仍输出 A（历史检查点不受影响）</span>
+
+<span class="c1"># 4. 恢复前先显式 create 保存当前状态，再恢复到 v0，最后还能找回刚才保存的状态</span>
+python3<span class="w"> </span>fs/newfs/bonus/tools/checkpointctl.py<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span><span class="w"> </span>create<span class="w"> </span>/models/model.bin<span class="w"> </span>before_restore
+python3<span class="w"> </span>fs/newfs/bonus/tools/checkpointctl.py<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span><span class="w"> </span>restore<span class="w"> </span>/models/model.bin<span class="w"> </span>v0<span class="w"> </span>resumed_again
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/models/model.bin&quot;</span><span class="w">                                </span><span class="c1"># 输出 A</span>
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/.checkpoints/models__model.bin/before_restore&quot;</span><span class="w">   </span><span class="c1"># 输出 C（之前显式保存的内容）</span>
+python3<span class="w"> </span>fs/newfs/bonus/tools/checkpointctl.py<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span><span class="w"> </span>restore<span class="w"> </span>/models/model.bin<span class="w"> </span>before_restore<span class="w"> </span>recovered
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/models/model.bin&quot;</span><span class="w">                                </span><span class="c1"># 输出 C（成功从 before_restore 找回）</span>
+</code></pre></div>
+<hr />
+<h2 id="bonus-vectorfs">3. 附加题三：VectorFS<a class="headerlink" href="#bonus-vectorfs" title="Permanent link">&para;</a></h2>
+<p><strong>前置要求：</strong> 请先在附加题一中完成并验证 <code>newfs</code> 的普通文件读写（<code>read</code>/<code>write</code>/<code>truncate</code>）、目录遍历与属性查询（<code>getattr</code>/<code>readdir</code>）、卸载重挂载持久化，以及更新语料所需的删除（<code>unlink</code>）和重命名（<code>rename</code>）。 <strong>本题与附加题二（CheckpointFS）互不依赖，不需要先实现硬链接。</strong></p>
+<h3 id="31-as-as">3.1 文件夹 as 查询，软链接 as 查询结果<a class="headerlink" href="#31-as-as" title="Permanent link">&para;</a></h3>
+<p>在 Linux 系统中，你可能见过（或者现在去ls一下） <code>/dev/disk/by-label/</code> 或 <code>/dev/disk/by-uuid/</code> 这样的目录：它们并不是另一块硬盘，而是按卷标或 UUID 组织的“查找目录”，里面的每个目录项都是指向真实设备节点（如 <code>../../sdb1</code>）的 <strong>软链接（符号链接，Symlink）</strong> ：</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>ls<span class="w"> </span>-l<span class="w"> </span>/dev/disk/by-label/DATA
+<span class="go">lrwxrwxrwx 1 root root 10 Jan  1 00:00 /dev/disk/by-label/DATA -&gt; ../../sdb1</span>
+</code></pre></div>
+<p>注意这里的相对路径 <code>../../sdb1</code> 是 <strong>相对于软链接自己所在的目录（<code>/dev/disk/by-label/</code>）</strong> 向上回退两级到达 <code>/dev/</code>，再指向 <code>sdb1</code> 的。用户只要访问这个路径，内核就会顺着软链接自动找到真正的设备。</p>
+<p><strong>VectorFS 把同样的思想用在了“文档相似度检索”上：</strong></p>
+<ol>
+<li><strong>普通文档库（<code>/documents/**</code>）</strong> ：用户像使用普通文件夹一样，在 <code>/documents</code> 及其子目录下创建、修改、移动或删除普通文本文件（例如 <code>/documents/fs.txt</code>、<code>/documents/os/inode.txt</code>）。这些都是保存在你 <code>newfs</code> 里的真实文件。</li>
+<li><strong>动态查询目录（<code>/.search/&lt;query&gt;/</code>）</strong> ：当用户访问 <code>/.search/&lt;查询词&gt;/</code> 时，不需要事先 <code>mkdir</code> 这个目录，文件系统会在 FUSE 回调中实时计算 <code>/documents</code> 下各文档与 <code>&lt;查询词&gt;</code> 的余弦相似度，选出排名前十（<code>VECTORFS_TOP_K = 10</code>）的文档。</li>
+<li><strong>动态结果软链接（<code>&lt;score&gt;__&lt;rank&gt;</code>）</strong> ：查询目录中的每一项都表现为一个虚拟软链接，名字形如 <code>0.948683__01</code>（6 位小数相似度 + 双下划线 + 从 <code>00</code> 开始的两位排名），软链接的目标指向 <code>../../documents/&lt;文档相对路径&gt;</code>。</li>
+</ol>
+<div class="highlight"><pre><span></span><code>/.search/&lt;query&gt;/
+├── 1.000000__00  -&gt;  ../../documents/a.txt
+├── 0.948683__01  -&gt;  ../../documents/os/a.txt
+└── 0.000000__02  -&gt;  ../../documents/b.txt
+</code></pre></div>
+<p><img alt="VectorFS 的动态目录与文档目标" src="part3.assets/vectorfs-operations.svg" /></p>
+<p>整个 <code>/.search</code> 下的目录和软链接都由你的 FUSE 回调函数在内存中即时生成， <strong>不在磁盘上创建真实的目录或软链接 <code>inode</code></strong> 。而当用户执行 <code>cat /.search/&lt;query&gt;/1.000000__00</code> 时，内核先通过你的 <code>vectorfs_readlink</code> 拿到目标路径 <code>../../documents/a.txt</code>，解析出 <code>/documents/a.txt</code> 后，再自动调用你自己的 <code>newfs_read</code> 读取原文档内容！</p>
+<h3 id="32">3.2 工具函数（直接调用）<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>为了让你专注于检索排序和三个标准 FUSE 回调，我们在 <code>bonus/include/vectorfs.h</code> 中提供了完整的支撑工具链。动手写代码前，请先熟悉这三组工具的用法，否则你的工作量会 <em>极大上升</em>：</p>
+<h4 id="vectorfs_search">工具组一：文档加载与向量相似度计算（供 <code>vectorfs_search</code> 使用）<a class="headerlink" href="#vectorfs_search" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="cm">/* 文档结构体：由 vectorfs_load_documents 生成 */</span>
+<span class="k">struct</span><span class="w"> </span><span class="nc">vectorfs_document</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">name</span><span class="p">;</span><span class="w">                       </span><span class="cm">/* 文件基名，如 &quot;inode.txt&quot; */</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">relative_path</span><span class="p">;</span><span class="w">              </span><span class="cm">/* 相对于 /documents 的路径，如 &quot;os/inode.txt&quot;（无前导斜杠） */</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">embedding</span><span class="p">[</span><span class="n">VECTORFS_DIMENSION</span><span class="p">];</span><span class="w">    </span><span class="cm">/* 教师已为你算好的 8 维归一化文档向量 */</span>
+<span class="p">};</span>
+
+<span class="cm">/* 1. 递归遍历你 newfs 中的 /documents 目录，加载所有普通文档及其向量 */</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">vectorfs_load_documents</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">vectorfs_document</span><span class="w"> </span><span class="o">**</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">count</span><span class="p">);</span>
+
+<span class="cm">/* 2. 用完文档列表后，统一释放内存（千万不要单独 free 里面的字段） */</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">vectorfs_documents_free</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">vectorfs_document</span><span class="w"> </span><span class="o">*</span><span class="n">documents</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">count</span><span class="p">);</span>
+
+<span class="cm">/* 3. 将一段字节（如 query 字符串）编码为 8 维归一化向量 */</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">vectorfs_embed</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">length</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">out</span><span class="p">[</span><span class="n">VECTORFS_DIMENSION</span><span class="p">]);</span>
+
+<span class="cm">/* 4. 计算两个 8 维向量的余弦相似度，返回值在 [-1.0, 1.0] 之间 */</span>
+<span class="kt">double</span><span class="w"> </span><span class="nf">vectorfs_similarity</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">VECTORFS_DIMENSION</span><span class="p">],</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="n">VECTORFS_DIMENSION</span><span class="p">]);</span>
+</code></pre></div>
+<p><strong>调用范例：</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">vectorfs_document</span><span class="w"> </span><span class="o">*</span><span class="n">docs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">doc_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="n">CHECK</span><span class="p">(</span><span class="n">vectorfs_load_documents</span><span class="p">(</span><span class="o">&amp;</span><span class="n">docs</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">doc_count</span><span class="p">));</span>
+
+<span class="kt">float</span><span class="w"> </span><span class="n">query_vec</span><span class="p">[</span><span class="n">VECTORFS_DIMENSION</span><span class="p">];</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vectorfs_embed</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="n">strlen</span><span class="p">(</span><span class="n">query</span><span class="p">),</span><span class="w"> </span><span class="n">query_vec</span><span class="p">);</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ret</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">vectorfs_documents_free</span><span class="p">(</span><span class="n">docs</span><span class="p">,</span><span class="w"> </span><span class="n">doc_count</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ret</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">doc_count</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vectorfs_similarity</span><span class="p">(</span><span class="n">query_vec</span><span class="p">,</span><span class="w"> </span><span class="n">docs</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">embedding</span><span class="p">);</span>
+<span class="w">    </span><span class="cm">/* docs[i].relative_path 就是该文档的相对路径，如 &quot;os/inode.txt&quot; */</span>
+<span class="p">}</span>
+
+<span class="cm">/* 函数返回前务必释放文档列表！ */</span>
+<span class="n">vectorfs_documents_free</span><span class="p">(</span><span class="n">docs</span><span class="p">,</span><span class="w"> </span><span class="n">doc_count</span><span class="p">);</span>
+</code></pre></div>
+<h4 id="getattr-readdir-readlink">工具组二：搜索路径解析（供 <code>getattr</code> / <code>readdir</code> / <code>readlink</code> 使用）<a class="headerlink" href="#getattr-readdir-readlink" title="Permanent link">&para;</a></h4>
+<p>FUSE 传给回调函数的 <code>path</code> 是形如 <code>"/.search"</code>、<code>"/.search/file%20system"</code> 或 <code>"/.search/file%20system/1.000000__00"</code> 的完整路径。直接调用 <code>vectorfs_parse_path</code> 即可完成路径分类、百分号解码（把 <code>%20</code> 还原为空格）以及分数/排名提取：</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span><span class="c1"> /* 使用 free() */</span>
+
+<span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">rate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">rank</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vectorfs_parse_path</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rate</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rank</span><span class="p">);</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">kind</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">kind</span><span class="p">;</span><span class="w"> </span><span class="cm">/* 路径格式非法或不属于 /.search，直接返回负错误码 */</span>
+<span class="p">}</span>
+
+<span class="cm">/* kind 的三种非负返回值：</span>
+<span class="cm"> *   kind == 0 : 搜索根目录 &quot;/.search&quot;（此时 query 为 NULL，rate 和 rank 为 0）</span>
+<span class="cm"> *   kind == 1 : 查询目录   &quot;/.search/&lt;query&gt;&quot;（此时 query 为新分配的已解码字符串）</span>
+<span class="cm"> *   kind == 2 : 结果软链接 &quot;/.search/&lt;query&gt;/&lt;rate&gt;__&lt;rank&gt;&quot;（query、rate、rank 均有效）</span>
+<span class="cm"> */</span>
+
+<span class="cm">/* ... 在这里根据 kind 执行目录或结果项逻辑 ... */</span>
+
+<span class="n">free</span><span class="p">(</span><span class="n">query</span><span class="p">);</span><span class="w"> </span><span class="cm">/* 重要：后续所有返回分支（包括报错返回）都必须调用 free(query)；当 query 为 NULL 时 free(NULL) 也是安全的 */</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">路径解析的两个易错点</p>
+<p><strong>解析成功不等于该结果真的存在</strong> ：<code>vectorfs_parse_path</code> 只是从路径字符串里拆出了数字 <code>rate</code> 和 <code>rank</code>。用户完全可能随便输入一个不存在的路径（比如 <code>ls /.search/a/0.123456__08</code>），你必须通过下面的缓存查询核对第 <code>rank</code> 名是否真的存在、且格式化后的名字是否与之一致。 (不 <em>防御性编程</em> 也不会出问题啦……)</p>
+</div>
+<h4 id="getattr-readdir-readlink_1">工具组三：查询缓存与结果格式化（供 <code>getattr</code> / <code>readdir</code> / <code>readlink</code> 使用）<a class="headerlink" href="#getattr-readdir-readlink_1" title="Permanent link">&para;</a></h4>
+<p>当你在终端执行一次 <code>ls -l /.search/a</code> 时，FUSE 会先调用 <code>readdir</code> 列出目录项，紧接着对每个目录项调用 <code>getattr</code> 和 <code>readlink</code>。为了避免同一个查询词在一次命令里被重复搜索十几次，教师提供了按查询词缓存的 <code>vectorfs_cache_get</code> 以及格式化工具：</p>
+<div class="highlight"><pre><span></span><code><span class="cm">/* 搜索结果项结构体（定义于 bonus/include/vectorfs.h） */</span>
+<span class="k">struct</span><span class="w"> </span><span class="nc">vectorfs_result</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">source</span><span class="p">[</span><span class="n">VECTORFS_TARGET_MAX</span><span class="p">];</span><span class="w"> </span><span class="cm">/* /documents 下的相对路径，如 &quot;os/a.txt&quot; */</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">rate</span><span class="p">;</span><span class="w">                      </span><span class="cm">/* 原始余弦相似度 */</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">rank</span><span class="p">;</span><span class="w">                      </span><span class="cm">/* 从 0 开始的排名（0 .. count-1） */</span>
+<span class="p">};</span>
+
+<span class="cm">/* 1. 按已解码的 query 获取缓存结果；若缓存未命中，内部会自动调用你写的 vectorfs_search */</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">vectorfs_cache_get</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">vectorfs_result</span><span class="w"> </span><span class="o">**</span><span class="n">results</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">count</span><span class="p">);</span>
+
+<span class="cm">/* 2. 将单个结果格式化为目录项名称（如 &quot;0.948683__01&quot;），成功返回 0 */</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">vectorfs_result_name</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">vectorfs_result</span><span class="w"> </span><span class="o">*</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">capacity</span><span class="p">);</span>
+
+<span class="cm">/* 3. 将单个结果格式化为软链接目标路径（如 &quot;../../documents/os/a.txt&quot;），成功返回 0 */</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">vectorfs_result_target</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">vectorfs_result</span><span class="w"> </span><span class="o">*</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">capacity</span><span class="p">);</span>
+</code></pre></div>
+<p><img alt="VectorFS 通过查询缓存复用学生搜索结果" src="part3.assets/vectorfs-flow.svg" /></p>
+<p><strong>在回调函数中借用缓存并核对第 <code>rank</code> 项的标准写法：</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">vectorfs_result</span><span class="w"> </span><span class="o">*</span><span class="n">results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vectorfs_cache_get</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">results</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">count</span><span class="p">);</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ret</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">free</span><span class="p">(</span><span class="n">query</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ret</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cm">/* 注意：results 指向教师缓存内部维护的数组，只读借用即可，千万不要修改或 free(results)！</span>
+<span class="cm"> * 当普通文件发生写入、删除、改名或卸载时，教师路由层会自动调用 vectorfs_cache_clear() 清空缓存。 */</span>
+</code></pre></div>
+<p>当 <code>kind == 2</code>（访问具体某个结果项 <code>&lt;rate&gt;__&lt;rank&gt;</code>）时，怎样验证路径里的 <code>rate</code> 和 <code>rank</code> 确实匹配缓存中的真实结果？只需两步：</p>
+<ol>
+<li>检查下标是否越界：若 <code>rank &gt;= count</code>，说明没有这个排名的结果，释放 <code>query</code> 后返回 <code>-ENOENT</code>；</li>
+<li>核对格式化后的名称是否一致：<code>vectorfs_parse_path</code> 已经保证路径末尾符合 <code>%.6f__%02zu</code> 格式。你可以用 <code>vectorfs_result_name(&amp;results[rank], expected_name, sizeof(expected_name))</code> 生成第 <code>rank</code> 名的标准名称，再和根据路径 <code>rate</code>/<code>rank</code> 格式化出的名称（或判断 <code>snprintf</code> 格式化 <code>rate</code> 后的 6 位小数）比对；若不一致，说明用户输入的分数与实际第 <code>rank</code> 名的分数不符，返回 <code>-ENOENT</code>。</li>
+</ol>
+<h3 id="33">3.3 待实现函数的分步指南<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<p>你需要编辑 <code>fs/newfs/src/vectorfs.c</code>，完成以下 <strong>4 个函数</strong> （1 个搜索计算函数 + 3 个标准 FUSE 回调）：</p>
+<h4 id="vectorfs">vectorfs<a class="headerlink" href="#vectorfs" title="Permanent link">&para;</a></h4>
+<p><code>int vectorfs_search(const char *query, struct vectorfs_result results[VECTORFS_TOP_K], size_t *count)</code></p>
+<p>当 <code>vectorfs_cache_get</code> 发现某个 <code>query</code> 尚未缓存时，会为你预分配好一个容量为 <code>VECTORFS_TOP_K</code>（10）的 <code>results</code> 数组传进来，调用本函数计算排名：</p>
+<ol>
+<li>调用 <code>vectorfs_load_documents(&amp;docs, &amp;doc_count)</code> 加载全部普通文档。如果 <code>doc_count == 0</code>（没有文档或 <code>/documents</code> 目录尚不存在），直接令 <code>*count = 0</code>、释放 <code>docs</code> 并返回 <code>0</code>。</li>
+<li>调用 <code>vectorfs_embed(query, strlen(query), query_vec)</code> 计算查询词的 8 维向量。</li>
+<li>遍历所有文档，用 <code>vectorfs_similarity(query_vec, docs[i].embedding)</code> 计算每个文档的得分，并把每个文档的 <code>relative_path</code> 与得分 <code>rate</code> 配对保存（例如保存在你自己的临时结构体数组中）。</li>
+<li><strong>排序规则</strong> ：<ul>
+<li>第一关键字：按相似度 <code>rate</code> <strong>降序</strong> 排列（分高者在前）；</li>
+<li>第二关键字（同分平局时）：按文档相对路径 <code>source</code> 的字典序（<code>strcmp</code>） <strong>升序</strong> 排列。</li>
+</ul>
+</li>
+<li><strong>填写输出</strong> ：取前 <code>k = min(doc_count, VECTORFS_TOP_K)</code> 项填入传入的 <code>results[0 .. k-1]</code>：<ul>
+<li>将文档的 <code>relative_path</code> 拷贝到 <code>results[i].source</code>（必须用 <code>strcpy</code>/<code>snprintf</code> 拷贝字符串内容，因为下一步就要释放 <code>docs</code> 了！）；</li>
+<li><code>results[i].rate = 相似度</code>；</li>
+<li><code>results[i].rank = i</code>（从 <code>0</code> 开始：<code>0, 1, ..., k-1</code>）；</li>
+<li>令 <code>*count = k</code>。</li>
+</ul>
+</li>
+<li>调用 <code>vectorfs_documents_free(docs, doc_count)</code> 释放文档列表（如果中间自己 <code>malloc</code> 了临时排序数组也一并 <code>free</code>）， <strong>不要 <code>free(results)</code></strong> ，最后返回 <code>0</code>。</li>
+</ol>
+<h4 id="vectorfs_getattr">vectorfs_getattr<a class="headerlink" href="#vectorfs_getattr" title="Permanent link">&para;</a></h4>
+<p><code>int vectorfs_getattr(const char *path, struct stat *st)</code></p>
+<p>与你写过的 <code>newfs_getattr</code> 签名完全一样，先 <code>memset(st, 0, sizeof(*st))</code> 清零结构体，再用 <code>vectorfs_parse_path(path, &amp;query, &amp;rate, &amp;rank)</code> 解析路径：</p>
+<ul>
+<li><strong>当 <code>kind == 0</code>（<code>/.search</code>）或 <code>kind == 1</code>（<code>/.search/&lt;query&gt;</code>）时</strong> ：<ul>
+<li>它们都是只读虚拟目录， <strong>不需要触发搜索</strong> ！</li>
+<li>直接设置 <code>st-&gt;st_mode = S_IFDIR | 0555; st-&gt;st_nlink = 2;</code>，释放 <code>query</code> 后返回 <code>0</code>。</li>
+</ul>
+</li>
+<li><strong>当 <code>kind == 2</code>（<code>/.search/&lt;query&gt;/&lt;rate&gt;__&lt;rank&gt;</code>）时</strong> ：<ul>
+<li>调用 <code>vectorfs_cache_get(query, &amp;results, &amp;count)</code> 获取该查询的结果数组；</li>
+<li>检查 <code>rank &lt; count</code> 且 <code>results[rank]</code> 的 6 位小数分数与路径中的 <code>rate</code> 完全一致（不一致则 <code>free(query)</code> 并返回 <code>-ENOENT</code>）；</li>
+<li>调用 <code>vectorfs_result_target(&amp;results[rank], target, sizeof(target))</code> 生成软链接目标路径 <code>"../../documents/&lt;source&gt;"</code>；</li>
+<li>设置软链接属性：<code>st-&gt;st_mode = S_IFLNK | 0777; st-&gt;st_nlink = 1; st-&gt;st_size = strlen(target);</code>（ <strong>注意：软链接的 <code>st_size</code> 是目标路径字符串的长度，不是原文档的大小！</strong> ），释放 <code>query</code> 后返回 <code>0</code>。</li>
+</ul>
+</li>
+</ul>
+<h4 id="vectorfs_readdir">vectorfs_readdir<a class="headerlink" href="#vectorfs_readdir" title="Permanent link">&para;</a></h4>
+<p><code>int vectorfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler, off_t offset, struct fuse_file_info *fi)</code></p>
+<p>与 <code>newfs_readdir</code> 一样，通过调用 <code>filler(buf, name, NULL, next_offset)</code> 向 FUSE 填充目录项：</p>
+<ol>
+<li>若 <code>offset &lt; 0</code> 返回 <code>-EINVAL</code>。调用 <code>vectorfs_parse_path</code> 解析路径：若 <code>kind == 2</code>（结果软链接不是目录），释放 <code>query</code> 后返回 <code>-ENOTDIR</code>。</li>
+<li><strong>当 <code>kind == 0</code>（搜索根目录 <code>/.search</code>）时</strong> ：<ul>
+<li>搜索根目录不保存历史查询记录，只列出 <code>"."</code> 和 <code>".."</code> 两个目录项（注意遵守 <code>offset</code>：第 0 项是 <code>"."</code>，<code>next_offset</code> 传 <code>1</code>；第 1 项是 <code>".."</code>，<code>next_offset</code> 传 <code>2</code>）。</li>
+</ul>
+</li>
+<li><strong>当 <code>kind == 1</code>（查询目录 <code>/.search/&lt;query&gt;</code>）时</strong> ：<ul>
+<li>调用 <code>vectorfs_cache_get(query, &amp;results, &amp;count)</code> 拿到前 <code>count</code> 个结果；</li>
+<li>目录项依次为：下标 <code>0</code> 是 <code>"."</code>，下标 <code>1</code> 是 <code>".."</code>，下标 <code>2 .. count+1</code> 对应 <code>results[0 .. count-1]</code>（用 <code>vectorfs_result_name(&amp;results[i], name, sizeof(name))</code> 生成目录项名）；</li>
+<li>从 <code>offset</code> 对应的位置开始依次调用 <code>filler(buf, name, NULL, 当前目录项位置 + 1)</code>；如果某次 <code>filler(...)</code> 返回非零值（表示 FUSE 缓冲区已满），立即停止循环，释放 <code>query</code> 并返回 <code>0</code>（成功）。</li>
+</ul>
+</li>
+</ol>
+<h4 id="vectorfs_readlink">vectorfs_readlink<a class="headerlink" href="#vectorfs_readlink" title="Permanent link">&para;</a></h4>
+<p><code>int vectorfs_readlink(const char *path, char *buf, size_t size)</code></p>
+<p>当用户执行 <code>readlink</code>、<code>ls -l</code> 或 <code>cat</code> 结果软链接时，FUSE 调用此函数获取软链接指向的目标路径字符串：</p>
+<ol>
+<li>若 <code>!buf || size == 0</code> 返回 <code>-EINVAL</code>。</li>
+<li>调用 <code>vectorfs_parse_path</code> 解析路径：若 <code>kind == 0</code> 或 <code>kind == 1</code>（目录不是软链接），释放 <code>query</code> 后返回 <code>-EINVAL</code>。</li>
+<li>调用 <code>vectorfs_cache_get(query, &amp;results, &amp;count)</code>，同样检查 <code>rank &lt; count</code> 且第 <code>rank</code> 项分数与路径中的 <code>rate</code> 匹配（不匹配则释放 <code>query</code> 并返回 <code>-ENOENT</code>）。</li>
+<li>调用 <code>vectorfs_result_target(&amp;results[rank], target, sizeof(target))</code> 得到 <code>"../../documents/&lt;source&gt;"</code>。</li>
+<li>按 FUSE2 <code>readlink</code> 规范，将 <code>target</code> 拷贝到调用者缓冲区 <code>buf</code> 中： <strong>最多拷贝 <code>size - 1</code> 个字节，并在末尾补 <code>'\0'</code></strong> （即使发生截断也返回 <code>0</code> 表示成功，不要返回拷贝的字节数，也不要去读原文档的内容）。释放 <code>query</code> 后返回 <code>0</code>。</li>
+</ol>
+<h3 id="34-newfs-vectorfs">3.4 一张表对照普通 <code>newfs</code> 与 <code>VectorFS</code> 回调<a class="headerlink" href="#34-newfs-vectorfs" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>标准 FUSE2 回调</th>
+<th>你在普通 <code>newfs</code> 中怎么做</th>
+<th>你在 <code>VectorFS</code> 中怎么做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getattr(path, st)</code></td>
+<td>从磁盘/内存 <code>inode</code> 读取属性填入 <code>st</code></td>
+<td>搜索根/查询目录填 <code>S_IFDIR \| 0555</code>；结果项从 <code>vectorfs_cache_get</code> 核对后填 <code>S_IFLNK \| 0777</code>，<code>st_size</code> 填链接目标路径的字节长度</td>
+</tr>
+<tr>
+<td><code>readdir(path, buf, filler, offset, fi)</code></td>
+<td>遍历目录的真实 <code>dentry</code> 调用 <code>filler</code></td>
+<td>搜索根只列 <code>.</code> 和 <code>..</code>；查询目录先列 <code>.</code>、<code>..</code>，再遍历缓存结果用 <code>vectorfs_result_name</code> 生成名字调用 <code>filler</code></td>
+</tr>
+<tr>
+<td><code>readlink(path, buf, size)</code></td>
+<td>读取保存的链接目标路径写入 <code>buf</code></td>
+<td>从缓存核对结果后，用 <code>vectorfs_result_target</code> 生成 <code>"../../documents/&lt;source&gt;"</code> 写入 <code>buf</code>（最多 <code>size - 1</code> 字节加 <code>'\0'</code>），返回 <code>0</code></td>
+</tr>
+</tbody>
+</table>
+<p>我们居然用了相同的接口来实现了一个完全不同的功能！太神奇了，文件系统……</p>
+<h3 id="vectorfs-acceptance">3.5 实验验收<a class="headerlink" href="#vectorfs-acceptance" title="Permanent link">&para;</a></h3>
+<p>完成实现后，在学生仓库根目录运行以下脚本，即可进行 VectorFS 自动验收：</p>
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>fs/newfs/tests/test.sh<span class="w"> </span>vector
+</code></pre></div>
+<p>若当前位于 <code>fs/newfs/tests</code>，直接运行 <code>bash test.sh vector</code>。脚本自动编译，并使用独立测试盘完成挂载、功能测试、重挂载和清理。</p>
+<p>以下为实际学生终端的完整运行结果，13 步全部通过：</p>
+<p><img alt="VectorFS 自动验收：实际终端完整输出，13 步通过" src="part3.assets/vectorfs-test-result.png" /></p>
+<h3 id="vectorfs-query-example">3.6 自主体验：从文本到路径，再读到原文<a class="headerlink" href="#vectorfs-query-example" title="Permanent link">&para;</a></h3>
+<p>本节及下一节供自行观察、调试与理解实现，不是额外验收要求；正式验收使用 <a href="#vectorfs-acceptance">3.5 的测试脚本</a>。</p>
+<p>下面我们用两个终端亲自在 Shell 里操作自己的文件系统，直观感受“路径即查询、结果即软链接”。所有命令均在实验 Docker 容器内执行。</p>
+<p><strong>终端 A：编译并前台挂载。</strong> 从仓库根目录 <code>/workspace</code> 开始，创建一个专用的体验目录 <code>vectorfs-experience</code>（若该目录已存在，第一条 <code>test ! -e</code> 会自动停止以避免覆盖旧数据；如需重做，可换个目录名或卸载后删除旧目录）：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/workspace
+cmake<span class="w"> </span>--build<span class="w"> </span>fs/newfs/build<span class="w"> </span>-j<span class="s2">&quot;</span><span class="k">$(</span>nproc<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">(</span>
+<span class="w">    </span><span class="nb">set</span><span class="w"> </span>-e
+<span class="w">    </span><span class="nb">test</span><span class="w"> </span>!<span class="w"> </span>-e<span class="w"> </span>vectorfs-experience
+<span class="w">    </span>mkdir<span class="w"> </span>-p<span class="w"> </span>vectorfs-experience/mnt
+<span class="w">    </span>fs/newfs/build/newfs<span class="w"> </span>--device<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PWD</span><span class="s2">/vectorfs-experience/disk&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-f<span class="w"> </span>-s<span class="w"> </span>-o<span class="w"> </span>use_ino,attr_timeout<span class="o">=</span><span class="m">0</span>,entry_timeout<span class="o">=</span><span class="m">0</span>,negative_timeout<span class="o">=</span><span class="m">0</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span><span class="s2">&quot;</span><span class="nv">$PWD</span><span class="s2">/vectorfs-experience/mnt&quot;</span>
+<span class="o">)</span>
+</code></pre></div>
+<p>挂载成功后，因为加了 <code>-f</code>（前台运行）， <strong>终端 A 会保持运行状态，这不是卡死</strong> 。请保持终端 A 打开，不要按 <code>Ctrl+C</code>，也不要在终端 A 里继续输命令。</p>
+<p><strong>终端 B：进入同一个容器操作文件系统。</strong> 在宿主机另开一个终端窗口，进入容器：</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>lab5-student<span class="w"> </span>bash
+</code></pre></div>
+<p>（若你的容器名称不是 <code>lab5-student</code>，请替换为实际容器名。）进入容器后设置挂载点变量并确认挂载成功：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/workspace
+<span class="nv">M</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PWD</span><span class="s2">/vectorfs-experience/mnt&quot;</span>
+<span class="nv">SEARCH</span><span class="o">=</span>fs/newfs/bonus/tools/searchpath.py
+mountpoint<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span><span class="w">  </span><span class="c1"># 应输出 is a mountpoint；若不是，请先回终端 A 检查挂载是否报错</span>
+</code></pre></div>
+<p>确认挂载成功后，在 <code>/documents</code> 下写入三份普通文档：</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/os&quot;</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;%s&#39;</span><span class="w"> </span><span class="s1">&#39;file system&#39;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/fs.txt&quot;</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;%s&#39;</span><span class="w"> </span><span class="s1">&#39;file system inode&#39;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/os/inode.txt&quot;</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;%s&#39;</span><span class="w"> </span><span class="s1">&#39;process scheduler&#39;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/process.txt&quot;</span>
+ls<span class="w"> </span>-R<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents&quot;</span>
+</code></pre></div>
+<p>（这里使用 <code>printf '%s'</code> 而不是 <code>echo</code>，是为了不在末尾附加换行符 <code>\n</code>——换行符也是字节，同样会参与分桶计数。）</p>
+<p><strong>发起第一次查询：<code>file system</code></strong></p>
+<div class="highlight"><pre><span></span><code><span class="nv">Q</span><span class="o">=</span><span class="k">$(</span>python3<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SEARCH</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span><span class="w"> </span><span class="s1">&#39;file system&#39;</span><span class="k">)</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;%s\n&#39;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Q</span><span class="s2">&quot;</span>
+ls<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Q</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p><code>searchpath.py</code> 只是一个帮你把空格编码成 <code>%20</code> 的小工具，输出的 <code>Q</code> 是 <code>/workspace/vectorfs-experience/mnt/.search/file%20system</code>。当你执行 <code>ls -l "$Q"</code> 时，才真正触发了你的 <code>vectorfs_readdir</code>、<code>vectorfs_getattr</code> 和 <code>vectorfs_readlink</code>！（你也可以直接手敲 <code>ls -l "$M/.search/file%20system"</code>，效果完全一样。）</p>
+<p>此时会看到三个结果软链接（注意：<code>ls</code> 默认按文件名字典序显示，所以分值小的可能排在屏幕上方； <strong>请看文件名末尾的 <code>__00</code>、<code>__01</code>、<code>__02</code> 来识别第 1、2、3 名</strong> ）：</p>
+<table>
+<thead>
+<tr>
+<th><code>rank</code>（从 0 开始）</th>
+<th>结果软链接名称</th>
+<th><code>readlink</code> 返回的目标路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0（第一名）</td>
+<td><code>1.000000__00</code></td>
+<td><code>../../documents/fs.txt</code></td>
+</tr>
+<tr>
+<td>1（第二名）</td>
+<td><code>0.973279__01</code></td>
+<td><code>../../documents/os/inode.txt</code></td>
+</tr>
+<tr>
+<td>2（第三名）</td>
+<td><code>0.787242__02</code></td>
+<td><code>../../documents/process.txt</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>通过通配符 <code>*__00</code> 直接读取第一名，无需手抄分数：</strong></p>
+<div class="highlight"><pre><span></span><code>readlink<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Q</span><span class="s2">&quot;</span>/*__00
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Q</span><span class="s2">&quot;</span>/*__00
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;\n&#39;</span>
+</code></pre></div>
+<p>输出为：</p>
+<div class="highlight"><pre><span></span><code>../../documents/fs.txt
+file system
+</code></pre></div>
+<p>注意通配符 <code>*__00</code> 要写在引号外面，让 Shell 自动匹配后缀为 <code>__00</code> 的第一名文件。<code>cat</code> 会顺着相对软链接 <code>../../documents/fs.txt</code> 回退到挂载根并进入 <code>documents/fs.txt</code>，最终调用你的 <code>newfs_read</code> 读出原文！</p>
+<p><strong>换一个查询词：<code>process scheduler</code></strong></p>
+<div class="highlight"><pre><span></span><code><span class="nv">Q2</span><span class="o">=</span><span class="k">$(</span>python3<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SEARCH</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span><span class="w"> </span><span class="s1">&#39;process scheduler&#39;</span><span class="k">)</span>
+readlink<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Q2</span><span class="s2">&quot;</span>/*__00
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Q2</span><span class="s2">&quot;</span>/*__00
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;\n&#39;</span>
+</code></pre></div>
+<p>输出为：</p>
+<div class="highlight"><pre><span></span><code>../../documents/process.txt
+process scheduler
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">关于演示编码器的说明：为什么它不是语义大模型？</p>
+<p>为了保证实验在离线容器中零依赖、可确定性复现，教师提供的 <code>vectorfs_embed</code> 采用的是 <strong>字节模 8 分桶计数 + L2 归一化</strong> 的教学算法，并非自然语言神经网络模型。它只统计字节分布，不理解英语词义，得分也不是概率。下面的手算小样本能帮你更精确地验证排序、同名子目录区分和缓存刷新逻辑。</p>
+</div>
+<h3 id="vectorfs-selftest">3.7 自主体验：手算分数、同分排序与修改文档后的动态更新<a class="headerlink" href="#vectorfs-selftest" title="Permanent link">&para;</a></h3>
+<p><strong>第一步：用可手算的极简样本检验分数与同名文件区分。</strong> 接着上面的实验环境，删掉刚才的三个示例文件，换上三个内容只有 <code>a</code> 和 <code>b</code> 的文件：</p>
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/fs.txt&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/os/inode.txt&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/process.txt&quot;</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;%s&#39;</span><span class="w"> </span><span class="s1">&#39;aaaa&#39;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/a.txt&quot;</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;%s&#39;</span><span class="w"> </span><span class="s1">&#39;aaab&#39;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/os/a.txt&quot;</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;%s&#39;</span><span class="w"> </span><span class="s1">&#39;bbbb&#39;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/b.txt&quot;</span>
+
+<span class="nv">Qa</span><span class="o">=</span><span class="k">$(</span>python3<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SEARCH</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span><span class="w"> </span><span class="s1">&#39;a&#39;</span><span class="k">)</span>
+<span class="nv">Qb</span><span class="o">=</span><span class="k">$(</span>python3<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SEARCH</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="k">)</span>
+ls<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Qa</span><span class="s2">&quot;</span>
+ls<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Qb</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>因为字符 <code>'a'</code>（ASCII 97，<code>97 % 8 = 1</code>）和 <code>'b'</code>（ASCII 98，<code>98 % 8 = 2</code>）落在不同的分桶里，我们可以直接手算出余弦相似度，结果应当严格如下：</p>
+<table>
+<thead>
+<tr>
+<th><code>rank</code>（从 0 开始）</th>
+<th>查询 <code>a</code>：结果名称 → 指向文档</th>
+<th>查询 <code>b</code>：结果名称 → 指向文档</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td><code>1.000000__00</code> → <code>a.txt</code></td>
+<td><code>1.000000__00</code> → <code>b.txt</code></td>
+</tr>
+<tr>
+<td>1</td>
+<td><code>0.948683__01</code> → <code>os/a.txt</code></td>
+<td><code>0.316228__01</code> → <code>os/a.txt</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>0.000000__02</code> → <code>b.txt</code></td>
+<td><code>0.000000__02</code> → <code>a.txt</code></td>
+</tr>
+</tbody>
+</table>
+<p>这里同时验证了两个关键细节：</p>
+<ol>
+<li><code>a.txt</code> 和 <code>os/a.txt</code> 的文件名（basename）都叫 <code>a.txt</code>，但相对路径不同，所以 <code>struct vectorfs_result.source</code> 中必须保存相对于 <code>/documents</code> 的完整相对路径（<code>os/a.txt</code>），不能只存文件名。</li>
+<li>相似度为 <code>0.000000</code> 的文档也会正常列出（只要文档总数不超过 <code>VECTORFS_TOP_K</code> 10 个，就全部返回，不设额外分数门槛）。</li>
+</ol>
+<div class="highlight"><pre><span></span><code>readlink<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Qa</span><span class="s2">&quot;</span>/*__00<span class="w">   </span><span class="c1"># 输出 ../../documents/a.txt</span>
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Qa</span><span class="s2">&quot;</span>/*__00<span class="w">        </span><span class="c1"># 输出 aaaa</span>
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;\n&#39;</span>
+readlink<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Qb</span><span class="s2">&quot;</span>/*__00<span class="w">   </span><span class="c1"># 输出 ../../documents/b.txt</span>
+</code></pre></div>
+<p><strong>第二步：修改文档内容，验证缓存自动失效与同分字典序排序。</strong></p>
+<p>现在把 <code>/documents/a.txt</code> 的内容也改成 <code>'bbbb'</code>，然后直接重新查看刚才的查询路径 <code>$Qb</code>：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;%s&#39;</span><span class="w"> </span><span class="s1">&#39;bbbb&#39;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">/documents/a.txt&quot;</span>
+ls<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Qb</span><span class="s2">&quot;</span>
+readlink<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Qb</span><span class="s2">&quot;</span>/*__00
+cat<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$Qb</span><span class="s2">&quot;</span>/*__00
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;\n&#39;</span>
+</code></pre></div>
+<p>此时 <code>a.txt</code> 和 <code>b.txt</code> 与查询 <code>'b'</code> 的相似度都是满分 <code>1.000000</code>。按照 <strong>“同分按相对路径 <code>source</code> 字典序升序”</strong> 规则，<code>"a.txt" &lt; "b.txt"</code>，所以第一名（<code>__00</code>）应该立刻变成 <code>a.txt</code>，第二名（<code>__01</code>）变成 <code>b.txt</code>：</p>
+<div class="highlight"><pre><span></span><code>../../documents/a.txt
+bbbb
+</code></pre></div>
+<ul>
+<li>如果修改后第一名还是 <code>b.txt</code>，请检查：① 你的回调是否通过 <code>vectorfs_cache_get</code> 获取结果；② <code>vectorfs_search</code> 中是否每次都调用 <code>vectorfs_load_documents</code> 重新读取最新文档；③ 挂载时是否加上了 <code>-o attr_timeout=0,entry_timeout=0,negative_timeout=0</code> 关闭内核元数据缓存。</li>
+<li>如果分数对了但指向的文档不对，请检查排序时有没有把 <code>source</code> 路径和 <code>rate</code> 分数绑在一起移动。</li>
+</ul>
+<p><strong>第三步：卸载并观察重挂载后的持久化。</strong> 在终端 B 中执行卸载，终端 A 的前台进程会自动正常退出：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/workspace
+fusermount<span class="w"> </span>-u<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$M</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>如果想验证重挂载后依然能正常检索，在终端 A 用相同的虚拟磁盘路径重新挂载：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/workspace
+fs/newfs/build/newfs<span class="w"> </span>--device<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PWD</span><span class="s2">/vectorfs-experience/disk&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-f<span class="w"> </span>-s<span class="w"> </span>-o<span class="w"> </span>use_ino,attr_timeout<span class="o">=</span><span class="m">0</span>,entry_timeout<span class="o">=</span><span class="m">0</span>,negative_timeout<span class="o">=</span><span class="m">0</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span><span class="s2">&quot;</span><span class="nv">$PWD</span><span class="s2">/vectorfs-experience/mnt&quot;</span>
+</code></pre></div>
+<p>再到终端 B 执行 <code>readlink "$Qb"/*__00</code> 和 <code>cat "$Qb"/*__00</code>，依然能够读到修改后的 <code>../../documents/a.txt</code> 和 <code>bbbb</code>。体验完毕后再次执行 <code>fusermount -u "$M"</code> 即可。</p>
+<hr />
+<h2 id="bonus-model">4. 附加题四：在自制 FS 上训练简单模型<a class="headerlink" href="#bonus-model" title="Permanent link">&para;</a></h2>
+<p><strong>前置要求：</strong> 完成附加题一中的普通文件读写、重挂载持久化和支持至少 <code>1MB</code> 的单文件容量扩展； <strong>不要求先完成 CheckpointFS 或 VectorFS</strong> 。</p>
+<h3 id="41">4.1 概述<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p>演示视频：</p>
+<ul>
+<li>Bonus-在自制 FS 上训练简单模型：<a href="https://www.bilibili.com/video/BV13dCsBPEij/?share_source=copy_web&amp;vd_source=a822dcda3537564ccdd0bb45aa0afe33">https://www.bilibili.com/video/BV13dCsBPEij/?share_source=copy_web&amp;vd_source=a822dcda3537564ccdd0bb45aa0afe33</a></li>
+</ul>
+<p>这是一个非常能体现文件系统完成度的综合性实验。当你真正把它跑通时，会直观地感受到：前面亲手编写的目录管理、<code>inode</code>、数据块分配、读写接口和持久化逻辑，已经不再只是为了应付几条简单的测试命令，而是真正支撑起了一个真实的机器学习训练负载！</p>
+<div class="admonition success">
+<p class="admonition-title">为什么推荐尝试这个实验？</p>
+<p>如果 PyTorch 训练脚本能够直接在你的文件系统上切分并读取 MNIST 数据集、持续保存更新模型权重 <code>model.pth</code>，并且在卸载重挂载后依然能加载模型继续训练或评估，说明你的文件系统已经串成了一套扎实、可靠的存储系统。</p>
+</div>
+<p>训练结束后，挂载点下会生成如下目录结构：</p>
+<div class="highlight"><pre><span></span><code>mnt
+├── model
+│   └── model.pth
+└── trimmed
+    ├── scaled_mnist_test_0.pt
+    ├── ...
+    ├── scaled_mnist_test_9.pt
+    ├── scaled_mnist_train_0.pt
+    ├── ...
+    └── scaled_mnist_train_9.pt
+
+3 directories, 21 files
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">切换分支前请务必先保存当前代码！</p>
+<p>本题需要切换到仓库的 <code>model</code> 分支。执行 <code>git checkout model</code> 前，请先用 <code>git commit</code>、<code>git stash</code> 或备份文件夹的方式保存好你在当前分支编写的 <code>newfs</code>（及附加题一/二/三）代码，避免切换分支时丢失修改。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">运行环境提醒</p>
+<ul>
+<li>本部分需要 Python + PyTorch 环境，PyTorch 安装可参考 <a href="https://pytorch.org/get-started/locally/">PyTorch 官网指南</a>。</li>
+<li>由于虚拟磁盘和数据集占用空间较大， <strong>请不要在学校共享远程计算节点上运行本题</strong> ，建议在个人电脑或本地容器环境中完成。</li>
+</ul>
+</div>
+<h3 id="42">4.2 任务要求与容量分析<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<p>在训练过程中，脚本会从 MNIST 数据集中随机抽取子集并按数字类别（<code>0</code>～<code>9</code>）切分为训练集与测试集各 <code>10</code> 个文件，存放在 <code>trimmed/</code> 目录下（格式为 <code>scaled_mnist_{train/test}_{0-9}.pt</code>），同时在 <code>model/</code> 目录下创建并反复覆写模型参数文件 <code>model.pth</code>。</p>
+<p>这对你的文件系统提出了四项具体要求：</p>
+<ol>
+<li><strong>稳定读取大文件</strong> ：<code>trimmed/</code> 下的单个数据文件最大接近 <strong><code>1MB</code></strong> ，训练与评估过程中会被反复读取；</li>
+<li><strong>持续覆写更新文件</strong> ：<code>model/model.pth</code> 大小约为几十 KB，每个 epoch 后都会重新写入更新；</li>
+<li><strong>支持至少 <code>1MB</code> 的单文件容量</strong> ：这是跑通本题最核心的门槛；</li>
+<li><strong>卸载重挂载后数据完好</strong> ：重新挂载后仍能直接运行评估脚本 <code>eval.sh</code> 或继续训练。</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">如何让文件支持 <code>1MB</code> 以上的容量？——间接块（Indirect Block）原理</p>
+<p>如果你在任务二中设计的 <code>inode</code> 只有少量直接块指针（比如逻辑块大小为 <code>1KB</code>，<code>inode</code> 中只有 <code>6</code> 个直接块指针），那么单个文件最大只能存 <code>6KB</code>，放不下接近 <code>1MB</code> 的 <code>.pt</code> 数据集文件。</p>
+<p>在经典 EXT2 文件系统中，解决方案是引入 <strong>间接块指针</strong> ：如果逻辑块大小是 <code>1KB</code>（1024 字节），每个块号指针占 <code>4B</code>，那么一个一级间接块就能存放：</p>
+<div class="highlight"><pre><span></span><code>1024 / 4 = 256 个数据块指针（额外提供 256KB 容量）
+</code></pre></div>
+<p>只需增加几个一级间接块指针，或者引入一个二级间接块指针（<code>256 × 256KB = 64MB</code>），就能轻松突破 <code>1MB</code> 的单文件限制！</p>
+<p><img alt="间接块示意图" src="part3.assets/indir_blk.png" style="display: block; margin: 0 auto;" width="70%" /></p>
+</div>
+<h3 id="43">4.3 实验步骤与性能优化建议<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>保存当前工作后切换到 <code>model</code> 分支</strong> ：</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>model
+</code></pre></div>
+</li>
+<li>
+<p><strong>重新运行 <code>./setenv.sh</code> 生成工程</strong> ，并将你已经实现的普通文件读写、持久化及大文件扩展代码迁移过来。</p>
+<ul>
+<li>与主分支相比，<code>model</code> 分支将虚拟磁盘容量扩大到了 <strong><code>80MB</code></strong> ，并在 <code>tests/</code> 目录下提供了训练脚本 <code>train.sh</code>、评估脚本 <code>eval.sh</code> 以及训练源码 <code>mtrain/</code>。</li>
+</ul>
+</li>
+<li><strong>运行训练与测试</strong> ：<ul>
+<li>首次运行时必须先执行 <code>train.sh</code>，它会自动切分数据集并写入你的文件系统，随后开始训练；</li>
+<li>训练完成后，可多次运行 <code>train.sh</code> 观察增量训练，或运行 <code>eval.sh</code> 测试模型准确率；最后验证卸载重挂载后数据是否保留。</li>
+</ul>
+</li>
+</ol>
+<p>在实现单文件 <code>1MB+</code> 容量时，通常有两种选择：</p>
+<ul>
+<li><strong>方案一（快速验证）</strong> ：直接扩大每个 <code>inode</code> 的预分配空间或直接块数组上限到 <code>1MB</code>～<code>2MB</code>。这种改法最简单，能最快看到训练跑通；但由于虚拟磁盘扩大到了 <code>80MB</code>，如果你在卸载（<code>destroy</code>）时采取“不论是否修改、把所有预分配块全部刷回磁盘”的策略，卸载过程可能会非常慢（甚至出现终端看似已卸载，但 VSCode 调试进程还在后台苦苦刷盘好几分钟的现象）。</li>
+<li><strong>方案二（推荐，更贴近真实系统）</strong> ：在 <code>inode</code> 中引入一级/二级间接块，并结合 <strong>按需分配</strong> 与 <strong><code>dirty</code> 脏页标记</strong> （只在文件或 <code>inode</code> 真正被修改过时才在卸载阶段写回磁盘），这样无论空间利用率还是卸载速度都会非常理想。</li>
+</ul>
+<p>下面是修改了 <code>sfs</code> 后的一个运行结果示意。这里采用的是较直接的一种做法：仅将预分配空间提高到 <code>2MB</code>，然后运行训练脚本。</p>
+<p><img alt="模型训练通过" src="part3.assets/mtrain.png" style="display: block; margin: 0 auto;" /></p>
+<p>可以看到，模型已经能够顺利完成训练。更重要的是，在文件系统卸载并重新挂载之后，之前训练得到的模型参数和写入的数据仍然应该保留下来；如果这一点也成立，就说明你的文件系统已经能够支撑这组训练脚本所需要的读写与持久化流程了。</p>
+<hr />
+<h2 id="5-faq">5. 附加题常见问题排查（FAQ）<a class="headerlink" href="#5-faq" title="Permanent link">&para;</a></h2>
+<h3 id="bonus-enosys">5.1 挂载后能看到 <code>/.checkpoint</code> 或 <code>/.search</code>，为什么操作时报错 <code>Function not implemented (ENOSYS)</code>？<a class="headerlink" href="#bonus-enosys" title="Permanent link">&para;</a></h3>
+<p>教师的路由层（<code>bonus_register</code>）已经把特殊路径接好了，但 <code>src/checkpointfs.c</code> 和 <code>src/vectorfs.c</code> 里的 8 个学生练习函数初始都写着 <code>return -ENOSYS;</code>。同理，<code>src/newfs.c</code> 里的 <code>newfs_read</code> 初始也返回 <code>-ENOSYS</code>。
+排查方法：</p>
+<ol>
+<li>先确认你所选题目对应的函数是否已经编写完成并重新编译（<code>cmake --build fs/newfs/build</code>）；</li>
+<li>如果普通文件读写或硬链接报错 <code>ENOSYS</code>，请检查 <code>src/newfs.c</code> 顶部的 <code>operations</code> 结构体，确认 <code>.write</code>、<code>.truncate</code>、<code>.unlink</code>、<code>.link</code> 等指针是否已经从 <code>NULL</code> 改成了你自己的函数名！</li>
+</ol>
+<h3 id="checkpoint-shared-write">5.2 在 CheckpointFS 中执行 <code>restore</code> 后，为什么继续写工作文件会改变新检查点，而历史检查点不变？<a class="headerlink" href="#checkpoint-shared-write" title="Permanent link">&para;</a></h3>
+<p>这是预期行为，也是本题想要展示的核心语义：<code>restore FILE HIST_CHECKPOINT NEW_CHECKPOINT</code> 先把 <code>HIST_CHECKPOINT</code> <strong>独立复制</strong> 到 <code>NEW_CHECKPOINT</code>，然后让工作文件 <code>FILE</code> 通过 <strong>硬链接</strong> 与 <code>NEW_CHECKPOINT</code> 共享同一个 <code>inode</code>。
+因为硬链接共享同一个底层 <code>inode</code>（没有自动写时复制 Copy-on-Write），所以继续向工作文件写数据，自然会同步体现在代表当前活跃分支的 <code>NEW_CHECKPOINT</code> 中；而当初的 <code>HIST_CHECKPOINT</code> 指向的是另一个独立的 <code>inode</code>，所以历史内容永远不会被改写。
+（注：<code>/.checkpoints/</code> 下的只读视图只是禁止用户直接通过 <code>/.checkpoints/...</code> 路径打开文件写入，并不阻碍底层共享 <code>inode</code> 随工作路径更新。若想在 <code>restore</code> 前保留未保存的工作内容，请先执行一次 <code>create</code>。）</p>
+<h3 id="vectorfs-recompute">5.3 在 VectorFS 中，为什么 <code>getattr</code>、<code>readdir</code> 和 <code>readlink</code> 都要调 <code>vectorfs_cache_get</code>？<a class="headerlink" href="#vectorfs-recompute" title="Permanent link">&para;</a></h3>
+<p>当用户执行 <code>ls -l /.search/a</code> 时，内核会依次调用一次 <code>readdir</code>、多次 <code>getattr</code> 和多次 <code>readlink</code>。如果这三个回调函数都调用 <code>vectorfs_cache_get(query, &amp;results, &amp;count)</code>：</p>
+<ul>
+<li>第一次调用（比如 <code>readdir</code>）未命中缓存时，教师缓存会自动调用你写的 <code>vectorfs_search</code> 算好前 10 名并存入缓存；</li>
+<li>紧接着的 <code>getattr</code> 和 <code>readlink</code> 再次调用 <code>vectorfs_cache_get</code> 时，就会直接命中缓存、复用同一个 <code>results</code> 数组，既快又保证同一次查询看到的排名完全一致。</li>
+<li>当 <code>/documents</code> 下的文档发生任何写入、删除或改名时，教师路由层会自动清空缓存，下次查询又会重新调用你的 <code>vectorfs_search</code>。因此你 <strong>不需要</strong> 自己造全局变量存结果，也 <strong>不要</strong> 修改或 <code>free</code> 从 <code>vectorfs_cache_get</code> 借出来的 <code>results</code> 指针。</li>
+</ul>
+<h3 id="vectorfs-link-target">5.4 <code>ls /.search/&lt;query&gt;</code> 能看到结果文件名，为什么 <code>ls -l</code> 或 <code>cat</code> 却报错/读不到原文？<a class="headerlink" href="#vectorfs-link-target" title="Permanent link">&para;</a></h3>
+<p>请按以下四点逐一核对：</p>
+<ol>
+<li><strong><code>vectorfs_getattr</code> 中对 <code>kind == 2</code> 的属性设置</strong> ：是否设置了软链接标志 <code>st-&gt;st_mode = S_IFLNK | 0777;</code>？<code>st-&gt;st_size</code> 是否设置为了 <strong>软链接目标路径字符串的长度</strong> （<code>strlen(target)</code>），而不是 <code>0</code> 或原文档大小？</li>
+<li><strong><code>vectorfs_readlink</code> 的输出内容</strong> ：<code>readlink</code> 应该用 <code>vectorfs_result_target(&amp;results[rank], ...)</code> 生成形如 <code>"../../documents/os/a.txt"</code> 的相对路径写入 <code>buf</code>（最多 <code>size - 1</code> 字节并补 <code>'\0'</code>），成功后返回 <code>0</code>。 <strong>千万不要在 <code>readlink</code> 里返回原文档内容，也不要返回拷贝的字节数！</strong></li>
+<li><strong>排序时字段是否错位</strong> ：在 <code>vectorfs_search</code> 排序时，<code>source</code>（文档相对路径）和 <code>rate</code>（得分）必须绑定在一起交换，最后按排序后的顺序令 <code>results[i].rank = i</code>。</li>
+<li><strong>文件名核对是否正确</strong> ：在 <code>getattr</code> 和 <code>readlink</code> 中（<code>kind == 2</code>），拿到 <code>rank</code> 后先检查 <code>rank &lt; count</code>，再用 <code>vectorfs_result_name(&amp;results[rank], ...)</code> 核对路径中的文件名是否与缓存第 <code>rank</code> 项一致（注意 <code>rank</code> 从 <code>0</code> 开始，直接用 <code>results[rank]</code> 索引， <strong>不要写成 <code>results[rank - 1]</code></strong> ）。</li>
+</ol>
+<h3 id="bonus-framework-boundary">5.5 我需要自己写百分号解码（<code>%20</code>）、控制文件解析或向量数学公式吗？<a class="headerlink" href="#bonus-framework-boundary" title="Permanent link">&para;</a></h3>
+<p>完全不需要！教师在 <code>bonus/</code> 下已经提供了这些辅助函数：</p>
+<ul>
+<li>CheckpointFS：直接调 <code>checkpointfs_path</code> 生成内部存储路径，调 <code>parent_path</code> 取父目录；你只需专注写 <code>copy_file</code>、<code>create</code>、<code>copy</code>、<code>restore</code> 里的文件读写、目录创建和 <code>unlink</code>/<code>link</code>。</li>
+<li>VectorFS：直接调 <code>vectorfs_parse_path</code> 解析路径，调 <code>vectorfs_load_documents</code> / <code>vectorfs_embed</code> / <code>vectorfs_similarity</code> 做向量计算，调 <code>vectorfs_cache_get</code> 拿缓存，调 <code>vectorfs_result_name</code> / <code>vectorfs_result_target</code> 生成名字和目标路径；你只需专注写排序填表逻辑和三个 FUSE 回调。</li>
+</ul>
+<hr />
+<h2 id="extra-submission">6. 附加题提交要求<a class="headerlink" href="#extra-submission" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>实验报告</strong> ：附加题有单独的提交通道。按你实际选做的题目（附加题一、二、三、四）分别说明实现范围、核心设计思路与测试结果截图，不要与必做任务一、任务二混在一起。<ul>
+<li><strong>只选做附加题一</strong> ：给出你实现的扩展钩子说明、手动测试与重挂载持久化的验证结果即可，不要求运行后续题目的测试。</li>
+<li><strong>选做附加题二（CheckpointFS）或附加题三（VectorFS）</strong> ：先说明复用了附加题一中的哪些普通文件能力（特别是硬链接 <code>nlink</code> 维护与按需分配读写），再贴出运行 <code>bash fs/newfs/tests/test.sh checkpoint</code>、<code>bash fs/newfs/tests/test.sh vector</code>（或 <code>all</code>）的实际通过输出，以及你用 <code>stat</code>/<code>ls -l</code>/<code>readlink</code>/<code>cat</code> 手动观察到的结果。</li>
+<li><strong>选做附加题四（模型训练）</strong> ：说明你采用的大文件扩展方案（如间接块设计或预分配策略），并给出训练脚本运行成功及重挂载后数据保留的截图。</li>
+</ul>
+</li>
+<li><strong>代码提交</strong> ：提交你实际修改过的源码与头文件（如 <code>src/newfs.c</code>、<code>src/checkpointfs.c</code>、<code>src/vectorfs.c</code>、<code>include/newfs.h</code>、<code>include/types.h</code>、<code>include/fs.layout</code> 等）， <strong>不要把 <code>build/</code> 编译产物、临时虚拟磁盘文件或 MNIST 数据集打包进提交压缩包</strong> 。</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="part6.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: simplefs 参考实现导读">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                simplefs 参考实现导读
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../oscomp/index.html" class="md-footer__link md-footer__link--next" aria-label="下一页: 2027年“全国大学生计算机系统能力大赛操作系统设计赛”火热报名中！">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                2027年“全国大学生计算机系统能力大赛操作系统设计赛”火热报名中！
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 - 2026 哈尔滨工业大学（深圳）
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<xiawen@hit.edu.cn>" target="_blank" rel="noopener" title="xiawen@hit.edu.cn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tabs.sticky", "navigation.tracking", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+        <script src="../js/baidu-tongji.js"></script>
+      
+        <script src="../js/image-captions.js"></script>
+      
+        <script src="../js/checkpoint-player.js"></script>
+      
+    
+  </body>
+</html>

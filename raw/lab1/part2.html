@@ -1,0 +1,3486 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="part1.html">
+      
+      
+        <link rel="next" href="part3.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>实验原理 - 操作系统2026秋 | 哈工大（深圳）</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--award:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 2c-.9 0-2 1-2 2H8c0-1-1.1-2-2-2H2v9c0 1 1 2 2 2h2.2c.4 2 1.7 3.7 4.8 4v2.08C8 19.54 8 22 8 22h8s0-2.46-3-2.92V17c3.1-.3 4.4-2 4.8-4H20c1 0 2-1 2-2V2h-4M6 11H4V4h2v7m14 0h-2V4h2v7Z"/></svg>');--md-admonition-icon--testimonial:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84 6.996 6.996 0 0 0 8.84 4.46 7 7 0 0 0 0-13.3L20 4V2m-5.06 17.5L12 17.78 9.06 19.5l.78-3.33-2.59-2.24 3.41-.29L12 10.5l1.34 3.14 3.41.29-2.59 2.24.78 3.33Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="操作系统2026秋 | 哈工大（深圳）" class="md-header__button md-logo" aria-label="操作系统2026秋 | 哈工大（深圳）" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7-18.9 22.5-45.5 58.8-58.1 96.7-6 17.9-8.8 36.1-6.2 53.3-6.5 5.8-11.4 14.7-16.6 20.2-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4 0 3.9.6 7.9 1.2 11.8 1.2 8.1 2.5 15.7.8 20.8-5.2 14.4-5.9 24.4-2.2 31.7 3.8 7.3 11.4 10.5 20.1 12.3 17.3 3.6 40.8 2.7 59.3 12.5 19.8 10.4 39.9 14.1 55.9 10.4 11.6-2.6 21.1-9.6 25.9-20.2 12.5-.1 26.3-5.4 48.3-6.6 14.9-1.2 33.6 5.3 55.1 4.1.6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23 16.6-1.3 34.1-11 48.3-27.9 13.6-16.4 36-23.2 50.9-32.2 7.4-4.5 13.4-10.1 13.9-18.3.4-8.2-4.4-17.3-15.5-29.7zM223.7 87.3c9.8-22.2 34.2-21.8 44-.4 6.5 14.2 3.6 30.9-4.3 40.4-1.6-.8-5.9-2.6-12.6-4.9 1.1-1.2 3.1-2.7 3.9-4.6 4.8-11.8-.2-27-9.1-27.3-7.3-.5-13.9 10.8-11.8 23-4.1-2-9.4-3.5-13-4.4-1-6.9-.3-14.6 2.9-21.8zM183 75.8c10.1 0 20.8 14.2 19.1 33.5-3.5 1-7.1 2.5-10.2 4.6 1.2-8.9-3.3-20.1-9.6-19.6-8.4.7-9.8 21.2-1.8 28.1 1 .8 1.9-.2-5.9 5.5-15.6-14.6-10.5-52.1 8.4-52.1zm-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5 4.7-4.4 13.5-14.2 27.9-14.2 7.1 0 15.6 2.3 25.9 8.9 6.3 4.1 11.3 4.4 22.6 9.3 8.4 3.5 13.7 9.7 10.5 18.2-2.6 7.1-11 14.4-22.7 18.1-11.1 3.6-19.8 16-38.2 14.9-3.9-.2-7-1-9.6-2.1-8-3.5-12.2-10.4-20-15-8.6-4.8-13.2-10.4-14.7-15.3-1.4-4.9 0-9 4.2-12.3zm3.3 334c-2.7 35.1-43.9 34.4-75.3 18-29.9-15.8-68.6-6.5-76.5-21.9-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6.6-16-.6-23.9-1.2-7.8-1.8-15 .9-20 3.5-6.7 8.5-9.1 14.8-11.3 10.3-3.7 11.8-3.4 19.6-9.9 5.5-5.7 9.5-12.9 14.3-18 5.1-5.5 10-8.1 17.7-6.9 8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9zm-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6 7.1 0 14.2-2.2 16.7-8.9 2.3-6.2 0-14.9-7.4-24.9-13.5-18.2-38.3-32.5-38.3-32.5-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2 2.3-1.7.8 3.2-8.7 20.8-8.5 16.1-24.4 53.3-2.6 82.4.6-20.7 5.5-41.8 13.8-61.5 12-27.4 37.3-74.9 39.3-112.7 1.1.8 4.6 3.2 6.2 4.1 4.6 2.7 8.1 6.7 12.6 10.3 12.4 10 28.5 9.2 42.4 1.2 6.2-3.5 11.2-7.5 15.9-9 9.9-3.1 17.8-8.6 22.3-15 7.7 30.4 25.7 74.3 37.2 95.7 6.1 11.4 18.3 35.5 23.6 64.6 3.3-.1 7 .4 10.9 1.4 13.8-35.7-11.7-74.2-23.3-84.9-4.7-4.6-4.9-6.6-2.6-6.5 12.6 11.2 29.2 33.7 35.2 59 2.8 11.6 3.3 23.7.4 35.7 16.4 6.8 35.9 17.9 30.7 34.8-2.2-.1-3.2 0-4.2 0 3.2-10.1-3.9-17.6-22.8-26.1-19.6-8.6-36-8.6-38.3 12.5-12.1 4.2-18.3 14.7-21.4 27.3-2.8 11.2-3.6 24.7-4.4 39.9-.5 7.7-3.6 18-6.8 29-32.1 22.9-76.7 32.9-114.3 7.2zm257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3 3.7-14.2 9.2-28.8 9.9-40.6.8-15.2 1.7-28.5 4.2-38.7 2.6-10.3 6.6-17.2 13.7-21.1.3-.2.7-.3 1-.5.8 13.2 7.3 26.6 18.8 29.5 12.6 3.3 30.7-7.5 38.4-16.3 9-.3 15.7-.9 22.6 5.1 9.9 8.5 7.1 30.3 17.1 41.6 10.6 11.6 14 19.5 13.7 24.6zM173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            操作系统2026秋 | 哈工大（深圳）
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              实验原理
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index.html" class="md-tabs__link">
+          
+  
+    
+  
+  实验概述
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../faq/faq-env.html" class="md-tabs__link">
+          
+  
+    
+  
+  常见问题
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab1：XV6与Unix实用程序
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab2/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab2：进程与系统调用
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab3/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab3：锁机制的应用
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab4/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab4：页表
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lab5/part1.html" class="md-tabs__link">
+          
+  
+    
+  
+  Lab5：基于FUSE的EXT2文件系统
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../oscomp/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  OS竞赛招新
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="操作系统2026秋 | 哈工大（深圳）" class="md-nav__button md-logo" aria-label="操作系统2026秋 | 哈工大（深圳）" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7-18.9 22.5-45.5 58.8-58.1 96.7-6 17.9-8.8 36.1-6.2 53.3-6.5 5.8-11.4 14.7-16.6 20.2-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4 0 3.9.6 7.9 1.2 11.8 1.2 8.1 2.5 15.7.8 20.8-5.2 14.4-5.9 24.4-2.2 31.7 3.8 7.3 11.4 10.5 20.1 12.3 17.3 3.6 40.8 2.7 59.3 12.5 19.8 10.4 39.9 14.1 55.9 10.4 11.6-2.6 21.1-9.6 25.9-20.2 12.5-.1 26.3-5.4 48.3-6.6 14.9-1.2 33.6 5.3 55.1 4.1.6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23 16.6-1.3 34.1-11 48.3-27.9 13.6-16.4 36-23.2 50.9-32.2 7.4-4.5 13.4-10.1 13.9-18.3.4-8.2-4.4-17.3-15.5-29.7zM223.7 87.3c9.8-22.2 34.2-21.8 44-.4 6.5 14.2 3.6 30.9-4.3 40.4-1.6-.8-5.9-2.6-12.6-4.9 1.1-1.2 3.1-2.7 3.9-4.6 4.8-11.8-.2-27-9.1-27.3-7.3-.5-13.9 10.8-11.8 23-4.1-2-9.4-3.5-13-4.4-1-6.9-.3-14.6 2.9-21.8zM183 75.8c10.1 0 20.8 14.2 19.1 33.5-3.5 1-7.1 2.5-10.2 4.6 1.2-8.9-3.3-20.1-9.6-19.6-8.4.7-9.8 21.2-1.8 28.1 1 .8 1.9-.2-5.9 5.5-15.6-14.6-10.5-52.1 8.4-52.1zm-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5 4.7-4.4 13.5-14.2 27.9-14.2 7.1 0 15.6 2.3 25.9 8.9 6.3 4.1 11.3 4.4 22.6 9.3 8.4 3.5 13.7 9.7 10.5 18.2-2.6 7.1-11 14.4-22.7 18.1-11.1 3.6-19.8 16-38.2 14.9-3.9-.2-7-1-9.6-2.1-8-3.5-12.2-10.4-20-15-8.6-4.8-13.2-10.4-14.7-15.3-1.4-4.9 0-9 4.2-12.3zm3.3 334c-2.7 35.1-43.9 34.4-75.3 18-29.9-15.8-68.6-6.5-76.5-21.9-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6.6-16-.6-23.9-1.2-7.8-1.8-15 .9-20 3.5-6.7 8.5-9.1 14.8-11.3 10.3-3.7 11.8-3.4 19.6-9.9 5.5-5.7 9.5-12.9 14.3-18 5.1-5.5 10-8.1 17.7-6.9 8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9zm-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6 7.1 0 14.2-2.2 16.7-8.9 2.3-6.2 0-14.9-7.4-24.9-13.5-18.2-38.3-32.5-38.3-32.5-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2 2.3-1.7.8 3.2-8.7 20.8-8.5 16.1-24.4 53.3-2.6 82.4.6-20.7 5.5-41.8 13.8-61.5 12-27.4 37.3-74.9 39.3-112.7 1.1.8 4.6 3.2 6.2 4.1 4.6 2.7 8.1 6.7 12.6 10.3 12.4 10 28.5 9.2 42.4 1.2 6.2-3.5 11.2-7.5 15.9-9 9.9-3.1 17.8-8.6 22.3-15 7.7 30.4 25.7 74.3 37.2 95.7 6.1 11.4 18.3 35.5 23.6 64.6 3.3-.1 7 .4 10.9 1.4 13.8-35.7-11.7-74.2-23.3-84.9-4.7-4.6-4.9-6.6-2.6-6.5 12.6 11.2 29.2 33.7 35.2 59 2.8 11.6 3.3 23.7.4 35.7 16.4 6.8 35.9 17.9 30.7 34.8-2.2-.1-3.2 0-4.2 0 3.2-10.1-3.9-17.6-22.8-26.1-19.6-8.6-36-8.6-38.3 12.5-12.1 4.2-18.3 14.7-21.4 27.3-2.8 11.2-3.6 24.7-4.4 39.9-.5 7.7-3.6 18-6.8 29-32.1 22.9-76.7 32.9-114.3 7.2zm257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3 3.7-14.2 9.2-28.8 9.9-40.6.8-15.2 1.7-28.5 4.2-38.7 2.6-10.3 6.6-17.2 13.7-21.1.3-.2.7-.3 1-.5.8 13.2 7.3 26.6 18.8 29.5 12.6 3.3 30.7-7.5 38.4-16.3 9-.3 15.7-.9 22.6 5.1 9.9 8.5 7.1 30.3 17.1 41.6 10.6 11.6 14 19.5 13.7 24.6zM173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5z"/></svg>
+
+    </a>
+    操作系统2026秋 | 哈工大（深圳）
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            实验概述
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../platform/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    实验平台
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            实验平台
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm_env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.虚拟机实验环境使用指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote_env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.远程实验平台使用指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../self_host_env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.实验环境搭建指南（自行部署版）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实用工具
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Linux.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux开发环境基础知识
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../debug/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    GDB调试指南
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            GDB调试指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gdb.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    命令行调试
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote_env_gdb.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图形化调试（VSCode）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote_env_gdb2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    系统调用进阶（VSCode）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    常见问题
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            常见问题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/faq-env.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验环境常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab1 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab2 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab3 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/lab4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab4 常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Lab1：XV6与Unix实用程序
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Lab1：XV6与Unix实用程序
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="part2.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-xv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 先认识 XV6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 用户程序
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 用户程序">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-lab1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 你在 Lab1 里到底在写什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 三件事不要混：写代码、编译启动、运行程序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-sleep" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 以 sleep 为例，一个用户程序是怎样跑起来的？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 命令是怎么变成程序的？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-main-argc-argv" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 main 中的 argc 和 argv
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-xv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 XV6 用户程序长什么样？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-xv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. xv6 的系统调用接口
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. xv6 的系统调用接口">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 本实验最常用的系统调用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 有两个调用，特别值得先记住
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-io" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 文件描述符和 I/O 操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 文件描述符和 I/O 操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 什么是文件描述符？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-readwriteclose" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 read、write、close 在做什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-dup" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 dup() 是做什么的？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 fork() 之后，文件描述符会怎样？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 管道
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 管道">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-pingpong" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 为什么 pingpong 需要两个管道？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 什么时候会卡住？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-wc" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 wc 示例：为什么不关闭写端会出问题？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#531" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3.1 按步骤看，这段程序到底做了什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#532-closep1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3.2 为什么子进程里一定要 close(p[1])？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#533-pingpong" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3.3 这个例子和 pingpong 有什么关系？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 文件系统简单介绍
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 文件系统简单介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 路径是什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 目录其实也是文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-stat-dirent" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 stat 和 dirent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-find" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 find 本质上在做什么？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-xv6-gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. XV6 启动流程：你在 GDB 里到底在看什么？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. XV6 启动流程：你在 GDB 里到底在看什么？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-initcode-init" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 initcode 和 init 的区别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 为什么要打印进程名？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 把原理和本实验任务对上号
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验步骤
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab2：进程与系统调用
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Lab2：进程与系统调用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/part5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附加题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab3：锁机制的应用
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Lab3：锁机制的应用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    xv-6中Lock的实现（选读）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part6.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础实验提交
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI 推理服务附加题（独立计分）
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            AI 推理服务附加题（独立计分）
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/part5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验要求
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-background.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI 数据背景
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-principles.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    经典数据链路与锁观察
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-model-kv.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模型与 KV 实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-workers.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多 worker 等价与性能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-prefetch.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KV-aware prefetch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-testing.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    验证与故障定位
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/ai-submission.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附加题提交
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab4：页表
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Lab4：页表
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab5：基于FUSE的EXT2文件系统
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Lab5：基于FUSE的EXT2文件系统
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part1.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验原理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验实现
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    提交文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常见问题（补充）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part6.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    simplefs 参考实现导读
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/part7.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附加题（选做）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../oscomp/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OS竞赛招新
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            OS竞赛招新
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-xv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 先认识 XV6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 用户程序
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 用户程序">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-lab1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 你在 Lab1 里到底在写什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 三件事不要混：写代码、编译启动、运行程序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-sleep" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 以 sleep 为例，一个用户程序是怎样跑起来的？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 命令是怎么变成程序的？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-main-argc-argv" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 main 中的 argc 和 argv
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-xv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 XV6 用户程序长什么样？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-xv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. xv6 的系统调用接口
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. xv6 的系统调用接口">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 本实验最常用的系统调用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 有两个调用，特别值得先记住
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-io" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 文件描述符和 I/O 操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 文件描述符和 I/O 操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 什么是文件描述符？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-readwriteclose" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 read、write、close 在做什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-dup" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 dup() 是做什么的？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 fork() 之后，文件描述符会怎样？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 管道
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 管道">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-pingpong" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 为什么 pingpong 需要两个管道？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 什么时候会卡住？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-wc" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 wc 示例：为什么不关闭写端会出问题？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#531" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3.1 按步骤看，这段程序到底做了什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#532-closep1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3.2 为什么子进程里一定要 close(p[1])？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#533-pingpong" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3.3 这个例子和 pingpong 有什么关系？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 文件系统简单介绍
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 文件系统简单介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 路径是什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 目录其实也是文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-stat-dirent" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 stat 和 dirent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-find" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 find 本质上在做什么？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-xv6-gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. XV6 启动流程：你在 GDB 里到底在看什么？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. XV6 启动流程：你在 GDB 里到底在看什么？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-initcode-init" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 initcode 和 init 的区别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 为什么要打印进程名？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 把原理和本实验任务对上号
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">实验原理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">这页怎么读</p>
+<p>本页只讲与 <code>Lab1</code> 直接相关的原理，不求一次全看懂。
+建议边做边看：先看第 2、3 节完成 <code>sleep</code>；再看第 4、5 节完成 <code>pingpong</code>；再看第 6 节完成 <code>find</code>；最后看第 7 节完成启动流程调试。</p>
+</div>
+<h2 id="1-xv6">1. 先认识 XV6<a class="headerlink" href="#1-xv6" title="Permanent link">&para;</a></h2>
+<p>XV6 是 MIT 用来教学的一个小型 Unix 风格操作系统。它的特点是：</p>
+<ul>
+<li>代码量不大，适合阅读；</li>
+<li>结构比较完整，包含进程、系统调用、文件系统、内存管理等核心模块；</li>
+<li>和 Linux 在很多基本概念上相通，适合用来建立操作系统直觉。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">官方参考资料</p>
+<ul>
+<li><strong>XV6 MIT 官网</strong> ：<a href="https://pdos.csail.mit.edu/6.S081/2020/">https://pdos.csail.mit.edu/6.S081/2020/</a><br />
+  这是 MIT 6.S081 课程主页，包含课程安排、实验说明、工具说明，以及 xv6 和 xv6 book 的官方入口。</li>
+<li><strong>xv6 book</strong> ：<a href="https://pdos.csail.mit.edu/6.828/2020/xv6/book-riscv-rev1.pdf">https://pdos.csail.mit.edu/6.828/2020/xv6/book-riscv-rev1.pdf</a><br />
+  这是 xv6 的官方参考书，系统讲解了 xv6 的整体结构与核心机制。对 <code>Lab1</code> 来说，建议优先关注第 1 章 <em>Operating system interfaces</em>、第 2 章 <em>Operating system organization</em> 中与第一个进程相关的部分，以及第 4 章 <em>Traps and system calls</em> 中和系统调用有关的内容。</li>
+</ul>
+<p>需要注意：官方资料很重要，但本课程实验做了适当调整；涉及具体要求时，请以本实验指导书为准。</p>
+</div>
+<p>对 <code>Lab1</code> 来说，你主要做两件事：</p>
+<ul>
+<li>编写并运行几个 <strong>用户程序</strong> ；</li>
+<li>用 <strong>命令行 GDB</strong> 观察 XV6 的启动流程。</li>
+</ul>
+<div align="center"><img src="./part2.assets/vx6.png" alt="XV6 总体结构示意图" width="40%"/></div>
+
+<p>如果你把 XV6 想成一栋楼，那么：</p>
+<ul>
+<li>用户程序在楼上活动；</li>
+<li>内核在楼下管理水电、门禁和设备；</li>
+<li>用户程序不能直接碰底层资源，必须通过系统调用向内核“申请服务”。</li>
+</ul>
+<h2 id="2">2. 用户程序<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>先分清一件事：<code>Lab1</code> 里的 <code>sleep</code>、<code>pingpong</code> 和 <code>find</code>，都是 <strong>在 XV6 用户态中运行的程序</strong> 。</p>
+<p>它们通常写在 <code>user/</code> 目录下，通过系统调用使用 XV6 内核提供的功能；这和 <code>kernel/</code> 目录中的内核实现代码不是一类内容。</p>
+<h3 id="21-lab1">2.1 你在 <code>Lab1</code> 里到底在写什么？<a class="headerlink" href="#21-lab1" title="Permanent link">&para;</a></h3>
+<p>对本实验来说，你主要是在做下面这件事：</p>
+<ul>
+<li>在 xv6 仓库的 <code>user/</code> 目录下编写 C 程序；</li>
+<li>把它加入 <code>Makefile</code> 的 <code>UPROGS</code>；</li>
+<li>编译并启动 XV6；</li>
+<li>再进入 XV6，像使用普通命令一样运行它。</li>
+</ul>
+<p>所以，<code>Lab1</code> 的重点不是一开始就去修改内核，而是先学会： <strong>如何在 XV6 上编写、编译、运行用户程序</strong> 。</p>
+<h3 id="22">2.2 三件事不要混：写代码、编译启动、运行程序<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<p>很多同学第一次做实验时，最容易混淆的就是： <strong>我到底是在哪里写代码，在哪里执行 <code>make</code>，又是在哪里运行 <code>sleep</code>？</strong></p>
+<p>可以直接记下面这张表：</p>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>通常在哪</th>
+<th>你会做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>写代码</td>
+<td><code>VSCode Remote-SSH</code> 打开的 xv6 仓库，或其他连接到 Linux 环境的编辑器</td>
+<td>修改 <code>user/sleep.c</code>、<code>user/pingpong.c</code>、<code>user/find.c</code>、<code>Makefile</code></td>
+</tr>
+<tr>
+<td>编译 / 启动 / 测试</td>
+<td><strong>Linux 终端</strong></td>
+<td>执行 <code>make qemu</code> 等命令</td>
+</tr>
+<tr>
+<td>运行用户程序</td>
+<td><strong>XV6 命令行</strong></td>
+<td>输入 <code>sleep 10</code>、<code>pingpong</code>、<code>find . b</code></td>
+</tr>
+</tbody>
+</table>
+<p>也就是说：</p>
+<ul>
+<li><code>VSCode</code> 通常只是你写代码的界面；</li>
+<li>当前你只需要先记住：<code>make qemu</code> 是在 <strong>Linux 终端</strong> 中执行的，它会编译并启动 XV6；</li>
+<li>真正的 <code>sleep</code>、<code>pingpong</code>、<code>find</code> 程序，是在 <strong>XV6 命令行</strong> 中运行。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">一句话记住</p>
+<p><strong>编辑界面不等于运行环境。</strong>
+你可以在 VSCode 里写代码，但程序最终是在 XV6 中运行的。</p>
+</div>
+<h3 id="23-sleep">2.3 以 <code>sleep</code> 为例，一个用户程序是怎样跑起来的？<a class="headerlink" href="#23-sleep" title="Permanent link">&para;</a></h3>
+<p>以 <code>sleep</code> 为例，整个过程可以理解成下面这条链：</p>
+<ol>
+<li>在 <code>VSCode</code> 或其他编辑器里修改 <code>user/sleep.c</code>；</li>
+<li>在 <code>Makefile</code> 的 <code>UPROGS</code> 中加入 <code>$U/_sleep</code>；</li>
+<li>在 <strong>Linux 终端</strong> 中执行 <code>make qemu</code>；</li>
+<li>XV6 启动后，在 <strong>XV6 命令行</strong> 中输入 <code>sleep 10</code>；</li>
+<li>XV6 的 shell 找到这个程序并运行；</li>
+<li>程序执行结束后调用 <code>exit(0)</code>，再回到 XV6 的 shell。</li>
+</ol>
+<h3 id="24">2.4 命令是怎么变成程序的？<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
+<p>无论在 Linux 还是在 XV6 中，我们通常都通过 shell 使用系统。</p>
+<p>当你输入一条命令时，例如：</p>
+<div class="highlight"><pre><span></span><code>sleep<span class="w"> </span><span class="m">10</span>
+</code></pre></div>
+<p>shell 会做两件事：</p>
+<ol>
+<li>找到要执行的程序，这里是 <code>sleep</code>；</li>
+<li>把后面的内容当作参数传给它，这里是 <code>10</code>。</li>
+</ol>
+<p>所以，命令行里看到的“命令”，本质上就是“程序名 + 参数”。</p>
+<h3 id="25-main-argc-argv">2.5 <code>main</code> 中的 <code>argc</code> 和 <code>argv</code><a class="headerlink" href="#25-main-argc-argv" title="Permanent link">&para;</a></h3>
+<p>这里先只看 <code>main</code> 的函数头，重点理解参数是怎么传进来的。用户程序通常从下面这个函数开始执行：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+</code></pre></div>
+<p>其中：</p>
+<ul>
+<li><code>argc</code> 表示参数个数；</li>
+<li><code>argv</code> 是参数字符串数组。</li>
+</ul>
+<p>例如执行：</p>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>.<span class="w"> </span>b
+</code></pre></div>
+<p>则可以把参数理解为：</p>
+<ul>
+<li><code>argc = 3</code></li>
+<li><code>argv[0] = "find"</code></li>
+<li><code>argv[1] = "."</code></li>
+<li><code>argv[2] = "b"</code></li>
+<li><code>argv[3] = 0</code></li>
+</ul>
+<p>这里的 <code>0</code> 表示空指针，也就是“参数到这里结束了”。它不是字符 <code>'0'</code>，也不是字符串 <code>"0"</code>。</p>
+<p>也就是说，程序需要靠 <code>argc</code> 和 <code>argv</code> 才知道“自己是被怎样启动的”。</p>
+<p>这也是为什么：</p>
+<ul>
+<li><code>sleep</code> 需要从参数里读到时间长度；</li>
+<li><code>find</code> 需要从参数里读到起始路径和目标名字。</li>
+</ul>
+<h3 id="26-xv6">2.6 XV6 用户程序长什么样？<a class="headerlink" href="#26-xv6" title="Permanent link">&para;</a></h3>
+<p>一个最简单的 XV6 用户程序大致如下：</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;kernel/types.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;user/user.h&quot;</span>
+
+<span class="kt">int</span>
+<span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;hello xv6</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>对 <code>Lab1</code> 来说，有 3 个细节特别重要：</p>
+<ul>
+<li>XV6 的用户程序通常放在 <code>user/</code> 目录下；</li>
+<li>新增程序后，通常还需要把它加入 <code>Makefile</code> 的 <code>UPROGS</code>；</li>
+<li>在 XV6 里，程序结束时通常应显式调用 <code>exit(0)</code>。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">为什么这里要写 <code>exit(0)</code>？</p>
+<p>在普通 Linux 程序里，<code>main</code> 返回后，运行时库会帮你收尾；但在 <code>xv6</code> 里， <strong>真正结束一个用户进程，靠的是 <code>exit</code> 这个系统调用</strong> 。</p>
+<p><code>return</code> 更像是“从 <code>main</code> 函数返回”；<code>exit(0)</code> 则是在显式通知内核：当前进程可以结束了，请回收资源，并把控制权交还给父进程或 shell。<br />
+所以在实验里直接写 <code>exit(0)</code>，更能体现“结束用户程序”这件事本质上也是一次系统调用。</p>
+</div>
+<h2 id="3-xv6">3. xv6 的系统调用接口<a class="headerlink" href="#3-xv6" title="Permanent link">&para;</a></h2>
+<p>用户程序自己不能直接访问磁盘、创建进程或操作管道，它必须通过 <strong>系统调用</strong> 向内核请求服务。</p>
+<p>你可以把系统调用理解为： <strong>用户程序向操作系统发起的“受控请求”</strong> 。</p>
+<p>例如：</p>
+<ul>
+<li>想让程序暂停一会儿，用 <code>sleep</code>；</li>
+<li>想创建子进程，用 <code>fork</code>；</li>
+<li>想读写数据，用 <code>read</code> / <code>write</code>；</li>
+<li>想建立管道，用 <code>pipe</code>；</li>
+<li>想获取文件信息，用 <code>fstat</code>。</li>
+</ul>
+<h3 id="31">3.1 本实验最常用的系统调用<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>系统调用</th>
+<th>在 <code>Lab1</code> 里可以怎么理解</th>
+<th>在本实验中的典型用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sleep(n)</code></td>
+<td>让当前程序先停一会儿，再继续执行</td>
+<td><code>sleep</code> 程序</td>
+</tr>
+<tr>
+<td><code>fork()</code></td>
+<td>复制出一个子进程，让父子进程分别继续往下执行</td>
+<td><code>pingpong</code> 中创建子进程</td>
+</tr>
+<tr>
+<td><code>wait(0)</code></td>
+<td>让父进程等待子进程结束</td>
+<td><code>pingpong</code> 中等待子进程退出</td>
+</tr>
+<tr>
+<td><code>exit(status)</code></td>
+<td>结束当前程序</td>
+<td>所有用户程序</td>
+</tr>
+<tr>
+<td><code>getpid()</code></td>
+<td>获取当前进程的编号</td>
+<td><code>pingpong</code> 中打印进程信息</td>
+</tr>
+<tr>
+<td><code>dup(fd)</code></td>
+<td>复制一个已有的文件描述符，让新的编号也指向同一个对象</td>
+<td>阅读管道示例、理解重定向与标准输入输出</td>
+</tr>
+<tr>
+<td><code>pipe(p)</code></td>
+<td>创建一条单向通道，<code>p[0]</code> 负责读，<code>p[1]</code> 负责写</td>
+<td><code>pingpong</code> 中在父子进程之间传数据</td>
+</tr>
+<tr>
+<td><code>read(fd, buf, n)</code></td>
+<td>从文件、目录或管道中读数据</td>
+<td><code>pingpong</code> 读管道，<code>find</code> 读目录</td>
+</tr>
+<tr>
+<td><code>write(fd, buf, n)</code></td>
+<td>向文件或管道中写数据</td>
+<td><code>pingpong</code> 往管道写消息</td>
+</tr>
+<tr>
+<td><code>close(fd)</code></td>
+<td>关闭当前不用的文件描述符</td>
+<td><code>pingpong</code> 中避免管道一直不结束，<code>find</code> 中及时释放资源</td>
+</tr>
+<tr>
+<td><code>open(path, flags)</code></td>
+<td>打开一个文件或目录，并拿到它的文件描述符</td>
+<td><code>find</code> 打开目录</td>
+</tr>
+<tr>
+<td><code>fstat(fd, &amp;st)</code></td>
+<td>查看这个文件描述符对应的是目录、普通文件还是其他对象</td>
+<td><code>find</code> 判断当前条目的类型</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">想看更详细的说明，可以查 xv6 book</p>
+<p>上表只列出本实验最常用的系统调用及其直观作用。如果你想进一步了解这些系统调用在 xv6 中的设计与实现，可以参考 <a href="https://pdos.csail.mit.edu/6.828/2020/xv6/book-riscv-rev1.pdf">xv6 book</a> 第 1 章 <em>Operating system interfaces</em> 和第 4 章 <em>Traps and system calls</em> 。</p>
+</div>
+<h3 id="32">3.2 有两个调用，特别值得先记住<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p><strong><code>fork()</code></strong></p>
+<ul>
+<li><code>fork()</code> 之后会多出一个子进程；</li>
+<li>父进程和子进程都会从 <code>fork()</code> 后继续往下执行；</li>
+<li>返回值不同：<ul>
+<li>在子进程中返回 <code>0</code></li>
+<li>在父进程中返回子进程的 PID</li>
+</ul>
+</li>
+</ul>
+<p>这就是为什么你经常会看到这样的写法：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">pid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fork</span><span class="p">();</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pid</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// 子进程</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// 父进程</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong><code>exec()</code></strong></p>
+<ul>
+<li><code>exec()</code> 不会创建新进程；</li>
+<li>它会用一个新程序替换当前进程原来的代码和数据；</li>
+<li>进程还是原来的进程，但“里面跑的程序”变了。</li>
+</ul>
+<p>这个调用在启动流程实验里非常重要，因为 <code>initcode</code> 后面就是通过 <code>exec("/init", ...)</code> 变成 <code>init</code> 的。</p>
+<div class="admonition tip">
+<p class="admonition-title">为什么经常是 <code>fork()</code> 和 <code>exec()</code> 配合使用？</p>
+<p>在 Unix / xv6 里，“创建一个新进程”和“让这个进程开始运行某个新程序”是拆开的两步。</p>
+<p>这样做的好处是：<code>fork()</code> 先复制出一个子进程，父进程可以继续当 shell；子进程则可以先做一些准备工作，再调用 <code>exec()</code> 换成真正要运行的程序。</p>
+<p>这些“准备工作”在 shell 里很常见，例如：</p>
+<ul>
+<li>设置输入输出重定向；</li>
+<li>连接管道；</li>
+<li>关闭不再需要的文件描述符。</li>
+</ul>
+<p>也就是说，<code>fork() + exec()</code> 的拆分让进程创建更灵活，这也是 Unix 风格系统里的经典设计。</p>
+</div>
+<h2 id="4-io">4. 文件描述符和 I/O 操作<a class="headerlink" href="#4-io" title="Permanent link">&para;</a></h2>
+<p>这一节主要服务于 <code>pingpong</code>，但其实 <code>find</code> 也会用到。</p>
+<h3 id="41">4.1 什么是文件描述符？<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p>“文件描述符”这个名字容易让人误会，以为它只能表示普通文件。其实更准确地说，文件描述符（file descriptor, fd）是 <strong>进程访问 I/O 对象时使用的整数编号</strong> 。</p>
+<p>用户程序并不直接操作内核里的文件、管道、终端，而是把这个编号交给内核，告诉它：</p>
+<ul>
+<li>我要从哪个对象读；</li>
+<li>我要往哪个对象写；</li>
+<li>我要关闭哪个对象。</li>
+</ul>
+<p>这里的“对象”不只是普通文件，也可能是终端、管道、设备、目录。这背后对应着 Unix / Linux 的经典思想： <strong>一切皆文件</strong> 。它的意思不是“这些对象全都是磁盘上的普通文件”，而是说：很多不同类型的 I/O 对象，都尽量用统一接口来操作。</p>
+<p>例如：</p>
+<ul>
+<li>从键盘输入内容，可以用 <code>read</code>；</li>
+<li>从管道里取数据，也可以用 <code>read</code>；</li>
+<li>向屏幕输出内容，可以用 <code>write</code>；</li>
+<li>向管道里发消息，也可以用 <code>write</code>。</li>
+</ul>
+<p>每个进程都有自己的一张文件描述符表，因此：</p>
+<ul>
+<li>文件描述符本质上是一个整数；</li>
+<li>它通常从 <code>0</code> 开始编号；</li>
+<li><code>open()</code>、<code>pipe()</code> 成功后，通常会返回新的文件描述符；</li>
+<li>不同进程里相同的编号，不一定对应同一个对象。</li>
+</ul>
+<p>在 XV6 中，最常见的 3 个文件描述符约定如下：</p>
+<table>
+<thead>
+<tr>
+<th>文件描述符</th>
+<th>含义</th>
+<th>刚进入 XV6 时可先简单理解为</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>标准输入（standard input）</td>
+<td>键盘输入</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>标准输出（standard output）</td>
+<td>屏幕正常输出</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>标准错误（standard error）</td>
+<td>屏幕错误输出</td>
+</tr>
+</tbody>
+</table>
+<p>所以：</p>
+<ul>
+<li><code>read(0, ...)</code> 表示从标准输入读；</li>
+<li><code>write(1, ...)</code> 表示往标准输出写；</li>
+<li><code>fprintf(2, ...)</code> 常用来打印错误信息。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">为什么这件事和 <code>pingpong</code> 有关？</p>
+<p>因为管道也会用文件描述符来表示。也就是说，<code>pipe()</code> 创建出来的读端和写端，本质上也是两个文件描述符。后面做 <code>pingpong</code> 时，你读写的其实就是这两个编号。</p>
+</div>
+<p>还要注意一点：标准输入、标准输出并不是永远固定连着键盘和屏幕。经过重定向或管道后，它们也可能改为连接文件或管道。这就是为什么同样是 <code>read(0, ...)</code>，有时读到的是键盘输入，有时读到的却是管道里的数据。</p>
+<h3 id="42-readwriteclose">4.2 <code>read</code>、<code>write</code>、<code>close</code> 在做什么？<a class="headerlink" href="#42-readwriteclose" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>read(fd, buf, n)</code>：从 <code>fd</code> 指向的对象中读取最多 <code>n</code> 字节到 <code>buf</code>；</li>
+<li><code>write(fd, buf, n)</code>：把 <code>buf</code> 中的数据写到 <code>fd</code> 指向的对象中；</li>
+<li><code>close(fd)</code>：告诉内核“这个编号我不用了”。</li>
+</ul>
+<p>一个很重要的返回值规则是：</p>
+<ul>
+<li><code>read(...)</code> 返回 <code>0</code>，通常表示读到结尾了；</li>
+<li><code>read(...)</code> 返回负数，通常表示出错；</li>
+<li><code>write(...)</code> 返回写入的字节数。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">为什么 <code>close</code> 少写一个，程序就可能卡住？</p>
+<p>先想一个最简单的场景：一个进程从管道里 <code>read</code>，另一个进程向管道里 <code>write</code>。</p>
+<ul>
+<li>只要还有写端开着，读端就会觉得“后面也许还有数据”，于是继续等。</li>
+<li>只有当所有写端都关闭后，<code>read</code> 才会返回 <code>0</code>，表示数据真的结束了。</li>
+</ul>
+<p>所以在 <code>pingpong</code> 里，如果某个进程明明不用某个写端，却忘了 <code>close</code>，另一个进程就可能一直阻塞在 <code>read</code> 上，看起来像是“程序卡死了”。</p>
+</div>
+<p>下面这段程序是 <code>cat</code> 核心逻辑的简化版：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">buf</span><span class="p">[</span><span class="mi">512</span><span class="p">];</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(;;)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;read error</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">write</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;write error</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>这段代码不关心输入来自键盘、文件还是管道，只关心“从 <code>0</code> 读，向 <code>1</code> 写”。这正是文件描述符抽象的好处。</p>
+<h3 id="43-dup">4.3 <code>dup()</code> 是做什么的？<a class="headerlink" href="#43-dup" title="Permanent link">&para;</a></h3>
+<p><code>dup(fd)</code> 的作用是： <strong>复制一个已有的文件描述符</strong> 。</p>
+<p>复制之后：新旧两个文件描述符编号不同，但它们指向的是同一个底层对象；因此，对其中一个进行读写，本质上都是在操作同一个文件、管道或终端。</p>
+<p>你可以把它理解成： <strong>给同一个对象再拿一个新的“号码牌”</strong> 。</p>
+<p>在 Unix / Linux 和 xv6 中，<code>dup()</code> 常用来配合标准输入输出做重定向。关键点是： <strong><code>dup()</code> 会返回当前最小的未使用文件描述符</strong> 。</p>
+<p>例如，下面 <code>wc</code> 示例里的子进程会先执行：</p>
+<div class="highlight"><pre><span></span><code><span class="n">close</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="n">dup</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+</code></pre></div>
+<p>这里先把标准输入 <code>0</code> 腾出来，再让 <code>dup()</code> 复制管道读端 <code>p[0]</code>。由于 <code>0</code> 是当前最小空位，新返回的文件描述符通常就是 <code>0</code>；这样后面 <code>wc</code> 从标准输入读数据时，实际上就是在从管道读。</p>
+<p>同理，如果想把标准输出改接到别的对象，常见做法就是先 <code>close(1)</code>，再 <code>dup(...)</code>。</p>
+<p>这也是为什么前面讲管道和后面讲 shell 重定向时，经常会看到 <code>close</code> 和 <code>dup</code> 连着出现。</p>
+<div class="admonition tip">
+<p class="admonition-title">对 <code>Lab1</code> 来说需要掌握到什么程度？</p>
+<p><code>pingpong</code> 本身通常不一定非要用到 <code>dup()</code>；但理解它有助于你明白：标准输入、标准输出其实也只是文件描述符，而文件描述符是可以重新指向别的对象的。后面阅读管道示例程序时，你会更容易看懂。</p>
+</div>
+<h3 id="44-fork">4.4 <code>fork()</code> 之后，文件描述符会怎样？<a class="headerlink" href="#44-fork" title="Permanent link">&para;</a></h3>
+<p>这是 <code>pingpong</code> 最关键的原理之一。</p>
+<p>当一个进程执行 <code>fork()</code> 后，子进程会复制父进程的文件描述符表；因此，父子进程一开始都拥有同样的打开对象，之后谁关闭、谁读、谁写，就要自己负责了。</p>
+<p>也就是说，如果你在 <code>fork()</code> 前创建了一条管道，那么 <code>fork()</code> 之后，父进程和子进程都会同时拥有这条管道的读端和写端。所以， <strong>不用的一端一定要及时关闭</strong> ，否则程序很容易卡住。</p>
+<h2 id="5">5. 管道<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>管道（pipe）可以理解成一根 <strong>单向的数据通道</strong> ：</p>
+<ul>
+<li>一端负责写入；</li>
+<li>另一端负责读出。</li>
+</ul>
+<p>调用：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="n">pipe</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+</code></pre></div>
+<p>之后：</p>
+<ul>
+<li><code>p[0]</code> 是读端；</li>
+<li><code>p[1]</code> 是写端。</li>
+</ul>
+<h3 id="51-pingpong">5.1 为什么 <code>pingpong</code> 需要两个管道？<a class="headerlink" href="#51-pingpong" title="Permanent link">&para;</a></h3>
+<p>因为一条管道只能单向传输，而 <code>pingpong</code> 需要：</p>
+<ol>
+<li>父进程发消息给子进程；</li>
+<li>子进程再把消息发回父进程。</li>
+</ol>
+<p>这是 <strong>双向通信</strong> ，所以通常需要两条管道：</p>
+<ul>
+<li>第一条：父 → 子</li>
+<li>第二条：子 → 父</li>
+</ul>
+<h3 id="52">5.2 什么时候会卡住？<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<p>如果管道里暂时没有数据，<code>read()</code> 会阻塞等待；只有当所有写端都关闭后，<code>read()</code> 才会返回 <code>0</code>，表示“后面没有数据了”。这就是为什么：</p>
+<ul>
+<li>写完数据后要关闭写端；</li>
+<li>不会使用的那一端也要尽快关闭。</li>
+</ul>
+<p>否则，读端会一直以为“后面也许还有数据”，程序就可能一直不结束。</p>
+<h3 id="53-wc">5.3 <code>wc</code> 示例：为什么不关闭写端会出问题？<a class="headerlink" href="#53-wc" title="Permanent link">&para;</a></h3>
+<p><code>wc</code> 是 Linux / Unix 中的一个常见命令，意思是 <strong>word count</strong> 。它常用来统计输入内容的行数、单词数和字节数。</p>
+<p>这个例子要做的事情很简单：</p>
+<ul>
+<li>父进程往管道里写入 <code>hello world\n</code></li>
+<li>子进程执行 <code>wc</code></li>
+<li>让 <code>wc</code> 从管道中读取这段数据</li>
+<li>最终输出 <code>1 2 12</code></li>
+</ul>
+<p>核心目标就是： <strong>把管道的读端接到 <code>wc</code> 的标准输入上</strong> 。</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unistd.h&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="w">    </span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;wc&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">pipe</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fork</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">close</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w">          </span><span class="c1">// 先把标准输入 0 腾出来</span>
+<span class="w">        </span><span class="n">dup</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span><span class="w">         </span><span class="c1">// dup() 返回当前最小未使用 fd，此时通常就是 0</span>
+<span class="w">        </span><span class="n">close</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span><span class="w">       </span><span class="c1">// 原来的读端 fd 不再需要了</span>
+<span class="w">        </span><span class="n">close</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span><span class="w">       </span><span class="c1">// 子进程不用写端，必须关闭</span>
+<span class="w">        </span><span class="n">execv</span><span class="p">(</span><span class="s">&quot;/bin/wc&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span><span class="w">   </span><span class="c1">// 现在 wc 会从标准输入 0 读取数据</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">close</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span><span class="w">                     </span><span class="c1">// 父进程不用读端，关闭</span>
+<span class="w">        </span><span class="n">write</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="s">&quot;hello world</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">);</span><span class="w"> </span><span class="c1">// 向管道写入数据</span>
+<span class="w">        </span><span class="n">close</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span><span class="w">                     </span><span class="c1">// 写完后关闭写端，告诉读端“数据结束了”</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="531">5.3.1 按步骤看，这段程序到底做了什么？<a class="headerlink" href="#531" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>pipe(p)</code> 创建一条管道：<code>p[0]</code> 负责读，<code>p[1]</code> 负责写。</li>
+<li><code>fork()</code> 之后，父子进程都会拥有这条管道的读端和写端。</li>
+<li>子进程先 <code>close(0)</code>，再 <code>dup(p[0])</code>；因为 <code>0</code> 是当前最小空位，所以新返回的文件描述符通常就是 <code>0</code>，也就等于把标准输入改成了管道读端。</li>
+<li>子进程执行 <code>execv("/bin/wc", argv)</code> 之后，<code>wc</code> 从标准输入读取数据，实际上就是从管道读数据。</li>
+<li>父进程向 <code>p[1]</code> 写入 <code>hello world\n</code>，于是 <code>wc</code> 就会统计这段内容。</li>
+</ol>
+<p>如果只记一句话，可以记成：</p>
+<blockquote>
+<p><strong>这个程序的关键，不是“运行了 wc”，而是“让 wc 的标准输入变成了管道读端”。</strong></p>
+</blockquote>
+<h3 id="532-closep1">5.3.2 为什么子进程里一定要 <code>close(p[1])</code>？<a class="headerlink" href="#532-closep1" title="Permanent link">&para;</a></h3>
+<p>这是这个例子最关键的地方。<code>fork()</code> 之后，子进程其实也继承了写端 <code>p[1]</code>；如果它不把这个写端关掉，那么即使父进程已经 <code>close(p[1])</code>，内核仍然会发现“这条管道还有写端活着”，于是读端不会收到结束信号。这样 <code>wc</code> 读完 <code>hello world\n</code> 后，还会继续等后续数据，程序看起来就像卡住了一样。</p>
+<p>所以问题不在于 <code>wc</code> 不会读，而在于它 <strong>不知道数据已经结束了</strong> 。</p>
+<h3 id="533-pingpong">5.3.3 这个例子和 <code>pingpong</code> 有什么关系？<a class="headerlink" href="#533-pingpong" title="Permanent link">&para;</a></h3>
+<p><code>pingpong</code> 和这个例子的共同点是：</p>
+<ul>
+<li>都会 <code>fork()</code> 出父子进程；</li>
+<li>都会让父子进程共享管道；</li>
+<li>都必须非常清楚“哪个进程保留哪一端，哪个进程关闭哪一端”。</li>
+</ul>
+<p>所以，如果你在 <code>pingpong</code> 里发现程序一直不结束，最应该优先检查的就是：</p>
+<ul>
+<li>有没有哪个不用的读端忘了关；</li>
+<li>有没有哪个不用的写端忘了关。</li>
+</ul>
+<h2 id="6">6. 文件系统简单介绍<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<p>这一节主要服务于 <code>find</code>。</p>
+<h3 id="61">6.1 路径是什么？<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<p>常见写法有：</p>
+<ul>
+<li>绝对路径：从根目录开始，例如 <code>/a/b/c</code></li>
+<li>相对路径：从当前目录开始，例如 <code>a/b/c</code></li>
+<li><code>.</code>：当前目录</li>
+<li><code>..</code>：上一级目录</li>
+</ul>
+<p>例如，<code>find . b</code> 表示从当前目录开始查找名字为 <code>b</code> 的条目；<code>find / b</code> 表示从根目录开始查找。</p>
+<h3 id="62">6.2 目录其实也是文件<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<p>在 XV6 中，目录并不是一种完全特殊的神秘对象；它本质上也是文件。不同的是：普通文件保存的是普通数据，而目录文件保存的是一组“目录项”；每个目录项至少会记录文件名和对应的 inode 编号。</p>
+<h3 id="63-stat-dirent">6.3 <code>stat</code> 和 <code>dirent</code><a class="headerlink" href="#63-stat-dirent" title="Permanent link">&para;</a></h3>
+<p><code>find</code> 做事时，最关心两类信息：</p>
+<ol>
+<li>这个条目是普通文件还是目录？</li>
+<li>这个条目叫什么名字？</li>
+</ol>
+<p>为此，最常见的两个结构就是 <code>stat</code> 和 <code>dirent</code>：</p>
+<ul>
+<li><code>stat</code> 用来描述“这个文件本身的属性”，例如它是不是目录、大小是多少、inode 编号是多少；</li>
+<li><code>dirent</code> 用来描述“某个目录里的一条目录项”，例如这条目录项的名字是什么、它对应哪个 inode。</li>
+</ul>
+<p>可以简单理解成： <strong><code>stat</code> 更像是在看‘文件对象本身’，<code>dirent</code> 更像是在看‘目录里列出来的条目’。</strong></p>
+<div class="highlight"><pre><span></span><code><span class="cp">#define T_DIR     1</span>
+<span class="cp">#define T_FILE    2</span>
+<span class="cp">#define T_DEVICE  3</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">stat</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">dev</span><span class="p">;</span>
+<span class="w">  </span><span class="n">uint</span><span class="w"> </span><span class="n">ino</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">short</span><span class="w"> </span><span class="n">type</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">short</span><span class="w"> </span><span class="n">nlink</span><span class="p">;</span>
+<span class="w">  </span><span class="n">uint64</span><span class="w"> </span><span class="n">size</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>其中，<code>type == T_DIR</code> 表示目录，<code>type == T_FILE</code> 表示普通文件。</p>
+<p>目录项结构如下：</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#define DIRSIZ 14</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">dirent</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">ushort</span><span class="w"> </span><span class="n">inum</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">char</span><span class="w"> </span><span class="n">name</span><span class="p">[</span><span class="n">DIRSIZ</span><span class="p">];</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>其中，<code>inum</code> 是对应 inode 编号，<code>name</code> 是名字；如果 <code>inum == 0</code>，通常说明这是无效目录项。</p>
+<div class="admonition note">
+<p class="admonition-title">做 <code>find</code> 时要特别注意</p>
+<p><code>dirent.name</code> 是一个固定长度数组，不一定天然带有字符串结尾符。写代码时，建议参考 <code>user/ls.c</code> 的处理方式。</p>
+</div>
+<h3 id="64-find">6.4 <code>find</code> 本质上在做什么？<a class="headerlink" href="#64-find" title="Permanent link">&para;</a></h3>
+<p>你可以把 <code>find</code> 理解成下面这件事：</p>
+<ol>
+<li>打开当前目录；</li>
+<li>依次读出每个目录项；</li>
+<li>跳过 <code>.</code> 和 <code>..</code>；</li>
+<li>把目录项名字和当前路径拼起来；</li>
+<li>判断它是普通文件还是目录；</li>
+<li>如果名字匹配，就输出；</li>
+<li>如果它还是目录，就递归继续找。</li>
+</ol>
+<p><code>find</code> 的核心不是“高级算法”，而是：</p>
+<ul>
+<li>会读目录；</li>
+<li>会判断类型；</li>
+<li>会处理路径；</li>
+<li>会写递归。</li>
+</ul>
+<h2 id="7-xv6-gdb">7. XV6 启动流程：你在 GDB 里到底在看什么？<a class="headerlink" href="#7-xv6-gdb" title="Permanent link">&para;</a></h2>
+<p>启动流程实验里，很多同学最容易迷糊的一点是： <strong>我到底在跟踪谁？为什么一会儿是 <code>initcode</code>，一会儿又变成了 <code>init</code>？</strong></p>
+<p>可以先把流程记成下面这条主线：</p>
+<ol>
+<li>QEMU 启动 XV6；</li>
+<li>内核从最早期启动代码开始执行；</li>
+<li>内核完成初始化，进入 <code>main()</code>；</li>
+<li>内核调用 <code>userinit()</code> 创建第一个用户进程；</li>
+<li>这个进程先运行一小段很短的用户程序 <code>initcode</code>；</li>
+<li><code>initcode</code> 再通过 <code>exec("/init", ...)</code> 把自己替换成真正的 <code>init</code> 程序；</li>
+<li><code>init</code> 最后启动 shell，于是你看到了 XV6 命令行。</li>
+</ol>
+<h3 id="71-initcode-init">7.1 <code>initcode</code> 和 <code>init</code> 的区别<a class="headerlink" href="#71-initcode-init" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>initcode</code>：非常短，只负责完成最早期的用户态引导；</li>
+<li><code>init</code>：真正的用户态初始化程序，后面还会启动 shell。</li>
+</ul>
+<p>所以它们不是两个“并列的独立实验程序”，而是：<code>userinit()</code> 创建的那个第一个用户进程，先执行 <code>initcode</code>，再通过 <code>exec()</code> 换成 <code>init</code>。也就是说，变的是进程里运行的程序，不是进程本身。</p>
+<h3 id="72">7.2 为什么要打印进程名？<a class="headerlink" href="#72" title="Permanent link">&para;</a></h3>
+<p>在实验里，你会在 GDB 中执行：</p>
+<div class="highlight"><pre><span></span><code>p cpus[$tp]-&gt;proc-&gt;name
+</code></pre></div>
+<p>它的含义可以粗略理解为：</p>
+<ul>
+<li>先找到当前 CPU；</li>
+<li>再找到这个 CPU 当前正在运行的进程；</li>
+<li>然后打印这个进程的名字。</li>
+</ul>
+<p>因此，在不同时间点执行这条命令，你会看到：</p>
+<ul>
+<li>先是 <code>initcode</code></li>
+<li>后来变成 <code>init</code></li>
+</ul>
+<p>这正说明你已经观察到了 XV6 从“第一个用户程序”过渡到“真正初始化程序”的过程。</p>
+<h2 id="8">8. 把原理和本实验任务对上号<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<p>最后，把整页内容压缩成一句最实用的话：</p>
+<ul>
+<li>做 <code>sleep</code>：重点理解 <strong>参数传递</strong> 和 <code>sleep</code> / <code>exit</code> 的使用；</li>
+<li>做 <code>pingpong</code>：重点理解 <strong><code>fork</code>、<code>pipe</code>、<code>read</code>、<code>write</code>、<code>close</code></strong> ；</li>
+<li>做 <code>find</code>：重点理解 <strong>目录项、文件类型、路径拼接和递归</strong> ；</li>
+<li>做启动流程调试：重点理解 <strong><code>initcode -&gt; exec -&gt; init</code></strong> 这条主线。</li>
+</ul>
+<p>如果你在做题时卡住了，可以回来问自己：</p>
+<ul>
+<li>我现在面对的是用户程序问题、管道问题，还是目录遍历问题？</li>
+<li>我现在这条命令应该在 Linux、XV6，还是 GDB 里运行？</li>
+<li>我是不是少关了某个文件描述符？</li>
+<li>我是不是把目录也当成普通文件处理了？</li>
+</ul>
+<p>带着这几个问题回头看代码，通常会容易很多。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="part1.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: 实验概述">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                实验概述
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="part3.html" class="md-footer__link md-footer__link--next" aria-label="下一页: 实验步骤">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                实验步骤
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 - 2026 哈尔滨工业大学（深圳）
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<xiawen@hit.edu.cn>" target="_blank" rel="noopener" title="xiawen@hit.edu.cn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tabs.sticky", "navigation.tracking", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+        <script src="../js/baidu-tongji.js"></script>
+      
+        <script src="../js/image-captions.js"></script>
+      
+        <script src="../js/checkpoint-player.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="550" viewBox="0 0 1200 550" role="img" aria-labelledby="title desc">
+  <title id="title">VectorFS：动态查询目录与普通文档</title>
+  <desc id="desc">查询路径 .search/query 是虚拟目录，结果 score__rank 是软链接，rank 从 0 开始：第一项后缀 __00，第二项 __01，第十项 __09；目标 ../../documents/relative_path 指向真实普通文档。目录和结果不写入磁盘；普通文件操作维护文档。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3Z" fill="#334155"/></marker>
+    <style>text{font-family:sans-serif;fill:#0f172a}.title{font-size:26px;font-weight:700}.head{font-size:21px;font-weight:600}.body{font-size:18px}.note{font-size:16px}.line{stroke:#334155;stroke-width:2;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1200" height="550" rx="18" fill="#f8fafc"/>
+  <text x="600" y="44" text-anchor="middle" class="title">VectorFS：查询是目录，结果是软链接</text>
+  <rect x="35" y="95" width="475" height="315" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="272" y="139" text-anchor="middle" class="head">虚拟命名空间</text>
+  <text x="70" y="192" class="body">/.search/&lt;query&gt;/</text>
+  <text x="90" y="250" class="body">0.932100__00</text>
+  <text x="90" y="305" class="body">0.871500__01</text>
+  <text x="272" y="370" text-anchor="middle" class="note">示意分数：实际名称取自查询缓存结果</text>
+  <rect x="745" y="95" width="420" height="315" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="955" y="139" text-anchor="middle" class="head">真实普通文档</text>
+  <text x="780" y="192" class="body">/documents/</text>
+  <text x="800" y="250" class="body">os/inode.txt</text>
+  <text x="800" y="305" class="body">directory.txt</text>
+  <text x="955" y="370" text-anchor="middle" class="note">普通 create / write / rename / unlink</text>
+  <path d="M320 243H780M320 298H780" class="line"/>
+  <rect x="520" y="190" width="215" height="37" rx="8" fill="#f8fafc"/><text x="627" y="215" text-anchor="middle" class="note">软链接：不复制文档</text>
+  <text x="600" y="459" text-anchor="middle" class="body">目标 ../../documents/&lt;relative_path&gt;：内核沿链接访问原文档</text>
+  <text x="600" y="497" text-anchor="middle" class="note">结果不占真实目录项、不增加文档 nlink；文档更新后重新查询，旧结果名可变化</text>
+  <text x="600" y="529" text-anchor="middle" class="note">虚拟目录只读不等于目标文档不可写</text>
+</svg>

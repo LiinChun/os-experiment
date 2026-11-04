@@ -1,0 +1,3392 @@
+{
+  "version": 1,
+  "base_url": "https://os-labs.p.cs-lab.top/",
+  "generated_at": "2026-11-04T14:00:28Z",
+  "count": 423,
+  "items": {
+    "Linux.html": {
+      "url": "https://os-labs.p.cs-lab.top/Linux.html",
+      "sha256": "392595416edf6b2e2355015a592efc0ec4d9e424131185b6a7871af74addce18",
+      "size": 82201,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "ads/ads.html": {
+      "url": "https://os-labs.p.cs-lab.top/ads/ads.html",
+      "sha256": "fc5208e5f091151c745ec3c1041fb9bb5a940df38a5bd18c894662f505673e7c",
+      "size": 48377,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "ads/assets/ads-imgs/image-1.png": {
+      "url": "https://os-labs.p.cs-lab.top/ads/assets/ads-imgs/image-1.png",
+      "sha256": "4558f22c648162fa3506996d4c8b6d7b2455d87d5601c26375f313a06cedacf4",
+      "size": 39840,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "ads/assets/ads-imgs/微信图片_20261027170337_2_1887-1.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/ads/assets/ads-imgs/微信图片_20261027170337_2_1887-1.jpg",
+      "sha256": "244f6999df207f871ad3dd1c18b663902090a8505ea18a3d8d556ec44e9c9e98",
+      "size": 337130,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "ads/assets/ads-imgs/微信图片_20261027171821_135_1803.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/ads/assets/ads-imgs/微信图片_20261027171821_135_1803.jpg",
+      "sha256": "6563f457643e349c0b5c803e0e4b09f3f1c8ad293c718510a075384b74876d3c",
+      "size": 1437307,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "assets/images/favicon.png": {
+      "url": "https://os-labs.p.cs-lab.top/assets/images/favicon.png",
+      "sha256": "023854c43fc4b25b795ee4951c8019e3de0593ffeb6f918b5d1f2a9b47a57cfe",
+      "size": 1870,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "assets/javascripts/bundle.a7c05c9e.min.js": {
+      "url": "https://os-labs.p.cs-lab.top/assets/javascripts/bundle.a7c05c9e.min.js",
+      "sha256": "87420f873fa72d4947835c0f326fdc1bcbd2dea40a23049d524544c476fda7e3",
+      "size": 107750,
+      "content_type": "text/javascript",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "assets/stylesheets/main.66ac8b77.min.css": {
+      "url": "https://os-labs.p.cs-lab.top/assets/stylesheets/main.66ac8b77.min.css",
+      "sha256": "66ac8b7785c87019ca75bbf91927b3a3cd6691a7e52811a3b60fab4b5a91ef05",
+      "size": 131356,
+      "content_type": "text/css",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "debug/index.html": {
+      "url": "https://os-labs.p.cs-lab.top/debug/index.html",
+      "sha256": "13356c9faa55d908cd445e1b61601d415fbe022550626e8addc5ee4190a10fec",
+      "size": 50679,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "env.html": {
+      "url": "https://os-labs.p.cs-lab.top/env.html",
+      "sha256": "533f0e59e39eefed39616875cc85294c51cd9493af514fd0c55e74e6fef943f3",
+      "size": 52393,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "faq/faq-env.assets/git-apply-patch.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/git-apply-patch.png",
+      "sha256": "6602f1b69669af0b4ab09fd205f0966cee9907738c4064f9b6a587699222453a",
+      "size": 70765,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20220915205018098.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20220915205018098.png",
+      "sha256": "7ea86e57de594a8af4776ccadc5b216f692b357e9c4dba28190e5c337c3e83b0",
+      "size": 17298,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20220915205054529.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20220915205054529.png",
+      "sha256": "e7438d1a0ba8a22bcc631cbe9990016b6d73452d13ab8c52b09f6f970827b64a",
+      "size": 288871,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20220915210332246.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20220915210332246.png",
+      "sha256": "a7f6476191487e9fe6d9bc9880e945015d023d0a92b6d4d0462ab0be998b61e9",
+      "size": 26467,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20220916094737504.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20220916094737504.png",
+      "sha256": "68a6ecea66c75d398e88ac986afcb4cd362d10fc354b1894de823a51676cee5d",
+      "size": 12039,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20220916095456586.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20220916095456586.png",
+      "sha256": "8ca44b8d746f43f82e679225ca7e8974fa7601aa6b97b14415e75f0006440f16",
+      "size": 17840,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20220916154734658.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20220916154734658.png",
+      "sha256": "456758422370ab3b76c348504e84fd84d3c996ade71ef0d9c364790de8119806",
+      "size": 3108,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20220916154922685.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20220916154922685.png",
+      "sha256": "dbea9ef15adfe498fecf25d1a9ab9ae24ca1dde5668ce616530cf85f1eceb701",
+      "size": 23711,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20220916155011110.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20220916155011110.png",
+      "sha256": "369854280929474b0ddf04934884085934eccebc45ee5ffb8e0b7bd1848cf154",
+      "size": 32860,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20250915212013555.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20250915212013555.png",
+      "sha256": "bcdb456fc467124ecc555790fc69818d8dd7331e140260e28691237fa001de4f",
+      "size": 55322,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20250926214431898.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20250926214431898.png",
+      "sha256": "a088ee4f0ee23dbcd5614e0b4945cde9854b33653f4c5f8088835dd290a6b79d",
+      "size": 48236,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.assets/image-20250926214442310.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.assets/image-20250926214442310.png",
+      "sha256": "bfdfc6659e62b29d8a61a35c2ee29b98a920121cfe52356f21816ea77b6d2c30",
+      "size": 15599,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq-env.html": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq-env.html",
+      "sha256": "2a4c1004fc94ae4881be6925c6d936464e8843face663e6a10187db997cefa6e",
+      "size": 85687,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "faq/faq.assets/gcc.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq.assets/gcc.png",
+      "sha256": "5d15812bd325a01250f6e72a11466add71f3c9b60fe8d0ff8149503553b0a2fe",
+      "size": 173046,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq.assets/gdb1.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq.assets/gdb1.jpg",
+      "sha256": "98ffb7f2734c9797dc9b1831bfe4be9cc55e200f26744476fb911269118df2e4",
+      "size": 206936,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq.assets/gdb2.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq.assets/gdb2.jpg",
+      "sha256": "c44e775945e8bb12ebb575d26d7ae1db605d3c0ea5284973d62ff11f8c753ddc",
+      "size": 10239,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq.assets/qemu.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq.assets/qemu.png",
+      "sha256": "b12164b9cd192d1144261fed1e28e475aff2dd94edc3a2871e1f062bdd588b64",
+      "size": 29323,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq.assets/qemu2.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq.assets/qemu2.png",
+      "sha256": "0f4943ff426ee621c6bad2eb9328a38c74297a43919a48555304ef6d000b0b1a",
+      "size": 26711,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/faq.assets/qemu3.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/faq.assets/qemu3.png",
+      "sha256": "9b3f808c90a359b6229d25d7cbc5944037f5a1751e5575484e686bf43a3d9c11",
+      "size": 220457,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/image-20220926180507976.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/image-20220926180507976.png",
+      "sha256": "001c79cea61ee707df4133a0188d857aeaa9281f61ea10e26af1b67f26d6ab84",
+      "size": 34385,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/image-20220926180632009.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/image-20220926180632009.png",
+      "sha256": "5921c8ea440b02f2ffc7e30ec00334e9b858ef4ea52027311d7df1287ff8f357",
+      "size": 44903,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/image-20220926180747910.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/image-20220926180747910.png",
+      "sha256": "cf8d0d871b0e4a23ae171932a10a9e4c0708f7ff06067a43aff5e66211bdc09f",
+      "size": 53831,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/image-20220926180931786.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/image-20220926180931786.png",
+      "sha256": "c88cf557789e3fa635f7fec9a4663f17bc33d1b10cab51bcf0a8c8ed147cff22",
+      "size": 67642,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/pingpong1.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/pingpong1.png",
+      "sha256": "72acbf9d971153e4cc61cbf74a5cf55b306d6149f900c39c9f9857ed454c4d4a",
+      "size": 14073,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/pingpong2.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/pingpong2.png",
+      "sha256": "196ac507f52139c576f8c1f6526e69273eda28e3eedfc4a8a836dca7715bfab3",
+      "size": 11933,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/pingpong3.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/pingpong3.png",
+      "sha256": "a2f95a067cf631c617f6a02200fd423f252fcda8b1a7c444b28acc34e1e2574b",
+      "size": 74425,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/pingpong4.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/pingpong4.png",
+      "sha256": "cf9dabb10074ed1cf124d355a2274d92bb5cfbb6837bd504d45cd91a11ce09df",
+      "size": 44214,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/pingpong5.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/pingpong5.png",
+      "sha256": "f814dbc007d892cf0349185afc9e9d0113a3f777e7a5f7217763cddddb236a57",
+      "size": 37875,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/pingpong6.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/pingpong6.png",
+      "sha256": "b500753c6b55527e95b0a3d6ee622a1dc6279a159baeb7ce62ac765df9e04704",
+      "size": 117594,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/pingpong7.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/pingpong7.png",
+      "sha256": "278cca864b843a95ea26d0c9660858fb640be65557133d2d0724c542d5a25b6a",
+      "size": 84983,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/primes.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/primes.png",
+      "sha256": "42ce2672e8696ec5779c0393ead38b4b4117f4f3cd9ed85f5435062cb89b41b4",
+      "size": 6390,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.assets/primes2.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.assets/primes2.png",
+      "sha256": "acc0869a81e37f4fd7c9638838911d2cb5225febab9aa77964f4361128508a5c",
+      "size": 10921,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab1.html": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab1.html",
+      "sha256": "a19822b14b74c4f82452e66474b80a8ec9ca4c4f945cacd30505129c10904193",
+      "size": 56561,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "faq/lab2.assets/q2.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab2.assets/q2.png",
+      "sha256": "5b098bfa9f1ea6affe435ac588456c52df335da7ddb8c96814a97354618e16a0",
+      "size": 23263,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab2.html": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab2.html",
+      "sha256": "f55198fd5c067307c056d98c58036696aaebcd92107252a85adbebe57b2037b8",
+      "size": 49937,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "faq/lab3.assets/acquire-panic.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab3.assets/acquire-panic.png",
+      "sha256": "8df3f526f7f0ad805e9152ae489d7fe5e685b2ef3271d8138cd53c9aa1d9af95",
+      "size": 18562,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab3.assets/kernel_asm.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab3.assets/kernel_asm.png",
+      "sha256": "1e23028e8d4d73e0782a4f05c366195234e99371f2c22c413c94f56405b689a0",
+      "size": 148158,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab3.assets/kerneltrap.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab3.assets/kerneltrap.png",
+      "sha256": "be1fde0183cac046a67f88ad521f57e75dc2b10a10afbca8962a7bbdb1338b1f",
+      "size": 97306,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab3.assets/scause.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab3.assets/scause.png",
+      "sha256": "b71e8441acbd29745ad3e54efeefd1a077d8094f3ea0a1d8fb543919b3154f97",
+      "size": 276513,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab3.assets/sched-panic.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab3.assets/sched-panic.jpg",
+      "sha256": "3f51bf50f3256b2c7be1b4b1e87a08338d117ff7a96df1ee49a9c9fed65cd4c9",
+      "size": 11394,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab3.html": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab3.html",
+      "sha256": "0378320b2b51babfbc21c76d451680c3ae16f4dd83764ba1b601ebfa30d9a201",
+      "size": 55185,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "faq/lab4.assets/SSTATUS_SUM.png": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab4.assets/SSTATUS_SUM.png",
+      "sha256": "b9655424ad77e507cf6638f89ac2f485a6436749c80029608d57bb677ab0743a",
+      "size": 46088,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "faq/lab4.html": {
+      "url": "https://os-labs.p.cs-lab.top/faq/lab4.html",
+      "sha256": "66cd8adec9033d0bd9d1fb945189a1252f415aa8f2464101787cb3d4f5d47d8d",
+      "size": 49099,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "gdb.assets/gdb-dashboard-areas.png": {
+      "url": "https://os-labs.p.cs-lab.top/gdb.assets/gdb-dashboard-areas.png",
+      "sha256": "d61f558c9dcf3b515f18ed9e0dff09f4319f88d251732cb5f6a318f743e45f53",
+      "size": 219821,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "gdb.assets/gdb-first.png": {
+      "url": "https://os-labs.p.cs-lab.top/gdb.assets/gdb-first.png",
+      "sha256": "1178396658f3cc1e27d373836f466f0f16d3f98f19ac540b9b61a09d7777d449",
+      "size": 142882,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "gdb.assets/gdb-help-cmd.png": {
+      "url": "https://os-labs.p.cs-lab.top/gdb.assets/gdb-help-cmd.png",
+      "sha256": "548d7fccccf3e4cbefc3efcbf57bdd2a30ab50542a4a11f5a869108bb3eed0c5",
+      "size": 160724,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "gdb.assets/gdb-help-next.png": {
+      "url": "https://os-labs.p.cs-lab.top/gdb.assets/gdb-help-next.png",
+      "sha256": "8b5a1b24941fcfdf27b61d31504930bd350fdf6d2202fe2c9cc78cf8b264bce9",
+      "size": 38706,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "gdb.assets/qemu-first.png": {
+      "url": "https://os-labs.p.cs-lab.top/gdb.assets/qemu-first.png",
+      "sha256": "b52dc11309342680c6ecbe4f308dc5c8de1a9f0c13703ee064c1b8209dc09f65",
+      "size": 54689,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "gdb.html": {
+      "url": "https://os-labs.p.cs-lab.top/gdb.html",
+      "sha256": "c284ec419896322a1982a4783e85c305ed4e1409b73fc8cdee0b746849f971f2",
+      "size": 77986,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "index.html": {
+      "url": "https://os-labs.p.cs-lab.top/index.html",
+      "sha256": "c2e4a35b3fcf1aa85baebd75bc16617c96e6dbde6b3b12fb2bcfb83dafca595e",
+      "size": 76312,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "js/baidu-tongji.js": {
+      "url": "https://os-labs.p.cs-lab.top/js/baidu-tongji.js",
+      "sha256": "4d152e873a8fe0967c36799353d4adb71c4f7d86aa744fcba9b4ab420ef5a86a",
+      "size": 254,
+      "content_type": "text/javascript",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "js/checkpoint-player.js": {
+      "url": "https://os-labs.p.cs-lab.top/js/checkpoint-player.js",
+      "sha256": "5c6e5d8244966d5354bed43a0c91a9f030d1261f7f7d63db0893594510589ec3",
+      "size": 1455,
+      "content_type": "text/javascript",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part1.assets/Snipaste_2024-09-05_16-16-29.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part1.assets/Snipaste_2024-09-05_16-16-29.png",
+      "sha256": "726a8da3415c2c1c6c843ca643634ec784b89355b6a3f2974911284e2d6f1756",
+      "size": 10518,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part1.assets/Snipaste_2024-09-05_22-30-33.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part1.assets/Snipaste_2024-09-05_22-30-33.png",
+      "sha256": "cfd4d5a0fef560ae51065c05d944e68c9a4cb42667295ad348001fb478050ed5",
+      "size": 21705,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part1.assets/Snipaste_2024-09-05_22-32-46.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part1.assets/Snipaste_2024-09-05_22-32-46.png",
+      "sha256": "42162a49efd1dcbe33a15b537d4973acba526b90f3c87de5542a74a119be434e",
+      "size": 71330,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part1.assets/gdb-initcode-init.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part1.assets/gdb-initcode-init.png",
+      "sha256": "e4bbd2afbf66d91b51900b69dfc0319e899ef007e9b2a0c22c08b77b9b14dcb4",
+      "size": 9931,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part1.assets/image-20230913171327769.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part1.assets/image-20230913171327769.png",
+      "sha256": "5a52e29c516fbc8fd3ff3f86e7af7d5715828a3200d491da905fe9dc4bd0f90f",
+      "size": 6579,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part1.assets/image-find-test1.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part1.assets/image-find-test1.png",
+      "sha256": "eb98172fdaf335f7217c1604ac9476eb519ce6c45bc4f119270d829a5c5c3409",
+      "size": 4539,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part1.assets/image-find-test2.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part1.assets/image-find-test2.png",
+      "sha256": "aa16f3713644c7c3aef1f7b58ffb9a33f042e956d600e9871b09dba2f7937bb7",
+      "size": 4511,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part1.assets/image-find-test3.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part1.assets/image-find-test3.png",
+      "sha256": "a45458cb5eda1e2b27c884233c55cb26bd918e5cd6f0f993da8f6b4fef5c01e3",
+      "size": 13962,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part1.assets/image-pingpong-testresult.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part1.assets/image-pingpong-testresult.png",
+      "sha256": "cf87ce1b2b634b4b2a17204369fc7e1fbf10d2a19a287371140f5684d139a583",
+      "size": 15979,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part1.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part1.html",
+      "sha256": "c84702b78efaed62b04521843cfb2edea243cc7993fc1e92b4126befea2f14a2",
+      "size": 61435,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab1/part2.assets/vx6.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part2.assets/vx6.png",
+      "sha256": "07f186fb27f6646313d98687ade673708a11c7334d607b8a13d45d05b9255aa2",
+      "size": 107585,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part2.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part2.html",
+      "sha256": "3ab30eabecd63d5a3cd468e80350f87f8a04ddf3a05838f51a5ba86207cfdb4d",
+      "size": 107062,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab1/part3.assets/gdb-0x1000.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/gdb-0x1000.png",
+      "sha256": "60ff946747c4895744bc7ca74dc7e0cde538768b07de496e65b8d1adc954831f",
+      "size": 121803,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/gdb-end-of-start.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/gdb-end-of-start.png",
+      "sha256": "1de6f02527a5f817476e76884796700f245b5dc5dae81303f8261d7f8ff4fc86",
+      "size": 94562,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/gdb-entry.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/gdb-entry.png",
+      "sha256": "dab6d54cfb39203986aba79e3616b34c56653d2eb45891d9dbecbee05c661193",
+      "size": 144766,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/gdb-schedule-swtch.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/gdb-schedule-swtch.png",
+      "sha256": "46131545520748c6fd3218819ff578d2072cb599d83dfbe8fd7dce91980ad7ef",
+      "size": 77688,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/gdb-start.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/gdb-start.png",
+      "sha256": "3415f8c55583c2356bbb9b2c6f5b0c456d7ec950067d2a632a0b8073dec82322",
+      "size": 182027,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/image-20201018125249828.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/image-20201018125249828.png",
+      "sha256": "68d6cd4f3cbab734cd53b6be07069443a42e71ab27ae85b5f4d845e8071689b4",
+      "size": 7796,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/image-20210913105916234.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/image-20210913105916234.png",
+      "sha256": "e9fd39af246a616272fc30aa5b46fde3dbc095344f6383c023f9cbfd6d0811d2",
+      "size": 13357,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/image-20210913110108193.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/image-20210913110108193.png",
+      "sha256": "9adf2780da1a459a28e401d0ec6d5f732853e543ef35a83756fa922ef249ece1",
+      "size": 13177,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/image-20220926104856325.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/image-20220926104856325.png",
+      "sha256": "4f51ad6fde41c9e59319785f25227b15fae44bdc367c01ddfb814cdf1b392195",
+      "size": 11844,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/image-20230914120057118.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/image-20230914120057118.png",
+      "sha256": "fb1437f40aa81a5eadaf553e5bd8231496f9b1a477e9b7e8a3a53525c5c4675f",
+      "size": 90258,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/pipe-question-result.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/pipe-question-result.png",
+      "sha256": "2b280a4121ae9c50dcedcd8b10f5c285fd24a023afad1ceea6c1fea2cae0c83b",
+      "size": 37047,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/pipe-question.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/pipe-question.png",
+      "sha256": "dce03ddbea30538448fd7d85d13e1b28f277da13b0104884cc0f55ebccfd0746",
+      "size": 148371,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.assets/riscv-fake-intr.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.assets/riscv-fake-intr.png",
+      "sha256": "d36c2c5ecb4b9228c6693afaae389aab88cd8b8d5b8e7932dd958a2fd81b6281",
+      "size": 86797,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part3.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part3.html",
+      "sha256": "67708c84503e2afae97ad2c2cb2e770981b59f08850c7018655743f86837963d",
+      "size": 84570,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab1/part4.assets/image-20230913181456026.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part4.assets/image-20230913181456026.png",
+      "sha256": "036cac70a65050e46d58dd14242a29c3461f7876c67b36f30846d080f67b2c55",
+      "size": 19279,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab1/part4.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab1/part4.html",
+      "sha256": "279cc1a4e036cb5cdc03bfe6c98643f50180675ddc5ab2d3ebf40633e98df1ff",
+      "size": 68266,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab2/part1.assets/result.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part1.assets/result.png",
+      "sha256": "307f3782bba6226385e0e18a67fbc045b0d2147af999fc4566501b9bf2a8edb5",
+      "size": 80529,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part1.assets/waittest-ans.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part1.assets/waittest-ans.png",
+      "sha256": "824e5132fd6d551f9aab42acac7e48d80e444056982f4d32b51ba66cfc280455",
+      "size": 25020,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part1.assets/yield-test.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part1.assets/yield-test.png",
+      "sha256": "e75bbdb2a9ab8d5acfd6d11cc0e4a65ddd647254a4db7b31193b29140db0fb43",
+      "size": 25679,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part1.assets/yieldtest_output.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part1.assets/yieldtest_output.png",
+      "sha256": "5d95b22c7cb0acc05e497c6d39008f567a98f96a8db79b85753fb5ea2f5e9249",
+      "size": 86518,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part1.assets/yieldtest_pass.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part1.assets/yieldtest_pass.png",
+      "sha256": "57f855760bada70933a17d38834e6ef2044e4bf0878a936870a5bda799bb4761",
+      "size": 26799,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part1.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part1.html",
+      "sha256": "08127c13e125ada300ec964c469abee2b56f653d7d78b02c9d5c5c7035810d89",
+      "size": 70097,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab2/part2.assets/exit.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part2.assets/exit.png",
+      "sha256": "50f0c7234c4d1a094a1d04c5acc3573237fef3f33077387afad5eea7f834a964",
+      "size": 394817,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part2.assets/image-20220920161553412.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part2.assets/image-20220920161553412.png",
+      "sha256": "b09d95733281b1eaef2bcbf6bb4fc9d2a3c14c14465b969d05c0155879956f5e",
+      "size": 205570,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part2.assets/riscv-register-calling-convention.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part2.assets/riscv-register-calling-convention.png",
+      "sha256": "7b654480da4ff95c056107790b8abaa40565d29af72411f5c8de16c66c36eda6",
+      "size": 226591,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part2.assets/switch.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part2.assets/switch.png",
+      "sha256": "5e2984c75021bac06a21fb7de7c1f698e1cb32f6c656c71d1e12decbc3fd6ce5",
+      "size": 118313,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part2.assets/syscall.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part2.assets/syscall.png",
+      "sha256": "b14207234518548eb4506a5699776eb1279e212f27f1ef409b55a9c86a865b61",
+      "size": 542410,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part2.assets/wait.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part2.assets/wait.png",
+      "sha256": "e3ec82c53e90e1bdbfeb967468bbc5c332bf0efcc3fa14c43f6ed27c30dce83c",
+      "size": 822016,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part2.assets/yield.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part2.assets/yield.png",
+      "sha256": "8623d13d5d2bc552f81ce28532bf1a833869ede77f3a6b42e6f1439491128586",
+      "size": 307142,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part2.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part2.html",
+      "sha256": "df40a0a1746b9d31089e5e1e5ebcb6b92e5d17c74b36b1bdee72143e2bac0eca",
+      "size": 131059,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab2/part3.assets/q4.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part3.assets/q4.png",
+      "sha256": "5dd7c9b653a0a60f4b574a2aa80cb06d0ef282b51c3c993b869f3479342c79c4",
+      "size": 16530,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab2/part3.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part3.html",
+      "sha256": "f04e58f1558ba391a3877ae3be0b9cff07ce2c39e4c4838d0b85e264f1c5d57b",
+      "size": 68866,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab2/part4.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part4.html",
+      "sha256": "e111a553ce0c1bc05ed53593a54fca83a5b39af288c30d0c688b978e1edd97fe",
+      "size": 75897,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab2/part5.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab2/part5.html",
+      "sha256": "48283fbda7566529978614d4498e138a2b69ce84bed39ad24eb79ff1e7d134a2",
+      "size": 68441,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/ai-background.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai-background.html",
+      "sha256": "4bf2d6f3d3b817b7fc83eb6af816347f45f50a682c99952222b2415a7d843b2c",
+      "size": 78978,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/ai-model-kv.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai-model-kv.html",
+      "sha256": "cd62c3044d2d05bfa827c700d9acf26f5e1b87fc8aa9b1f8ba0566be3224aaec",
+      "size": 74514,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/ai-prefetch.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai-prefetch.html",
+      "sha256": "881ea52e5d9ca45086c04d12a4e9e42ced4613682dc863000588b0875a3cafc6",
+      "size": 99928,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/ai-principles.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai-principles.html",
+      "sha256": "0a479bb03dfd0ff0ad97649a0040b6dbbdfac3095855c6b69cc77edb8d97ddd5",
+      "size": 97654,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/ai-submission.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai-submission.html",
+      "sha256": "7fab2c4beb60f4d2fa4a3e373aaab1f2e7a3e59f6f5cf69e59de63ebe86ab495",
+      "size": 56830,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/ai-testing.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai-testing.html",
+      "sha256": "2a63f7af591713b41d0b3a971df13025871eeadb715847df2f07045eb0ae3352",
+      "size": 57498,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/ai-workers.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai-workers.html",
+      "sha256": "5601a358e370721e5681c6c6ba833e99d16af6c3136964c14e4a3c6a2a858aa8",
+      "size": 56252,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/ai.assets/KV写盘后释放页面.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/KV写盘后释放页面.png",
+      "sha256": "f4ed44c124b597412bff2a11e9423bf37af154607ed2fcfe43a12fe4ef660c8a",
+      "size": 91506,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/KV覆盖页面后恢复.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/KV覆盖页面后恢复.png",
+      "sha256": "56fb045fcd936252215b67abbd301f31327202d259bd7241ee3b5deff66da976",
+      "size": 63814,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/make-grade-ai通过示例.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/make-grade-ai通过示例.png",
+      "sha256": "0aa4ec1f48a91f1bf06ca1f19ca42fea67fcb2cea706fd38c3979d1b2d49e665",
+      "size": 1675352,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/写入单个分片.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/写入单个分片.png",
+      "sha256": "79766bfa00a58ce82a55c250f9e019e205a26181b7a444a7f3af912c7cd128bd",
+      "size": 53055,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/写入模型清单.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/写入模型清单.png",
+      "sha256": "0def540ad042a32e1c0dd5bc6ca7a99a06e568903c5da2b2bdc34c4041460ffe",
+      "size": 73783,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/基线KV创建与写入.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/基线KV创建与写入.png",
+      "sha256": "86af62a0c11f82e6772b2bda33ea91f462585590b9addd267baab376d5c5178d",
+      "size": 92729,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/基线KV打开与恢复.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/基线KV打开与恢复.png",
+      "sha256": "c2ae5759e77be9e186535a18bcac8a19f323dc9cb02c0c61e8199fd99d5f559e",
+      "size": 75941,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/基线分片校验与计数.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/基线分片校验与计数.png",
+      "sha256": "302ffdb3b91c7bcbb00de177cffdf6b3713fc8de741b2bf1db1cb50d86feba0a",
+      "size": 47652,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/基线分片检查与读取.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/基线分片检查与读取.png",
+      "sha256": "91317d18c91d24299eea30790122f146419bb733defd82454fac72e4f955ec60",
+      "size": 70190,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/生成分片内容.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/生成分片内容.png",
+      "sha256": "5abcb24fc2da037be93d2ebfd4a7ba285068c38a7d5110c2e89df81903383cbe",
+      "size": 34909,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/精确写入循环.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/精确写入循环.png",
+      "sha256": "d15d3c94319059747626f47b9ab9dafbe9cfd093424bf44568cab1cd6a72e7f6",
+      "size": 40267,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/精确读取循环.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/精确读取循环.png",
+      "sha256": "a048eac22a6019eb57707924b075731ca8467089f29f390992b3b0574eabd76c",
+      "size": 42498,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/遍历模型与嵌入分片.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/遍历模型与嵌入分片.png",
+      "sha256": "14562c7ff5c24087966a307dda2b7e41a63953ac08281f2bfda8a6379e2cb4f7",
+      "size": 74935,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/预取下一条与计算重叠.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/预取下一条与计算重叠.png",
+      "sha256": "9be3492e81e58a30e8b5e7932c72879d93360e591dc3fc2974d63f003c956d3f",
+      "size": 67152,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/预取学生接口.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/预取学生接口.png",
+      "sha256": "19d1fc47146d02923c852e5e4d303ca74552483d15a1513c90fbadff7d47341c",
+      "size": 88998,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/预取通路切换.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/预取通路切换.png",
+      "sha256": "26180557877273dc9375110b2ebc417dd08f4e0384e1fac656a69394a6a1acde",
+      "size": 57624,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/ai.assets/预取首条启动.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/ai.assets/预取首条启动.png",
+      "sha256": "876bdf9c4778da88a2b05b7a3225b6146754016a046db78cdbb9da4b630cc2ed",
+      "size": 28068,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part1.assets/grade-16349752282893.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part1.assets/grade-16349752282893.png",
+      "sha256": "3f7a4d31d12feb933d4b976f61959b4319b61b9bdbcd2cab497c94fa17ae319a",
+      "size": 13584,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part1.assets/image-20211019205449169.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part1.assets/image-20211019205449169.png",
+      "sha256": "9f1ddb8abf80bb12a4ea73d220cea8be79ff0b172d0c10ba1b039a5f7c667e13",
+      "size": 159410,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part1.assets/kalloc_proc.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part1.assets/kalloc_proc.jpg",
+      "sha256": "70a77fdf8bae8c356931850c595aa4f52ee1121fe26cb25bf37e15e4d63fb679",
+      "size": 220293,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part1.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part1.html",
+      "sha256": "8bb272b5537219cb36862c4fa54252e8046025fa451eecf20cf7d13b33dc7d7d",
+      "size": 70335,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/part2.assets/CLOCK.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/CLOCK.png",
+      "sha256": "8cb21caad18ba4010c399b6e6d3d7dbb7cddf230b3fc18cda580ead560e0366e",
+      "size": 316988,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/bcache2.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/bcache2.png",
+      "sha256": "b8471329b8438c198d56e78346606776cad928c60406e9fdc62ed8947015e323",
+      "size": 48322,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/bcache3.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/bcache3.png",
+      "sha256": "75a086dfd53818105da97204d481d062da756ae83dea5eeaba570df3a9bb38cc",
+      "size": 11717,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/buffercache.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/buffercache.png",
+      "sha256": "74276926e081267ee4647f5187c505a2c84b5271543f885cf1cb6e8d65d45aec",
+      "size": 34083,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/freelist.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/freelist.png",
+      "sha256": "1241c415712d70a3447e33079edc90d933e636a3531ed54d06a83c59c44ede07",
+      "size": 35576,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/hash.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/hash.png",
+      "sha256": "72983a1e4bfb610538a84b2806e0faec54246f1ae0537b4ce7f081411fc35d20",
+      "size": 66948,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/image-20201121160342435.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/image-20201121160342435.png",
+      "sha256": "13d958565d86c3e7c497a4602d8e5c3fec45cabfc49ec6f7e86907005f6deb6d",
+      "size": 9504,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/image-20201121160419011.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/image-20201121160419011.png",
+      "sha256": "7db8174d468e839cf611b7c6133a540ce4e75eccc9b3576256a6df50977e18d7",
+      "size": 9765,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/image-20221012175648080.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/image-20221012175648080.png",
+      "sha256": "9d175c1107aedc1686d751aa1735391f37723e35be86dbc758f2daa1b1a02fe6",
+      "size": 84202,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/kalloc-2.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/kalloc-2.png",
+      "sha256": "a93b807297a98592c4b66d332f18b0b99244dabdfa8a64112ab235f8ae5de4b9",
+      "size": 45886,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/kalloc.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/kalloc.png",
+      "sha256": "52a177eb3695cf1a1bac6132249b2e69f42c9cd985578514c5abb25b9c03e80c",
+      "size": 35208,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.assets/timestamp.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.assets/timestamp.png",
+      "sha256": "adf6a46a35e406204a7334570f8ff1d0d85740073d698b0b2911f4dab7e3562d",
+      "size": 10503,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab3/part2.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part2.html",
+      "sha256": "f2bfba67d29c12959230db0ddeb10f5ae6eaa3bb473045c323b7a94cd97238f6",
+      "size": 104495,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/part3.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part3.html",
+      "sha256": "b6ddb5f91184e09c87edba1f71e8cb3536c5b93ef400a47a66f5ae3677824ac4",
+      "size": 64505,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/part4.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part4.html",
+      "sha256": "8e53cb2c9c0a422c2abc32d2ffbb40eceba8adae8422c3e5734e6098b15792df",
+      "size": 84661,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/part5.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part5.html",
+      "sha256": "8463b4fa594a72dfa0601da7c0055b443a68fb7bfb27169412c8f1f58342dbd4",
+      "size": 58573,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab3/part6.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab3/part6.html",
+      "sha256": "c35db7a647d5a22cedec6ebf2f707264111d3510de17493ecdea9486934fdfec",
+      "size": 55263,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab4/part1.assets/image-20211023160155602-16353874445883.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part1.assets/image-20211023160155602-16353874445883.png",
+      "sha256": "6d9e2a8d13a21aacd1499abaa12b702755afb237874d45ea77e9f62fb297b0db",
+      "size": 105764,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part1.assets/image-20211023161926242-16353841836811.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part1.assets/image-20211023161926242-16353841836811.png",
+      "sha256": "d0a13aff1701af2f7fe5fe66ce7ab3e18739cf693d2bf5c788391767992e9f78",
+      "size": 10445,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part1.assets/image-20211023162335116-16353873302232.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part1.assets/image-20211023162335116-16353873302232.png",
+      "sha256": "60f3b0c86fb1801f8cf7e117c8bd4d896dfe6e0e74f9de5cc7b4bd5cd799dc47",
+      "size": 10041,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part1.assets/image-20221024121955342.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part1.assets/image-20221024121955342.png",
+      "sha256": "9482753f2f772ce4402d83d8516bad92274aaaeaf756bdb362957c09e5f22897",
+      "size": 6705,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part1.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part1.html",
+      "sha256": "e5802e9bed695a901a2aa6b0904c26dea4c07b18ff228a63e4ce16da345dede1",
+      "size": 74971,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab4/part2.assets/1313421-20180729102826537-1711528749.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/1313421-20180729102826537-1711528749.png",
+      "sha256": "8649cbcc0021283e612c0574d306c13d966008da8e67309c10d5394cddac7b2c",
+      "size": 2593,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/cpu-os.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/cpu-os.png",
+      "sha256": "e79ea7c9badcdf89149065b36356f204e84c668278fe43220b6ae82f1a33da6b",
+      "size": 280657,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/image-20211009204518009.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/image-20211009204518009.png",
+      "sha256": "5a0b1eec32fac315f087dd2bba9f929291facdd621ad3fa0b27dbbd828ce124c",
+      "size": 1981261,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/image-20211009210828719.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/image-20211009210828719.png",
+      "sha256": "2b50168709014a89c0df966f2460811727f67781552b07fbe181865c2f2f238e",
+      "size": 10664,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/image-20211009211825370.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/image-20211009211825370.png",
+      "sha256": "53ca9fdd425911806a292249fd09093f323d3d282f670d71f2372fdd57c07951",
+      "size": 32710,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/image-20211010100329520.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/image-20211010100329520.png",
+      "sha256": "3d9f8d9875d25b9e440fa15dd31d887c8fbd0002a2c8e332d272c2ff1d906f75",
+      "size": 1896468,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/image-20211023210540509.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/image-20211023210540509.png",
+      "sha256": "ec656b72cc505a644bc9d33f1e2d7fd5473275584e44eb58173d80fc8019c896",
+      "size": 1882312,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/image-20221024160039840.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/image-20221024160039840.png",
+      "sha256": "b05ec81120f2c33509351fb48ea2abd97dde3c29a14d389c016197fb5fcbfa83",
+      "size": 1116873,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/image-20221024170624973.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/image-20221024170624973.png",
+      "sha256": "5326df9c02431fbaf2458aa64c7a7112d237a4f1b63df2dceb44687e1cab3210",
+      "size": 2288471,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/kstack.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/kstack.png",
+      "sha256": "5c51029de29aee95d137fefc02fdae2cfe03a6b57ff3da5f84bca3b6e6a93196",
+      "size": 413482,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/memory-manage.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/memory-manage.png",
+      "sha256": "7db69349cb9ee769f7dd923a280377d88bfba3e5be91ee23d5847eae21a5e828",
+      "size": 798329,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/process-timeslice.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/process-timeslice.png",
+      "sha256": "743d936faa317875e1ce80e6f3834bc276c92bc83d14f0303df948873bbdd8be",
+      "size": 825369,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.assets/sync.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.assets/sync.png",
+      "sha256": "77e6f081b8fb6f8f0b397c08f24b547bd1c26da3dc66212d6a0355766d965c7d",
+      "size": 1165789,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part2.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part2.html",
+      "sha256": "a061a4693a0860cf9d0bd022e57c31b0dc35ea63a4c362d9bb64eba9180fb8f8",
+      "size": 96603,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab4/part3.assets/free.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part3.assets/free.png",
+      "sha256": "939924bbf4f0d16b1630574f54e81218aa3236da17d88713b5336fe466e8c509",
+      "size": 45819,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part3.assets/image-20211009204518009.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part3.assets/image-20211009204518009.png",
+      "sha256": "9b61ac826dd28ae1e2e6a3e82d5b9e8a02be6bf1247523ff474e8f283eeb10fe",
+      "size": 78267,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part3.assets/process-timeslice-perfer.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part3.assets/process-timeslice-perfer.png",
+      "sha256": "2c976909ce63d50fef45f6375616f1b3093897c1e83342bacec395a310a66592",
+      "size": 973117,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part3.assets/user-sync.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part3.assets/user-sync.png",
+      "sha256": "e65e6c8f6cafa4333cba17682dc44aa42e454d5f82167142b508571053d92cfb",
+      "size": 24493,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab4/part3.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part3.html",
+      "sha256": "8659f132c6d9fdc3fec5d7d78ae14246b0972ed27e998b73c7579ab6ecd0f5d2",
+      "size": 82951,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab4/part4.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab4/part4.html",
+      "sha256": "c1d26085b49e654209599aa40eccbe2efd34aacfabaebb9b97811e36b70b29aa",
+      "size": 48913,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab5/part1.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part1.html",
+      "sha256": "f892567a8ae86a59283194bc14ed0945e5804a1ab788b768e3afc14eb2c5c8bc",
+      "size": 58597,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "lab5/part2.assets/dev.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/dev.png",
+      "sha256": "e35950e3606ecdd5d747735b75e40d3e0e5fa831cddb4b2f33cde55195648668",
+      "size": 693664,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/disk-layout.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/disk-layout.svg",
+      "sha256": "07474ca8c6a09c757ebf67471c27bf4d419eae22479453f91887bf63c572cadd",
+      "size": 68801,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/file-system.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/file-system.svg",
+      "sha256": "d8c68937b2161951d6675a03ba037fba282524894209aed7d43eea556606ee3a",
+      "size": 79206,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/fuse.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/fuse.svg",
+      "sha256": "93752d77727c390ff7047fccfd02a2e53ad1d0e5e930ad5f58de2dabecd05972",
+      "size": 9995,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/goal.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/goal.svg",
+      "sha256": "2dfc88efe946956f7a1681a532fa6c879cadd0c879a1283db94023f87a2a095b",
+      "size": 77972,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/hex.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/hex.png",
+      "sha256": "3b1a1231a8bf63d671cc4ea79171fe05fc57f6efa73375dbacef5813068e0083",
+      "size": 82311,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/hierarchy.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/hierarchy.svg",
+      "sha256": "2f9ca5b4bdb5146616b71b1fd12ea84b4d6fb23f3a6849b38118ff9c214946a9",
+      "size": 30009,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/image-20211024102812913.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/image-20211024102812913.png",
+      "sha256": "6743a0ae95d2610796267bace6e7a4aed419211d98f3b67a9e9bf86b4d9cf9e4",
+      "size": 46565,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/in-Mem-in-Disk.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/in-Mem-in-Disk.png",
+      "sha256": "f060b214eea5a830049778a2dad12daa4b3a1600f352a213e8c130ecc73180f4",
+      "size": 241037,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/linux-filesystems.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/linux-filesystems.svg",
+      "sha256": "78475a950be2ed99c5a1eee73b44271e198a9be1721c4ba969835ab9f0c6fefa",
+      "size": 3546,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/mem-disk.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/mem-disk.svg",
+      "sha256": "01854e07c1f0323a2b7d2b8bb4264c65fabb3477e9d49bd3e3396a02187a89bc",
+      "size": 190334,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.assets/naive-file-system.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.assets/naive-file-system.svg",
+      "sha256": "de25433e359345d19d72c6f158d52238123585e115084fe1c10fcedc62f06052",
+      "size": 70159,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part2.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part2.html",
+      "sha256": "45867fe212ee211e96d6669b89336cdc25afeba482ceb203cfdb12a6a80f7a9f",
+      "size": 115090,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:18 GMT"
+    },
+    "lab5/part3-1.assets/image-20221108103122575.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3-1.assets/image-20221108103122575.png",
+      "sha256": "b8bdc252be3c70cafa52db8b99ed4feba79e0211261f4e043c9c07b26f2caadb",
+      "size": 66219,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3-1.assets/image-20221108111316672.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3-1.assets/image-20221108111316672.png",
+      "sha256": "426a13e1c6191a2e424a8d2594a58d35bbe8ed68bf0d3aa37662b384660baf15",
+      "size": 94616,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3-3.assets/image-20221109161936405.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3-3.assets/image-20221109161936405.png",
+      "sha256": "83d29b38e5af788531fe5c828436134ab0b4bebf53c81c5bd485eb147fc5f5a8",
+      "size": 28566,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/bitmap.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/bitmap.png",
+      "sha256": "72f1064e2bb4daad845420a29e6f0d7224926b72402e2ed0e3a9478687c2c39f",
+      "size": 232451,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpoint-board-create-1.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpoint-board-create-1.svg",
+      "sha256": "383879b34f33374f389eb762956e5fb54e1f094b4f44f6a4a9a86c2902e7f353",
+      "size": 13435,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpoint-board-create-2.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpoint-board-create-2.svg",
+      "sha256": "360491a91c2f8a0870188aad64de6ac62669646151859d3fa6fb2130b09f4d92",
+      "size": 14314,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpoint-board-create-3.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpoint-board-create-3.svg",
+      "sha256": "f734712c2154aed8f4f9433bd5ad02e23bc61d7ec020153717ee73bb0829c85b",
+      "size": 15338,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpoint-board-create-4.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpoint-board-create-4.svg",
+      "sha256": "66b7637ba38b6cabcfedb8fb1183e15c74833f625cbfdadcdecc3ce050dfa276",
+      "size": 15194,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpoint-board-create-5.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpoint-board-create-5.svg",
+      "sha256": "32416ac5be7cb34fc3efc98a6e9bfad02fcad6cf1a9230a6e07e9bd1ae5c618d",
+      "size": 15348,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpoint-board-create-6.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpoint-board-create-6.svg",
+      "sha256": "0587d1ea5150332a9d42696ca4c7f3ae74974fb5d070521f67cc8215b606f17f",
+      "size": 16475,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpoint-board-create-7.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpoint-board-create-7.svg",
+      "sha256": "2f0a6a7a6fd3836312b54a2b6c2280ebe8f65a69311a3abdaf084e15ba48be60",
+      "size": 17101,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpoint-board-restore-1.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpoint-board-restore-1.svg",
+      "sha256": "5d149ce011b04e4c020148d3a51ee92fc779e7c236d35fe9cfa6bd1d47daa14a",
+      "size": 16505,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpoint-board-restore-2.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpoint-board-restore-2.svg",
+      "sha256": "c4fa3afe685d0d4a8d4189dbde4cd62233c91e79f311eb888e8977a32391a86b",
+      "size": 18350,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpoint-board-restore-3.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpoint-board-restore-3.svg",
+      "sha256": "44f9a818781bcd52171b44fd286fe4eea4e15d473418b8fd3faef393212a1aae",
+      "size": 18956,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpointfs-flow.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpointfs-flow.svg",
+      "sha256": "6d3973a7bf42f3cb6fadc37ca96c1eef9fc17dfd1046f984a741bf6b51886baa",
+      "size": 3680,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/checkpointfs-test-result.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/checkpointfs-test-result.png",
+      "sha256": "11148079549fd571e07ec6693400546579eff8bd2f93b3ad74524bb8e3875933",
+      "size": 1768691,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/ddriver.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/ddriver.png",
+      "sha256": "f57a81272b1d3540bd0122ad0c4eb3a917d45a81ba601b866de2c05e2a68a49f",
+      "size": 27409,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/dentry-index.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/dentry-index.svg",
+      "sha256": "2c146121b2a2e3eca944189728c530c015bdc012bcd333568a6f8c9c18998d13",
+      "size": 10367,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/f5-2.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/f5-2.png",
+      "sha256": "6c35c8ee96d9acab2000ed7b23d8a1083c6ad1de74e457415f9fefc8a2c7dbab",
+      "size": 173848,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/f5.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/f5.png",
+      "sha256": "54af08d83527b33d8888effb1312b10ee3807d6d00a5bedbaa15ab8ebbd26989",
+      "size": 165133,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/f5运行成功任务二.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/f5%E8%BF%90%E8%A1%8C%E6%88%90%E5%8A%9F%E4%BB%BB%E5%8A%A1%E4%BA%8C.png",
+      "sha256": "bb9e876592efff7e24cf4bece7adea1ab1989db783270bef13ff91b8e6eaee74",
+      "size": 158473,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/flush.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/flush.svg",
+      "sha256": "75abfdbfc87fd70bf56b62541072399af82459f08941f11bf2233a5e30e3ac45",
+      "size": 223864,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/fs-diff.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/fs-diff.svg",
+      "sha256": "088b8bb423f55ef39369c790504b85572e70216ee24bec6e18acaae3bd6f1eb3",
+      "size": 73079,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/image-20211024145359896.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/image-20211024145359896.png",
+      "sha256": "e9f683215c15643becc4f1edb7569f187551f764ef3a890266bdbda6e93a7ee5",
+      "size": 346491,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/image-20211024145654250.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/image-20211024145654250.png",
+      "sha256": "6c1de0d3dcbb48626d26975b96e48f220529dc7b717a311a50668a99e1973d04",
+      "size": 337287,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/image-20211024151032944.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/image-20211024151032944.png",
+      "sha256": "12a9de8ee81cebe6c011de5107f581082faa98012dbe031e0e877213bb620d78",
+      "size": 218619,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/image-20211024155739859.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/image-20211024155739859.png",
+      "sha256": "6e683e202f85ba0a04b756f52a984e524272b08b1b9c8185471dc2211218e571",
+      "size": 250666,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/image-20211024170743344.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/image-20211024170743344.png",
+      "sha256": "2b22d2270946a835d7863db1a2c2cdbef35effb2e78afc45e0169f89d95536e6",
+      "size": 278215,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/image-20211024170839872.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/image-20211024170839872.png",
+      "sha256": "20da744678b4dae366e8f63fef86ddb101f2c711f9fad785073ecbc58752c7b4",
+      "size": 264706,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/image-20211024171103128.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/image-20211024171103128.png",
+      "sha256": "4106715b950dc69e3e17362053f9a33cb59eca1f0e90846d322f4d8279027106",
+      "size": 250269,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/image-20211024171348041.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/image-20211024171348041.png",
+      "sha256": "c8804f76efc43ae1696bfb8bde50c95ff98c3cdc4a3df9b08b910dee2f69a4cc",
+      "size": 253738,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/indir_blk.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/indir_blk.png",
+      "sha256": "5a63ff2221f9d9e0c155aad22193ede11e7b6383a71d47526b4c65482a03555a",
+      "size": 177389,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/lookup.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/lookup.svg",
+      "sha256": "661327e7924eb7af5a201e232090694d7a87820d597ca531990a04cefcc391a2",
+      "size": 43167,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/lookup找到示意图.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/lookup%E6%89%BE%E5%88%B0%E7%A4%BA%E6%84%8F%E5%9B%BE.png",
+      "sha256": "dcd654693b0df33508389e2f149f75e936db61208f68e8ea4e2df97e7aa21639",
+      "size": 172191,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/lookup未找到示意图.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/lookup%E6%9C%AA%E6%89%BE%E5%88%B0%E7%A4%BA%E6%84%8F%E5%9B%BE.png",
+      "sha256": "867610abe70343b32dceb790dbac78758354e2e1bd2e54d5656b9bf0675a37f0",
+      "size": 173308,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/mkdir-mknod.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/mkdir-mknod.svg",
+      "sha256": "938d4a90bfa95d12ebeab2cd5541d32fad1c1d2d136864d1df518fe6871d3897",
+      "size": 19897,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/mknod和mkdir示意图.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/mknod%E5%92%8Cmkdir%E7%A4%BA%E6%84%8F%E5%9B%BE.png",
+      "sha256": "f78aec93a83006e9c9d5b8ad9f30fd68431bcdefee3f81d327dd5fef4f0f9575",
+      "size": 182933,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/mount.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/mount.svg",
+      "sha256": "7c0c792e577b21822649e62e7a78764c3f2b4c7f1dfeb4ec5efdd7801cfc59f5",
+      "size": 159346,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/mount示意图.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/mount%E7%A4%BA%E6%84%8F%E5%9B%BE.png",
+      "sha256": "5954ce72c112bb97c019d74aa17241ecc1058bbc93f23fc3c54dbdbd5071c486",
+      "size": 145076,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/mtrain.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/mtrain.png",
+      "sha256": "9bc59925cbba7906bbc74a015a6de5a04dd5e6c5f1b769bd62e74e4ea9cb7a7d",
+      "size": 123240,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/read-offset.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/read-offset.svg",
+      "sha256": "cd21e7ddc49c16b6ab416e2ab07df5ba69b1a3cb58e7ebd3e4d87ab5e084e951",
+      "size": 408583,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/readdir示意图.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/readdir%E7%A4%BA%E6%84%8F%E5%9B%BE.png",
+      "sha256": "4632e57e2fa8830602e829ee11cfe5356e18125bdee6b5ddee01c9d0022600d0",
+      "size": 53344,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/read接口封装.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/read%E6%8E%A5%E5%8F%A3%E5%B0%81%E8%A3%85.png",
+      "sha256": "d6e4d10d1012129c4a63ce33f1adfdab78fe6a7a40326bc9d9a63599758f031e",
+      "size": 107150,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/task1-2.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/task1-2.png",
+      "sha256": "585d4df040a9a7271ac6e65ed090f2b24700af65855a9d67b2c52930d5722f7d",
+      "size": 7823,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/task1.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/task1.png",
+      "sha256": "9887e4e9ae05f551967bb69e49eef178c3034b89edbdbeef6a50972337e6b0cc",
+      "size": 79390,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/task2-3.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/task2-3.png",
+      "sha256": "4059b58a07d718278fa3d199624b56c0c3dcb92955d3b53de354f6ebe050490a",
+      "size": 12100,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/task2-pass.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/task2-pass.png",
+      "sha256": "90b8c71e6025873c8812d4d39b9b404f1d77c3bb6e7616b709ad903f54d438ee",
+      "size": 70441,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/task2-test.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/task2-test.png",
+      "sha256": "7eedb15d8d2e6bb21aa315dadc37421e34ee5f5ecb98c843a2d59c3097018c19",
+      "size": 31967,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/test-fail.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/test-fail.png",
+      "sha256": "fd518c825645a1230fc2b43a3f930f33f7d5592beaee0063da794c0f768dfb97",
+      "size": 20515,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/test-pass.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/test-pass.png",
+      "sha256": "aa665b2692140e5058ff8ddc9aa7bba7aa636c1b243e325e1633ba3b77c3369e",
+      "size": 13102,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/umount-example.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/umount-example.png",
+      "sha256": "5caf598e1552765d77f70a3daeb072021f39775e10f2ca1107c3a97d3cbff654",
+      "size": 11588,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/umount.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/umount.svg",
+      "sha256": "d9a33ea710a17a9f78c119e29cdb779c39d7b63597c3f870a8d3d41a95f0b25e",
+      "size": 189352,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/umount示意图.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/umount%E7%A4%BA%E6%84%8F%E5%9B%BE.png",
+      "sha256": "dd95dd1aaca04ea9eeaaf40454424f24200a65217538e711a1bbec2c8d94f978",
+      "size": 127879,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/vectorfs-flow.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/vectorfs-flow.svg",
+      "sha256": "08955dc3a4bda8c978794704ca2cb9440639a2466c017a0cb358f29694afeb2e",
+      "size": 3624,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/vectorfs-operations.svg": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/vectorfs-operations.svg",
+      "sha256": "76d55e6f22e56eb9274b2b27eb688740f4cd618598ae94bdfc63988ca993cd07",
+      "size": 2695,
+      "content_type": "image/svg+xml",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/vectorfs-test-result.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/vectorfs-test-result.png",
+      "sha256": "bd5677c5278603ac9a570fd391a14dcc3dfca2d1407fba6af4bcc4c2108ec3e5",
+      "size": 1664088,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/vscode-cpp.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/vscode-cpp.png",
+      "sha256": "1d02f210a133c6cdf24d5faf74e3b7fd53ad099724d92eaef6cf8fefe223fd04",
+      "size": 133725,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/write接口封装.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/write%E6%8E%A5%E5%8F%A3%E5%B0%81%E8%A3%85.png",
+      "sha256": "7ef1077cc12c0ad66305c5771aac7670c061453bd6b6f289a7fac520aa3cdd97",
+      "size": 120378,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.assets/刷回文件示意图.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.assets/%E5%88%B7%E5%9B%9E%E6%96%87%E4%BB%B6%E7%A4%BA%E6%84%8F%E5%9B%BE.png",
+      "sha256": "4d89770f7cd0fa5bcaed5e81bcc2a957b8df32bb54ebb80fdfe5998bcc29ed30",
+      "size": 162241,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part3.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part3.html",
+      "sha256": "0c91a259f81ce021b449a71d94b92b0c4f9cff5a743072021ea616aa04463631",
+      "size": 137992,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:18 GMT"
+    },
+    "lab5/part4.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part4.html",
+      "sha256": "32b713a3eecb4b47ef7db78b724666801a756b7cb663361dd43ac75ef6eb9bb9",
+      "size": 50298,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:18 GMT"
+    },
+    "lab5/part5.assets/CC++release.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/CC%2B%2Brelease.png",
+      "sha256": "11a862ec4a6506879ca0c44db1db9b8970902f5960965b71705bcf78c2da10c8",
+      "size": 489701,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/data.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/data.png",
+      "sha256": "a10435d425a9d8448f8f6ccb20b39ac5634a0d7f593ad65ba43eae846a57f420",
+      "size": 31809,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/datamap.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/datamap.png",
+      "sha256": "08e804c6b282bee25738bd275a0654400f340279b30fc8f3ad6661052bd1b019",
+      "size": 242406,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/ddriverpath.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/ddriverpath.png",
+      "sha256": "f70ccbae10e0deccb67bf3002ea03bcfccf3b46b27c11c0926efb25d47d09c4a",
+      "size": 612879,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/debug.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/debug.png",
+      "sha256": "95424c98410898a8de5664efbb91b0fa4666e34bd5c36748d20076390fc00597",
+      "size": 221224,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/extern1.JPG": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/extern1.JPG",
+      "sha256": "ffea62d501a823ca44476d92b73ade1cdfb4fcf037bca652a48d9a6a40f45d97",
+      "size": 48968,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/extern2.JPG": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/extern2.JPG",
+      "sha256": "a4d7cd152babdf0e9fd6621119b31930a0fd31004f12d4bb49cfb266f6fdd430",
+      "size": 32153,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/extern3.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/extern3.png",
+      "sha256": "b155003b103cad50f0d64b6406e91e7500e5014836273af427ffcdf52c667192",
+      "size": 20032,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/flags.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/flags.png",
+      "sha256": "99c14092f995f7a4821d1f044929fa475a45101f9d05f804019b837abab39313",
+      "size": 195656,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/getattr.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/getattr.png",
+      "sha256": "b8add8a21003e434b9bb1646b36d643b59bbae5707f4871008c2645e7bc7d824",
+      "size": 386962,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/hardlink.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/hardlink.png",
+      "sha256": "64cb0017ba6c621691e741095d4c4ce1cdf06d17e26dfce9616c71f5db4e4be0",
+      "size": 203181,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/inodemap.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/inodemap.png",
+      "sha256": "6e3912ac71ca22a29757a43fda820a6f42866f33073397a0f19d620d57729042",
+      "size": 24931,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/launchfail.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/launchfail.png",
+      "sha256": "99495f2b866bed7219a3707a8dbec5fed446f66920d01fc22f748c0dbb4f29d0",
+      "size": 341147,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/noextern.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/noextern.png",
+      "sha256": "5730d208a89a1ee07095734ec747fbd296333b85eaebc74d25f267d0b2acf918",
+      "size": 609759,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/not-permitted.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/not-permitted.png",
+      "sha256": "7fd256d58f4001d8966800867ea2a128f7b3ad88c640cb6423585c7d551b131c",
+      "size": 215715,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/red.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/red.png",
+      "sha256": "c27432bf8ffa0ffaef749b5dab11e4741f234dff1cec01a5bcb2f718d65a8720",
+      "size": 288274,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/red_why.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/red_why.png",
+      "sha256": "befc336eaf388b8fbe85bc9a8139ebfa767ce46a6d6f91ac12b6eb1333262cec",
+      "size": 93771,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/settings.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/settings.png",
+      "sha256": "cadae172e14609aeeac1dbeddf1f7c5a74a4e72144c433b18eae07744bfd0096",
+      "size": 30343,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/sig.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/sig.png",
+      "sha256": "0e6ab02432520ccbe2dfaf4882759ba6517c70c5539f2d18f6c0ef0aeaaa6f2e",
+      "size": 9958,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/spawn.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/spawn.png",
+      "sha256": "2b64f5374ee6a14eb686b40468afdde9d6941560e57caef466e366391311b65e",
+      "size": 120926,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/tasks.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/tasks.png",
+      "sha256": "9a10341efa4f31fab0f8fa7b349283f96b50b27e1fd637908f2b0dc8d2dcbfa7",
+      "size": 197064,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/unMount.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/unMount.png",
+      "sha256": "73b945025f83ddb5e50ce89d281747a9eda3e9e821317f5141481326ac1a363e",
+      "size": 139784,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.assets/use_ino.png": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.assets/use_ino.png",
+      "sha256": "2210d60c86583704f7cdf6f5a4f3adc90677b2290e043ebeb447bb844a6b76de",
+      "size": 295435,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "lab5/part5.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part5.html",
+      "sha256": "37ab31631d092b884e840fa06b3dddead4d719962788a7f0c3bdda45df8975c1",
+      "size": 74278,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:18 GMT"
+    },
+    "lab5/part6.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part6.html",
+      "sha256": "e96dca85e9d64a154285e30b3d8bddfc942ff8b76eb3618ece33fb7cb9551e63",
+      "size": 149922,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:18 GMT"
+    },
+    "lab5/part7.html": {
+      "url": "https://os-labs.p.cs-lab.top/lab5/part7.html",
+      "sha256": "eb4286dc4eb00aaa94973d2f902eab4165d65c38f7622c768cff34bb00e70428",
+      "size": 219896,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:18 GMT"
+    },
+    "oscomp/index.html": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/index.html",
+      "sha256": "fa24f9efe5b1ef26c28d0f10c9781f42dff60447eee0d29696726ea5b5c17f28",
+      "size": 134430,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:18 GMT"
+    },
+    "oscomp/oscomp.assets/30E64877881B93916ECF7357393_059C77BA_1CBB0.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/30E64877881B93916ECF7357393_059C77BA_1CBB0.jpg",
+      "sha256": "b9ac0377fd20a6c23c477d05ba93fbc3d27dc8a70ef11b6a131ae8d639343edd",
+      "size": 117680,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/D052DE40F53E4A5E2BB62E9208D_56BCF9D8_177A7.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/D052DE40F53E4A5E2BB62E9208D_56BCF9D8_177A7.jpg",
+      "sha256": "172650cce9ccc3e072cd6d0d65ae4b622aa599a20d95f20da2ae969fe11f7867",
+      "size": 96167,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/FTL.png": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/FTL.png",
+      "sha256": "4aa03f981f5b3a00cbeb7f0e23ea00c511a36a795986c946f7b77b05ccbc2138",
+      "size": 226860,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/LMY.png": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/LMY.png",
+      "sha256": "bfefd5303b53f154a12f32f399c307a271517735cb94d6bf3d443d5f9d718337",
+      "size": 233775,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-F-2023-1.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-F-2023-1.jpg",
+      "sha256": "97fc9f0c9c33bcef7bbece049cf0f91ccb0424e09c50a92221393e1e9ac0fee2",
+      "size": 538583,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-F-2023-4.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-F-2023-4.jpg",
+      "sha256": "fb2961a712e488db700cef2ab844744831a1336c60552af6f8b5734b2979ae77",
+      "size": 611995,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-F-2023.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-F-2023.jpg",
+      "sha256": "77a1e3ae7688d3d981b2e376a7f54c212a6a1cf2c6b2080532787b2517ea5330",
+      "size": 475239,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-F-2025-1.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-F-2025-1.jpg",
+      "sha256": "19f98ee0302d0026a113b2fa6d393ed7aa6adb7a788a6b6be9ceecdf2cab7a7e",
+      "size": 187825,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-F-2025-2.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-F-2025-2.jpg",
+      "sha256": "d93758ae73b52f0aa8121e6a09b27543841b791b3c1c5408ced1982b0a28cd0b",
+      "size": 226235,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-F-2025-3.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-F-2025-3.jpg",
+      "sha256": "97c2f68621ef84dcb95247124306c36af4632822a8f9ca8ad9c04f63eef83213",
+      "size": 1079417,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-K-2023-1.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-K-2023-1.jpg",
+      "sha256": "b8f1a7ce5b271b88c5e90e27b323a2f9f2a0ae73e38412427777156efe8bc750",
+      "size": 3501858,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-K-2024.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-K-2024.jpg",
+      "sha256": "e4502f9ccef607cd7c3640e931ca08b91b941af3e18b14c010d0e6b274f48e18",
+      "size": 217481,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-K-2025-1.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-K-2025-1.jpg",
+      "sha256": "7d1d0ef0ee7db1befddcf25d1d7d10697855dab8cd60df4bbc8fe7535d8510f9",
+      "size": 2277170,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-K-2025-2.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-K-2025-2.jpg",
+      "sha256": "7da63b31494e5e4b501f90e2cc0fc0483880dcfd5427b29e8f9de82df9991586",
+      "size": 454899,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OS-K-2025-3.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OS-K-2025-3.jpg",
+      "sha256": "32c9f8f12ef3583db8ed7f0104df301ff3f77954c3a6b5f76eba42d887c2a4eb",
+      "size": 240705,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OScomp.png": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OScomp.png",
+      "sha256": "4fb58d337592a361f571a6cb1bbdcbb4fa71a0176b128a2939150f5f85b66244",
+      "size": 26329,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/OopS.png": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/OopS.png",
+      "sha256": "aab7f58343f368d5486fc58d0b75c23a11bd21952148d7b1576109f45f2c559f",
+      "size": 207670,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/code.png": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/code.png",
+      "sha256": "2fcabd630ebacfd0659a801c577ae2c959653adc9b22958c4964f6ece0890aca",
+      "size": 5902,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/os-张正翰.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/os-%E5%BC%A0%E6%AD%A3%E7%BF%B0.jpg",
+      "sha256": "4fc2b32022aa2dc63a88d456c66e22efc23f1386494ffd2b4da6b0e48c0ac275",
+      "size": 4631489,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/os-苏安炫.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/os-%E8%8B%8F%E5%AE%89%E7%82%AB.jpg",
+      "sha256": "1ac61e2f550055bdfb7196ff1ce91c36ff4b74fe1e168c14d8add53ca98504b7",
+      "size": 2959599,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/os-陈浩.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/os-%E9%99%88%E6%B5%A9.jpg",
+      "sha256": "523fe605d3fd4a5cd2660f5f68aa63721edce7a66194e81f34077d9a485caff5",
+      "size": 121341,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/os-颜晨.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/os-%E9%A2%9C%E6%99%A8.jpg",
+      "sha256": "003917ebf6bac849d2d4e204692683019418daa64b11283eb28162361342df71",
+      "size": 244446,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/panic2.png": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/panic2.png",
+      "sha256": "c3f2eac359c07a4fa42ebf0a06c8d9d4301a498a65f3d7d725d7f61c3ecea006",
+      "size": 66608,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/time-2023.png": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/time-2023.png",
+      "sha256": "cb82692e56ef6d22e304d25877cdfbdfb7d2db0ec68988972d3e88310d88bab7",
+      "size": 88365,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "oscomp/oscomp.assets/xv6bgrc.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/oscomp/oscomp.assets/xv6bgrc.jpg",
+      "sha256": "7180c820d0148bbdd53781195c1e0517ea32673f2f4e99d5787ea87d5adbf5fd",
+      "size": 36479,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "platform/index.html": {
+      "url": "https://os-labs.p.cs-lab.top/platform/index.html",
+      "sha256": "15740ab3334d975033c534d0c03a02de8f6a5b3c8add042ba6a5bf2d9dac4ad3",
+      "size": 52233,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:18 GMT"
+    },
+    "remote_env.assets/char.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/char.png",
+      "sha256": "3838ae8f850ad336351309ff3a0569ee60b6e85055e91f613cb7f2a9a1544369",
+      "size": 27313,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/clone0.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/clone0.png",
+      "sha256": "4cd8ad9e58c1f77b48542ce65531e707882efa71e2a4cc5f5027b43d6476b860",
+      "size": 68399,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/connect1-16618272820231.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/connect1-16618272820231.png",
+      "sha256": "ab67bc8a3e6fedb238df0c70f8c3e1277ab0a78b1d1de4b383e0b8c8146c3d11",
+      "size": 9637,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/connect2.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/connect2.png",
+      "sha256": "c7959d64685e3bdfb494da6b72056814c502d3e11a9bfb5f86d46069528dad5c",
+      "size": 79264,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/connect3.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/connect3.png",
+      "sha256": "ee7f6e01d2268285ac22a5ad10d6443cd3436ff7c079cef589b72c754fbf5a44",
+      "size": 80268,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/connect4.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/connect4.png",
+      "sha256": "6aa91b08dfe8f54c2f2c4a28adf3c5423e99a0fefc47f16b8156767dbb49c491",
+      "size": 81922,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/icon.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/icon.png",
+      "sha256": "8b234776bb1ef8c051f485d11188e1dcc73b55411376d7a0810788850eaf9764",
+      "size": 908,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/image-20201016162754878.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/image-20201016162754878.png",
+      "sha256": "4e1363c69f98b613826dffa3b690e9bfb1233c139df41e12e39734d1bc518c49",
+      "size": 168204,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/image-20201016162859685.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/image-20201016162859685.png",
+      "sha256": "605722fe80db9fd06f340a2da36931f666cd7725cbe20a43bb647c38f7770e25",
+      "size": 74117,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/image-20201016163031421.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/image-20201016163031421.png",
+      "sha256": "581d0ea28f6a85bd6927d37952ca26405c3c31cbd751b401af92ee26cab2d9e2",
+      "size": 308801,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/image-20210910105707775.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/image-20210910105707775.png",
+      "sha256": "aa37784713f52b5eaa0c297bffb80b1198f6dcd1105b737eb594d4b4fcd86f01",
+      "size": 27651,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/open_folder.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/open_folder.png",
+      "sha256": "ae335eb0232830b65aaa76b0f41f9db822deb332f9c3e5e9e12b949ee953871a",
+      "size": 89556,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/open_folder2.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/open_folder2.png",
+      "sha256": "d93640167312c35170a633db3a95a6987a24225ce25e9377c0f08e10648c8606",
+      "size": 29940,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/open_folder3.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/open_folder3.png",
+      "sha256": "912dcd304722751678f0abc6b178cca46a64f9251e20a2b0d64563b2a6453d9c",
+      "size": 97051,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/passwd.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/passwd.png",
+      "sha256": "676aeebef1e0e973d924e273e296a74aecb98216a57a67bf7cfe063fe28076e8",
+      "size": 8513,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/ssh_add_host.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/ssh_add_host.png",
+      "sha256": "2f9635ff7bef25da824ada02e311421be7c61370ea656ad04a15bc56bc6619a6",
+      "size": 15275,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/ssh_add_host2.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/ssh_add_host2.png",
+      "sha256": "486291cff21c037465807afe9126f73c6abd2034d5390a991a0477241a147085",
+      "size": 87914,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/ssh_add_host3.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/ssh_add_host3.png",
+      "sha256": "462c691de7b5091610fad67640db5e561f6123c807e951e177ef351699e13ca3",
+      "size": 22029,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/ssh_keygen.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/ssh_keygen.png",
+      "sha256": "5363ca5def3b75dfb2103b9772b1f8336d908c9cf48322320dd32f77e4196194",
+      "size": 31126,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/success.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/success.png",
+      "sha256": "d0766639831f1d8f777c4fc73ed381a0efdc344a0b4f6b895a465dec30cc8555",
+      "size": 4058,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.assets/vscode_extension.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.assets/vscode_extension.png",
+      "sha256": "04aafcb8eec20ae1f3cfad88a5454fa0c4ced311301ffdcac9976716cd344cae",
+      "size": 200683,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env.html": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env.html",
+      "sha256": "6ba75b3afc5d06b2f6c8fab51f9868ac5d1f339dfb612a7ea820550ee0a2d336",
+      "size": 76070,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "remote_env_gdb.assets/bp.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/bp.png",
+      "sha256": "c7d4ca98c40048c8149121b3fd10794f0aec77ce308fe4ea75ec82757725b6a8",
+      "size": 159750,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/bp_fin.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/bp_fin.png",
+      "sha256": "c8d39679421b36a464a52d01a3d638b1a0d94a8cb7846c99b41bbb4abb0fd918",
+      "size": 178711,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/bp_stop.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/bp_stop.png",
+      "sha256": "9f1c19cffaff218ef300c6e7fc7a2a21f9b814dfaf4f52351f0dcc18a4e5dec2",
+      "size": 183515,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/buttons.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/buttons.png",
+      "sha256": "68f38a3e07f45f82455e5ad8a7d8f0574b7f25ae02eb3ffef4fa4c520ac7a812",
+      "size": 3334,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/cores.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/cores.png",
+      "sha256": "98d6c50e0406e41837b3f302f628e782670816aee7a7fd3db08fd31a824d2888",
+      "size": 208773,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/debug_cons.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/debug_cons.png",
+      "sha256": "041287c55c066a910475c7759ce1ae05718a20b5958d6199296b2c1820daee8b",
+      "size": 184762,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/debug_tab.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/debug_tab.png",
+      "sha256": "b8e66e2b0a1a0f3d8603a9da2b0e61054128c6d2e3659f4a308598adf4ff6fbd",
+      "size": 79160,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/del_bp.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/del_bp.png",
+      "sha256": "de93602d69090205ee862fcac832b1b9f36b63b1c327f5409d67b5225c2ef56d",
+      "size": 13535,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/file_ls.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/file_ls.png",
+      "sha256": "9ee13dd639c50c40bad3f1135bed7c98838e4890eb70d7636dbff3d4cba78eef",
+      "size": 134950,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/gen_profile.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/gen_profile.png",
+      "sha256": "af3e9ec832259da8b3a8f0d99f1d29f9f893b699e92fbbdaa4d727c76134fb1e",
+      "size": 80628,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/image-20210928095130751.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/image-20210928095130751.png",
+      "sha256": "aadaeffda1f8bc03b7267af894332ba304882603bece6d4b7f523486663a8049",
+      "size": 63101,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/image-20210928095306503.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/image-20210928095306503.png",
+      "sha256": "3e73eb3c2cea7761da46df66a01503c4e5a774db616082ecd52689d3285dd58c",
+      "size": 55997,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/image-20220923143519150.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/image-20220923143519150.png",
+      "sha256": "a49ea5bb4c149f180c30dc6d06e6a397e91b63bcef5b41a1459781a2adaebaf2",
+      "size": 12720,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/image-20220924102228129.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/image-20220924102228129.png",
+      "sha256": "9e7cdb3d97f0ece2c51b50b9bd0cf720a7a067229c58d805553d3608b55fe260",
+      "size": 117278,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/image-20220924102353055.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/image-20220924102353055.png",
+      "sha256": "86a967f8c41bf06cd7518485cdcbef68803695a4928ac3602eaffaf0f3f31ebf",
+      "size": 27725,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/image-20220924102844921.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/image-20220924102844921.png",
+      "sha256": "b8589543b952b5dd01ab5fac578c9a7289808d1f1383c2d25154e7ced4f40f1b",
+      "size": 122676,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/image-20220924102934345.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/image-20220924102934345.png",
+      "sha256": "a9b6b523b3dc118d4de6c3f553768ff86d6c759b964e0a03ddc34f94c3a3e0a7",
+      "size": 139728,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/image-20220924104328493.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/image-20220924104328493.png",
+      "sha256": "d8c14bb02816b1932df188939c33b06891b51a933daa864a34753d98ce09edf9",
+      "size": 114145,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/ls_bmain.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/ls_bmain.png",
+      "sha256": "ea43b580aaa6b21acf2fc198782608ae93b3c8896d3886dde31392e16880e519",
+      "size": 174791,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/ls_debug.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/ls_debug.png",
+      "sha256": "17a43d3c0c3d1345e089b853d66de798bbdca343286bfa95e41ed5689cc6a4ef",
+      "size": 123266,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/mem.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/mem.png",
+      "sha256": "562c57674bf7228b43c7bc830e6d1802bdb407aefe6a74e8b3d6a4ad7324efb7",
+      "size": 155854,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/native_debug.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/native_debug.png",
+      "sha256": "06d7ed6f5aa80b5a57df9948d00ef1f480c7f3362cfc1d7f7bb327f41bbb7685",
+      "size": 166671,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/reg.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/reg.png",
+      "sha256": "0a2257587fc626b51c88f99e3a02c8ae1efc86a4944b22e7a89252f698bcbac1",
+      "size": 35012,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/run_gdb.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/run_gdb.png",
+      "sha256": "5db42b9a390885d5246be591264bfa4e47b842764c471fde60abecf0a8921366",
+      "size": 59568,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/si_1.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/si_1.png",
+      "sha256": "741d921eedf2332feb506f4bfeaa8fd233ec65344899b6dd82bfa7f6c10fadea",
+      "size": 587878,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/si_2.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/si_2.png",
+      "sha256": "95e26e2096dc1e683d83523c4e0beb9249165c4f71c9a0748540cbee04a6a693",
+      "size": 43670,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/si_3.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/si_3.png",
+      "sha256": "52d2e073a69f9f5ce0f4783796568bf47c6eb6147dbcef59e53edb33aeebe74b",
+      "size": 37295,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/step_fin.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/step_fin.png",
+      "sha256": "8c26722c209821e417d3138140bf2e09062f5da5ae51a2009deec77f55cffae8",
+      "size": 183591,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/step_init.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/step_init.png",
+      "sha256": "42842633318a94955f5acd40af59cecd746620058a2039b73577eb6f61392581",
+      "size": 183222,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/step_into_1.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/step_into_1.png",
+      "sha256": "beb4d26069f93ba564ca8c011d4f2f79191eeb2360ecd425b8bc03f2fcc7f506",
+      "size": 173681,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/step_into_2.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/step_into_2.png",
+      "sha256": "105078a97aca14d79179a28aeaceeb2e4421566baa34aef7f4f22d858c38fa66",
+      "size": 172886,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.assets/step_into_3.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.assets/step_into_3.png",
+      "sha256": "c587c95a8c80d4db05474592f343770e6ba6d851f3459ea9120a142f7d14afa7",
+      "size": 181267,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb.html": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb.html",
+      "sha256": "ef16bcf69c0488390583938711a02d1a00dd34c90520e8267bd1c14651302b58",
+      "size": 73093,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "remote_env_gdb2.assets/ecall-epc.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/ecall-epc.png",
+      "sha256": "bf8f87c841b356476e3d5f6d9e9a65bcb5e873f79f47fe723fefc6737a746e51",
+      "size": 23021,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922094635420.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922094635420.png",
+      "sha256": "3444bf5bcec64772aaf91ed8e738e9bb6325bff19a62773fc5871eb094bc984d",
+      "size": 21179,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922094744944.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922094744944.png",
+      "sha256": "8600dab42ab9c542903ead63f052118f17c09e0531a260384d2b9908c8da11c1",
+      "size": 151940,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922095149572.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922095149572.png",
+      "sha256": "425def0c56c5a2fea924bef88dbd9ad70d73be027fd6f7d95bea03f8319d3878",
+      "size": 147359,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922095717980.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922095717980.png",
+      "sha256": "8f5f889fcdce2070988d55f6bbb9bee48c9aecb32a5332146abc1265bf50489c",
+      "size": 9755,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922100008332.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922100008332.png",
+      "sha256": "58116f6932be98ca6554ad8c6ac1da8e0b45e9838f63df41ecf9879a3732bbf6",
+      "size": 128394,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922100826291.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922100826291.png",
+      "sha256": "d5329fa59dd54a86449b0efe2e55c4b8ed2b988556727375eb77dcf0281f9e24",
+      "size": 26917,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922103905096.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922103905096.png",
+      "sha256": "8933fcd098fcaa3ee318933082811c7fa99fdb728cc5adf67a8f1be041dc1291",
+      "size": 39030,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922104511551.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922104511551.png",
+      "sha256": "52e534b6243e01f09b43130025f89aa2173a06ef59d77fe5dc46e270ad97ac32",
+      "size": 58816,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922124624540.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922124624540.png",
+      "sha256": "7653a33b2f5ea4ed930a0ec5197a1af334a27e2c65ecf74c0deb2465aa5777c9",
+      "size": 59542,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922163531277.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922163531277.png",
+      "sha256": "3507d0b70fb381074fc886974ab9d464d251df5487b1f43d757d9b97bfccd3e9",
+      "size": 7333,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922163711214.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922163711214.png",
+      "sha256": "441a8bf2a2326ee98561564afa2cf810e749be499e57485eaf5d4738cf9d6e1c",
+      "size": 96900,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922164434984.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922164434984.png",
+      "sha256": "c71787f01b614cfa47ba3b196bba9e86c2883e7ebfe77ec462175fe536f94620",
+      "size": 13238,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922165128856.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922165128856.png",
+      "sha256": "016c2be12afebd24b1fdec45f9cf52d7712d5484e90d2fa64595842ffc78d8cb",
+      "size": 7434,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922165205475.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922165205475.png",
+      "sha256": "d3e53ee9790773515ae613d854746db01ecd2503e2048266a69860fe907d5cb3",
+      "size": 31533,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922165315546.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922165315546.png",
+      "sha256": "102dc9fb23c7cd919b01c2cf72cc1370084069496d4cbd2f472e5de9de0f5322",
+      "size": 17565,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922165428369.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922165428369.png",
+      "sha256": "12746651acacdb956313948fdbfafe126849e6e785632e8d8e01e45734be8ec3",
+      "size": 165623,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/image-20220922171000913.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/image-20220922171000913.png",
+      "sha256": "e144c77d392c33755504cdbe79a1dc958b94a18e81fe1767877e005ed3307fbd",
+      "size": 20080,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/kernel-sp.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/kernel-sp.png",
+      "sha256": "0b3ac348e1f5d12f554aa36dcfdf354894bc847d6ee80be8850de3e11fd2cb5c",
+      "size": 45455,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.assets/stvec.png": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.assets/stvec.png",
+      "sha256": "c74a844c1ec99a5c2c0b929585d96ff1f70ce4f621d46a9d30cd832d76267f8b",
+      "size": 25682,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "remote_env_gdb2.html": {
+      "url": "https://os-labs.p.cs-lab.top/remote_env_gdb2.html",
+      "sha256": "7d1eaafc88a51d4ce3b59a0fa2c1afe1686f680d02ee54756359272e37454531",
+      "size": 66451,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "self_host_env.html": {
+      "url": "https://os-labs.p.cs-lab.top/self_host_env.html",
+      "sha256": "e8f23617629596bb0f93feb6f8c83aa0649000b67f8af43c54f4968305d0efd5",
+      "size": 56747,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "stylesheets/extra.css": {
+      "url": "https://os-labs.p.cs-lab.top/stylesheets/extra.css",
+      "sha256": "6b188ae765645660a145a4192204ed6e727330ae0a7d26d7721bb2b28af2dfe8",
+      "size": 6965,
+      "content_type": "text/css",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/0-12.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/0-12.png",
+      "sha256": "18b5f23025816af7cabddf088e8a10487a9be6f00b46f03874dd7c285ac67252",
+      "size": 88866,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/commit.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/commit.png",
+      "sha256": "ab514443b78bd97daf4a92f18100ddec11706fb283c4cc9e71a61beee4200829",
+      "size": 61486,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/git-command.jpg": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/git-command.jpg",
+      "sha256": "bae07124ce61c8d20d9774a186405652103856bdb4919dd2a5baad10a742903b",
+      "size": 25801,
+      "content_type": "image/jpeg",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/image-20201017220316972.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/image-20201017220316972.png",
+      "sha256": "b9326d9bb752ac2f67f8b5944b395b5d0931266726a83091de59764d4f794318",
+      "size": 37530,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/merge_cf.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/merge_cf.png",
+      "sha256": "d005e4e2e9818946ea3757fda18286f1980641ba1772e20bf1e46aecc9c7406b",
+      "size": 80881,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/mobaxterm-4.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/mobaxterm-4.png",
+      "sha256": "3e50111ad30bcc52d604d87ff974d478fc50ad7ee6826cb095de628ab31fe459",
+      "size": 2010,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/mobaxterm-6.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/mobaxterm-6.png",
+      "sha256": "b21a694b3f183926a6dafc5d4be59468d02e41696a16bfb565f4fce188690e44",
+      "size": 65735,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/new_repo.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/new_repo.png",
+      "sha256": "653ca21d4dc8ca14dfde5f162a160373e5831b629b6bbb23c69a2cb4053a110e",
+      "size": 222471,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/new_repo2.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/new_repo2.png",
+      "sha256": "d7343983b63e25d0e1ba05e238854dc3a33d9e007163ed9ad4de7f10e23e36c0",
+      "size": 269186,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/new_repo3.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/new_repo3.png",
+      "sha256": "e65db3577714215dd8a21f86790e1721a6e855b85755f09b259b3a2431826011",
+      "size": 371507,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/push.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/push.png",
+      "sha256": "ca802e35a285500777aa1b60085621b0374387a21309c61864478abfa2474c01",
+      "size": 57433,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/stage.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/stage.png",
+      "sha256": "4539ef3b122239cf65632bacb6f4dd9a0aeeb835697eeda88e823a09aeccef77",
+      "size": 60696,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/stage2.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/stage2.png",
+      "sha256": "b1bd845d1f3d139cd685bb3d3afc672d2123a861f5bf224e5ef0789b0e9b620d",
+      "size": 60890,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.assets/vs_git.png": {
+      "url": "https://os-labs.p.cs-lab.top/tools.assets/vs_git.png",
+      "sha256": "3332fea730ea7f85fe379bdbe7cc620c95adba13b2c21783ce833b15d894383a",
+      "size": 60884,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "tools.html": {
+      "url": "https://os-labs.p.cs-lab.top/tools.html",
+      "sha256": "1408b6fc0964cd0a3243e69aff077f2a38a0c158e1d3fb9d9da9c3c942859f09",
+      "size": 86690,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    },
+    "vm_env.assets/T2102-hostonly.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/T2102-hostonly.png",
+      "sha256": "e809b57af16fe255cb71167761e0a09fa83a2b279579325972aa81d6d8857f80",
+      "size": 55343,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/T2102-oslab.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/T2102-oslab.png",
+      "sha256": "39105e5803e60686356c57a56482c42b9cabb6c0a663c9cf74e04d4a59152388",
+      "size": 69178,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/a-1.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/a-1.png",
+      "sha256": "58308e10ac68e06d239c2c48ba1fc00c9011e48e760b7bffd91d441022e5485b",
+      "size": 53246,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/a-2.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/a-2.png",
+      "sha256": "0cdfa958b0e36b1004e09b6b502a4df12d52731bc4f8cac2c4d405e0b639c2a5",
+      "size": 718350,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250701190300681.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250701190300681.png",
+      "sha256": "3c8c87548c7bc3a7a704e7b0dd1c1d9b5a5b7d393c3c76ffa32e07813ac996bd",
+      "size": 48629,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250701190358688.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250701190358688.png",
+      "sha256": "0240b6010cf4ad7bfadd78eb9ec61340052cb29c3b3977ef6fa657760f725d56",
+      "size": 29409,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250701190606901.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250701190606901.png",
+      "sha256": "6908760a184f71385e7bbb11965dc67b2375b4900e46ab9a5b577c5952093b99",
+      "size": 19670,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250701190702968.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250701190702968.png",
+      "sha256": "e9b7356629273f63be2047580fb886f1fe4003c5d073a71aa74507a4b3117d96",
+      "size": 8105,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250701190738403.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250701190738403.png",
+      "sha256": "af9d68cd83c160daa535f5b62fadd3a8d05eda2b05c498588a5eaa0cda9b19bf",
+      "size": 15492,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250701190824830.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250701190824830.png",
+      "sha256": "9c179a5182884600682cb382ad1cacf31ce67f5f34333c168876cedf6c137cf4",
+      "size": 18794,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909152138418.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909152138418.png",
+      "sha256": "122bb233eb800cada28891c3944e40770d6f544825ac69b6fb155762b4dca45b",
+      "size": 252488,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909155736975.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909155736975.png",
+      "sha256": "45c686732d1fef1f42495479e4a1ac09c36a5912c877a1a576844ef9c9921e99",
+      "size": 83722,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909162256826.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909162256826.png",
+      "sha256": "95c10180bd6cacd84e63d2bf4efad7c8202873f651432a9a779a71b68f7e2e1a",
+      "size": 21385,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909162546304.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909162546304.png",
+      "sha256": "890b704bb099e4ce363c14328b31450b6c193f5a1531db5d8ea792ae0719787c",
+      "size": 12285,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909162729559.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909162729559.png",
+      "sha256": "134cb96cb0884c4508ccd8f29d3b1a5345952b7a3877da4f67a0311f98f0e80b",
+      "size": 37808,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909164120526.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909164120526.png",
+      "sha256": "a4ed446577702e97937ebb0a8136b026895949b1ea40b6a1dc32472d629b20d1",
+      "size": 21966,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909174557973.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909174557973.png",
+      "sha256": "745cc0392d10589c1fcdd925b45c933194b70f67a5878e6d5308658199dcf1ae",
+      "size": 19894,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909175255379.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909175255379.png",
+      "sha256": "adf8d9cd47883ca8930c552350fd16f48fac34de11b8e5e87692505a98e48b66",
+      "size": 37591,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909175322736.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909175322736.png",
+      "sha256": "6a9f379131d757959d71e71cae4695d14987bb7ac3b490be3eab98ba588dfcda",
+      "size": 44176,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909181140167.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909181140167.png",
+      "sha256": "35fe6b1bf7c99b0a6bed75431953cfba3d0ab259ab7901acd9521901d5cb3f23",
+      "size": 19398,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/image-20250909181234017.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/image-20250909181234017.png",
+      "sha256": "08c139df0205a92b791a4c081a31d551e7813c9662a73b47a33b968ad83579cd",
+      "size": 21956,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/vscode-3.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/vscode-3.png",
+      "sha256": "4d1d1876bb07b054b0e80e5cdeb41e1beb9bca4b719fb8c35996d9b1838a7afd",
+      "size": 84065,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.assets/vscode_extension.png": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.assets/vscode_extension.png",
+      "sha256": "04aafcb8eec20ae1f3cfad88a5454fa0c4ced311301ffdcac9976716cd344cae",
+      "size": 200683,
+      "content_type": "image/png",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:16 GMT"
+    },
+    "vm_env.html": {
+      "url": "https://os-labs.p.cs-lab.top/vm_env.html",
+      "sha256": "70e2f5256ee02d90e71210d5e1e69da8394d11c830dd022a7d02d51bb6406923",
+      "size": 68179,
+      "content_type": "text/html",
+      "etag": "",
+      "last_modified": "Mon, 02 Nov 2026 05:40:17 GMT"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oslabs-scraper"
+version = "1.0.0"
+description = "Mirror https://os-labs.p.cs-lab.top into a git repository with an incremental HTML snapshot"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "LiinChun" }]
+keywords = ["scraper", "mkdocs", "git-scraper", "xv6", "os-labs"]
+dependencies = ["requests>=2.28"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+oslabs-scrape = "oslabs_scraper.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/LiinChun/os-experiment"
+Source = "https://os-labs.p.cs-lab.top/"
+
+[tool.setuptools.packages.find]
+include = ["oslabs_scraper*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

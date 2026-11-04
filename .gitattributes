@@ -1,0 +1,14 @@
+# 源码统一 LF，便于跨平台协作
+*.py     text eol=lf
+*.md     text eol=lf
+*.toml   text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.sh     text eol=lf
+*.txt    text eol=lf
+*.html   text eol=lf
+.gitignore text eol=lf
+
+# 快照必须与服务端返回的字节完全一致（manifest.json 里记录了 sha256），
+# 因此禁止 git 对 raw/ 下任何文件做行尾转换。
+raw/** -text

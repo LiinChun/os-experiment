@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker>
+    <style>
+      .title{font:700 25px sans-serif;fill:#0f172a}.label{font:600 18px sans-serif;fill:#0f172a}.small{font:15px sans-serif;fill:#334155}.box{stroke-width:2;rx:12}.line{stroke:#334155;stroke-width:2.2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="980" height="520" fill="#f8fafc" rx="18"/>
+  <text x="490" y="42" text-anchor="middle" class="title">同一棵 Linux 目录树，背后可以是不同文件系统</text>
+  <rect x="350" y="75" width="280" height="68" class="box" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="490" y="105" text-anchor="middle" class="label">VFS</text>
+  <text x="490" y="130" text-anchor="middle" class="small">统一 open / read / write / readdir</text>
+  <path d="M490 143 L490 178" class="line"/>
+  <path d="M490 168 L110 205" class="line"/><path d="M490 168 L300 205" class="line"/><path d="M490 168 L490 205" class="line"/><path d="M490 168 L680 205" class="line"/><path d="M490 168 L870 205" class="line"/>
+  <g>
+    <rect x="25" y="210" width="170" height="118" class="box" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="110" y="243" text-anchor="middle" class="label">ext4</text><text x="110" y="270" text-anchor="middle" class="small">/home/report.txt</text><text x="110" y="298" text-anchor="middle" class="small">磁盘上的 inode 与数据块</text>
+    <rect x="215" y="210" width="170" height="118" class="box" fill="#fef3c7" stroke="#d97706"/>
+    <text x="300" y="243" text-anchor="middle" class="label">tmpfs</text><text x="300" y="270" text-anchor="middle" class="small">/run /dev/shm</text><text x="300" y="298" text-anchor="middle" class="small">主要驻留在内存</text>
+    <rect x="405" y="210" width="170" height="118" class="box" fill="#ede9fe" stroke="#7c3aed"/>
+    <text x="490" y="243" text-anchor="middle" class="label">procfs</text><text x="490" y="270" text-anchor="middle" class="small">/proc/cpuinfo</text><text x="490" y="298" text-anchor="middle" class="small">读取时动态生成状态</text>
+    <rect x="595" y="210" width="170" height="118" class="box" fill="#fee2e2" stroke="#dc2626"/>
+    <text x="680" y="243" text-anchor="middle" class="label">sysfs</text><text x="680" y="270" text-anchor="middle" class="small">/sys/class/...</text><text x="680" y="298" text-anchor="middle" class="small">设备与内核对象属性</text>
+    <rect x="785" y="210" width="170" height="118" class="box" fill="#cffafe" stroke="#0891b2"/>
+    <text x="870" y="243" text-anchor="middle" class="label">devtmpfs</text><text x="870" y="270" text-anchor="middle" class="small">/dev/null /dev/input</text><text x="870" y="298" text-anchor="middle" class="small">文件操作进入设备驱动</text>
+  </g>
+  <rect x="105" y="382" width="770" height="88" class="box" fill="#ffffff" stroke="#64748b"/>
+  <text x="490" y="416" text-anchor="middle" class="label">用户看到的都是路径和文件描述符</text>
+  <text x="490" y="448" text-anchor="middle" class="small">真正决定文件行为的，是路径解析后选中的文件系统及其 operations</text>
+  <path d="M110 328 L245 382" class="line"/><path d="M300 328 L365 382" class="line"/><path d="M490 328 L490 382" class="line"/><path d="M680 328 L615 382" class="line"/><path d="M870 328 L735 382" class="line"/>
+</svg>

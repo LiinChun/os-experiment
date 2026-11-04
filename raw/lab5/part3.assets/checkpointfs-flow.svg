@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">CheckpointFS：独立保存，复制历史后恢复</title>
+  <desc id="desc">四个学生函数中 copy_file 为 static，create、checkpointfs_copy、restore 为三个公开 C 函数。create 准备路径与集合目录后调用通用 copy_file，后者用普通 read/write 或内部块实现独立 inode/数据、相同大小和内容，不覆盖，失败只清理本次新目标。restore 调用 checkpointfs_copy(source,hist_id,new_id)，后者在同一个 source 集合计算两个 ID 的真实路径并调用 copy_file，随后 restore unlink FILE，再 link 新 checkpoint 到 FILE。无同 inode 快捷返回，不自动备份旧内容。重复新 ID 或复制失败时 FILE 不变；link 失败保留新 checkpoint，但 FILE 可能不存在。写 FILE 改变新 checkpoint，不改变历史。CLI 仍只有 create 和 restore。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3Z" fill="#334155"/></marker>
+    <style>text{font-family:sans-serif;fill:#0f172a}.title{font-size:26px;font-weight:700}.head{font-size:20px;font-weight:600}.body{font-size:17px}.box{stroke-width:2;rx:12}.line{stroke:#334155;stroke-width:2;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1200" height="460" rx="18" fill="#f8fafc"/>
+  <text x="600" y="43" text-anchor="middle" class="title">CheckpointFS：两条命令，四个实现函数</text>
+  <text x="36" y="100" class="head">create FILE ID</text>
+  <rect x="35" y="120" width="235" height="100" class="box" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="152" y="158" text-anchor="middle" class="head">create 准备路径</text><text x="152" y="190" text-anchor="middle" class="body">创建源文件的集合目录</text>
+  <rect x="355" y="120" width="235" height="100" class="box" fill="#fef3c7" stroke="#d97706"/>
+  <text x="472" y="158" text-anchor="middle" class="head">static copy_file</text><text x="472" y="190" text-anchor="middle" class="body">read/write 或内部块复制</text>
+  <rect x="675" y="120" width="235" height="100" class="box" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="792" y="158" text-anchor="middle" class="head">独立 inode 与数据</text><text x="792" y="190" text-anchor="middle" class="body">不覆盖；失败仅清理新文件</text>
+  <path d="M270 170H355M590 170H675" class="line"/>
+  <text x="36" y="273" class="head">restore FILE HIST_CHECKPOINT NEW_CHECKPOINT</text>
+  <rect x="35" y="295" width="300" height="100" class="box" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="185" y="333" text-anchor="middle" class="head">checkpointfs_copy</text><text x="185" y="365" text-anchor="middle" class="body">同一 source 集合 → copy_file</text>
+  <rect x="440" y="295" width="300" height="100" class="box" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="590" y="333" text-anchor="middle" class="head">复制成功后删除工作路径</text><text x="590" y="365" text-anchor="middle" class="body">newfs_unlink(source)</text>
+  <rect x="845" y="295" width="320" height="100" class="box" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="1005" y="333" text-anchor="middle" class="head">链接新 checkpoint 到 FILE</text><text x="1005" y="365" text-anchor="middle" class="body">newfs_link(checkpoint, source)</text>
+  <path d="M335 345H440M740 345H845" class="line"/>
+  <text x="600" y="435" text-anchor="middle" class="body">非原子：link 失败保留新 checkpoint，FILE 可能不存在；旧内容不自动备份，要保留须先 create</text>
+</svg>
