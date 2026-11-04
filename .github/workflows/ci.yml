@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Unit tests (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+  mirror:
+    name: Verify committed mirror
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      # 站点在内网，云端无法抓取；这里只校验已提交的快照是否自洽
+      # （manifest.json 中的 sha256 与磁盘一致、页面内引用都能落到本地文件）。
+      - name: Verify snapshot integrity
+        run: python -m oslabs_scraper verify --out raw
+      - name: Show snapshot stats
+        run: |
+          echo "pages: $(find raw -name '*.html' | wc -l)"
+          echo "assets: $(find raw -type f ! -name '*.html' ! -name 'manifest.json' | wc -l)"
+          du -sh raw
